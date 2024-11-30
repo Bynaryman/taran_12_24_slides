@@ -19,6 +19,12 @@
   }
 }
 
+\setbeamertemplate{subsection in miniframes}{%
+  \vspace{-2pt}% Reduce vertical space above the dots
+  \insertsubsectionnavigationhorizontal{\textwidth}{}{\hskip0pt plus1filll}
+}
+\setcounter{tocdepth}{2} % Set table of contents depth to sections and subsections only
+\setcounter{secnumdepth}{2} % Set section numbering depth
 
 \usefonttheme{professionalfonts}
 %\usefonttheme{serif}

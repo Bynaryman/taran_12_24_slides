@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.4.2)  29 NOV 2024 11:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.4.2)  30 NOV 2024 11:30
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1463,7 +1463,7 @@ yles.code.tex))
 \@quotelevel=\count590
 \@quotereset=\count591
 LaTeX Font Info:    Trying to load font information for T1+lmss on input line 3
-4.
+5.
  (/usr/share/texmf/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) (./main.aux
@@ -1471,38 +1471,32 @@ File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 LaTeX Warning: Label `fig:accuracy' multiply defined.
 
 
-LaTeX Warning: Label `fig:neuron_variations' multiply defined.
-
-
 LaTeX Warning: Label `fig:overlay_design' multiply defined.
 
 
 LaTeX Warning: Label `fig:zoom_layers' multiply defined.
 
-
-LaTeX Warning: Label `fig:16mlp' multiply defined.
-
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1560,7 +1554,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring OFF on input line 34.
+Package hyperref Info: Link coloring OFF on input line 35.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -1573,9 +1567,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count598
 )
-LaTeX Info: Redefining \ref on input line 34.
-LaTeX Info: Redefining \pageref on input line 34.
-LaTeX Info: Redefining \nameref on input line 34.
+LaTeX Info: Redefining \ref on input line 35.
+LaTeX Info: Redefining \pageref on input line 35.
+LaTeX Info: Redefining \nameref on input line 35.
 
 (./main.out) (./main.out)
 \@outlinefile=\write7
@@ -1671,18 +1665,18 @@ Package biblatex Warning: BibTeX reported the following issues
 (biblatex)                - Invalid format of field 'month'.
 
 )
-Package biblatex Info: Reference section=0 on input line 34.
-Package biblatex Info: Reference segment=0 on input line 34.
+Package biblatex Info: Reference section=0 on input line 35.
+Package biblatex Info: Reference segment=0 on input line 35.
  (./main.nav)
-<./figs/darkblue-logo.pdf, id=245, 587.19376pt x 591.20876pt>
+<./figs/darkblue-logo.pdf, id=142, 587.19376pt x 591.20876pt>
 File: ./figs/darkblue-logo.pdf Graphic file (type pdf)
 <use ./figs/darkblue-logo.pdf>
-Package pdftex.def Info: ./figs/darkblue-logo.pdf  used on input line 47.
+Package pdftex.def Info: ./figs/darkblue-logo.pdf  used on input line 46.
 (pdftex.def)             Requested size: 28.25934pt x 28.45274pt.
-<./figs/bsc_logo_2.jpg, id=246, 193.9245pt x 174.1707pt>
+<./figs/bsc_logo_2.jpg, id=143, 193.9245pt x 174.1707pt>
 File: ./figs/bsc_logo_2.jpg Graphic file (type jpg)
 <use ./figs/bsc_logo_2.jpg>
-Package pdftex.def Info: ./figs/bsc_logo_2.jpg  used on input line 47.
+Package pdftex.def Info: ./figs/bsc_logo_2.jpg  used on input line 46.
 (pdftex.def)             Requested size: 31.67953pt x 28.45274pt.
  [1
 
@@ -3542,7 +3536,7 @@ or  <return>  to continue without it.
 ] [44
 
 ]
-<./figs//kulisch1.pdf, id=5580, 355.3275pt x 152.57pt>
+<./figs//kulisch1.pdf, id=4458, 355.3275pt x 152.57pt>
 File: ./figs//kulisch1.pdf Graphic file (type pdf)
 <use ./figs//kulisch1.pdf>
 Package pdftex.def Info: ./figs//kulisch1.pdf  used on input line 253.
@@ -3550,7 +3544,7 @@ Package pdftex.def Info: ./figs//kulisch1.pdf  used on input line 253.
  [45
 
  <./figs//kulisch1.pdf>]
-<./figs//kulisch2.pdf, id=5708, 355.3275pt x 152.57pt>
+<./figs//kulisch2.pdf, id=4563, 355.3275pt x 152.57pt>
 File: ./figs//kulisch2.pdf Graphic file (type pdf)
 <use ./figs//kulisch2.pdf>
 Package pdftex.def Info: ./figs//kulisch2.pdf  used on input line 253.
@@ -3558,7 +3552,7 @@ Package pdftex.def Info: ./figs//kulisch2.pdf  used on input line 253.
  [46
 
  <./figs//kulisch2.pdf>]
-<./figs//kulisch3.pdf, id=5824, 355.3275pt x 152.57pt>
+<./figs//kulisch3.pdf, id=4656, 355.3275pt x 152.57pt>
 File: ./figs//kulisch3.pdf Graphic file (type pdf)
 <use ./figs//kulisch3.pdf>
 Package pdftex.def Info: ./figs//kulisch3.pdf  used on input line 253.
@@ -3566,7 +3560,7 @@ Package pdftex.def Info: ./figs//kulisch3.pdf  used on input line 253.
  [47
 
  <./figs//kulisch3.pdf>]
-<./figs//kulisch4.pdf, id=5940, 356.33125pt x 152.57pt>
+<./figs//kulisch4.pdf, id=4749, 356.33125pt x 152.57pt>
 File: ./figs//kulisch4.pdf Graphic file (type pdf)
 <use ./figs//kulisch4.pdf>
 Package pdftex.def Info: ./figs//kulisch4.pdf  used on input line 253.
@@ -3582,7 +3576,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 ]
 <../../../PhD/paper_factory/thesis_louis/Chapter2/Figs//posit_16_4_bit_pattern.
-pdf, id=6179, 203.33414pt x 39.57841pt>
+pdf, id=4942, 203.33414pt x 39.57841pt>
 File: ../../../PhD/paper_factory/thesis_louis/Chapter2/Figs//posit_16_4_bit_pat
 tern.pdf Graphic file (type pdf)
 <use ../../../PhD/paper_factory/thesis_louis/Chapter2/Figs//posit_16_4_bit_patt
@@ -3591,7 +3585,7 @@ Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter2/Figs/
 /posit_16_4_bit_pattern.pdf  used on input line 337.
 (pdftex.def)             Requested size: 169.43596pt x 32.9805pt.
 <../../../PhD/paper_factory/thesis_louis/Chapter2/Figs//posit_16_4_bit_pattern_
-no_frac.pdf, id=6180, 203.33414pt x 39.57841pt>
+no_frac.pdf, id=4943, 203.33414pt x 39.57841pt>
 File: ../../../PhD/paper_factory/thesis_louis/Chapter2/Figs//posit_16_4_bit_pat
 tern_no_frac.pdf Graphic file (type pdf)
 <use ../../../PhD/paper_factory/thesis_louis/Chapter2/Figs//posit_16_4_bit_patt
@@ -3600,7 +3594,7 @@ Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter2/Figs/
 /posit_16_4_bit_pattern_no_frac.pdf  used on input line 337.
 (pdftex.def)             Requested size: 169.43596pt x 32.9805pt.
 <../../../PhD/paper_factory/thesis_louis/Chapter2/Figs//posit_16_4_bit_pattern_
-no_frac_no_scale.pdf, id=6181, 203.33414pt x 39.57841pt>
+no_frac_no_scale.pdf, id=4944, 203.33414pt x 39.57841pt>
 File: ../../../PhD/paper_factory/thesis_louis/Chapter2/Figs//posit_16_4_bit_pat
 tern_no_frac_no_scale.pdf Graphic file (type pdf)
 <use ../../../PhD/paper_factory/thesis_louis/Chapter2/Figs//posit_16_4_bit_patt
@@ -3609,7 +3603,7 @@ Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter2/Figs/
 /posit_16_4_bit_pattern_no_frac_no_scale.pdf  used on input line 337.
 (pdftex.def)             Requested size: 169.43596pt x 32.9805pt.
 <../../../PhD/paper_factory/thesis_louis/Chapter2/Figs//posit_16_4_bit_pattern_
-no_frac_no_scale_no_terminating.pdf, id=6182, 203.33414pt x 39.57841pt>
+no_frac_no_scale_no_terminating.pdf, id=4945, 203.33414pt x 39.57841pt>
 File: ../../../PhD/paper_factory/thesis_louis/Chapter2/Figs//posit_16_4_bit_pat
 tern_no_frac_no_scale_no_terminating.pdf Graphic file (type pdf)
 <use ../../../PhD/paper_factory/thesis_louis/Chapter2/Figs//posit_16_4_bit_patt
@@ -3715,7 +3709,7 @@ Overfull \vbox (2.67294pt too high) detected at line 337
 
 [52
 
-]) (./chapter3.tex (./main.toc) [53
+]) (./chapter4.tex (./main.toc) [53
 
 ] [54
 
@@ -3723,620 +3717,1068 @@ Overfull \vbox (2.67294pt too high) detected at line 337
 
 ] [56
 
-]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 78.
-<../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//john_operations_percent
-age.png, id=7049, 998.73125pt x 1185.42876pt>
-File: ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//john_operations_pe
-rcentage.png Graphic file (type png)
-<use ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//john_operations_per
-centage.png>
-Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs/
-/john_operations_percentage.png  used on input line 78.
-(pdftex.def)             Requested size: 116.37914pt x 138.1212pt.
- [57
-
- <../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//john_operations_percen
-tage.png>]
-File: ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//john_operations_pe
-rcentage.png Graphic file (type png)
-<use ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//john_operations_per
-centage.png>
-Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs/
-/john_operations_percentage.png  used on input line 78.
-(pdftex.def)             Requested size: 116.37914pt x 138.1212pt.
- [58
+] (./main.toc) [57
 
 ]
-[59
-
-]
-<../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//vgg16.png, id=7390, 453
-.7969pt x 198.10051pt>
-File: ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//vgg16.png Graphic 
-file (type png)
-<use ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//vgg16.png>
-Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs/
-/vgg16.png  used on input line 173.
-(pdftex.def)             Requested size: 171.14764pt x 74.71371pt.
- [60
-
- <../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//vgg16.png>]
-<../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//resnet50.png, id=7499, 
-453.7969pt x 198.10051pt>
-File: ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//resnet50.png Graph
-ic file (type png)
-<use ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//resnet50.png>
-Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs/
-/resnet50.png  used on input line 173.
-(pdftex.def)             Requested size: 171.14764pt x 74.71371pt.
-
-[61
-
- <../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//resnet50.png>]
-<../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//alexnet.png, id=7609, 4
-53.7969pt x 198.10051pt>
-File: ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//alexnet.png Graphi
-c file (type png)
-<use ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//alexnet.png>
-Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs/
-/alexnet.png  used on input line 173.
-(pdftex.def)             Requested size: 171.14764pt x 74.71371pt.
-
-[62
-
- <../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//alexnet.png>]
-<../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//epsilon16.pdf, id=7718,
- 415.53807pt x 161.23888pt>
-File: ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//epsilon16.pdf Grap
-hic file (type pdf)
-<use ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//epsilon16.pdf>
-Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs/
-/epsilon16.pdf  used on input line 173.
-(pdftex.def)             Requested size: 342.2953pt x 132.81949pt.
-
-[63
-
- <../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//epsilon16.pdf>]
-<../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//fast_sigmoid.pdf, id=78
-52, 473.46pt x 236.73pt>
-File: ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//fast_sigmoid.pdf G
-raphic file (type pdf)
-<use ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//fast_sigmoid.pdf>
-Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs/
-/fast_sigmoid.pdf  used on input line 205.
-(pdftex.def)             Requested size: 205.37926pt x 102.68773pt.
-
-[64
-
- <../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//fast_sigmoid.pdf>]
-File: ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//fast_sigmoid.pdf G
-raphic file (type pdf)
-<use ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//fast_sigmoid.pdf>
-Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs/
-/fast_sigmoid.pdf  used on input line 205.
-(pdftex.def)             Requested size: 205.37926pt x 102.68773pt.
-
-[65
-
-]
-File: ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//fast_sigmoid.pdf G
-raphic file (type pdf)
-<use ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//fast_sigmoid.pdf>
-Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs/
-/fast_sigmoid.pdf  used on input line 205.
-(pdftex.def)             Requested size: 205.37926pt x 102.68773pt.
- [66
-
-] (./main.toc) [67
-
-]
-<../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//posit_denormalize.pdf, 
-id=8308, 240.36258pt x 64.99419pt>
-File: ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//posit_denormalize.
-pdf Graphic file (type pdf)
-<use ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//posit_denormalize.p
-df>
-Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs/
-/posit_denormalize.pdf  used on input line 272.
-(pdftex.def)             Requested size: 128.36073pt x 34.70856pt.
-<../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//posit_normalize.pdf, id
-=8309, 240.36258pt x 64.99419pt>
-File: ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//posit_normalize.pd
-f Graphic file (type pdf)
-<use ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//posit_normalize.pdf
->
-Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs/
-/posit_normalize.pdf  used on input line 272.
-(pdftex.def)             Requested size: 128.36073pt x 34.70856pt.
-<../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//posit_2operands_operato
-r.pdf, id=8310, 357.36269pt x 136.422pt>
-File: ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//posit_2operands_op
-erator.pdf Graphic file (type pdf)
-<use ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//posit_2operands_ope
-rator.pdf>
-Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs/
-/posit_2operands_operator.pdf  used on input line 272.
-(pdftex.def)             Requested size: 128.36073pt x 49.00154pt.
- [68
-
- <../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//posit_denormalize.pdf>
- <../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//posit_normalize.pdf
-
-pdfTeX warning: pdflatex (file ../../../PhD/paper_factory/thesis_louis/Chapter3
-/Figs//posit_normalize.pdf): PDF inclusion: multiple pdfs with page group inclu
-ded in a single page
-> <../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//posit_2operands_opera
-tor.pdf
-
-pdfTeX warning: pdflatex (file ../../../PhD/paper_factory/thesis_louis/Chapter3
-/Figs//posit_2operands_operator.pdf): PDF inclusion: multiple pdfs with page gr
-oup included in a single page
->]
-File: ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//posit_denormalize.
-pdf Graphic file (type pdf)
-<use ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//posit_denormalize.p
-df>
-Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs/
-/posit_denormalize.pdf  used on input line 272.
-(pdftex.def)             Requested size: 128.36073pt x 34.70856pt.
-File: ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//posit_normalize.pd
-f Graphic file (type pdf)
-<use ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//posit_normalize.pdf
->
-Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs/
-/posit_normalize.pdf  used on input line 272.
-(pdftex.def)             Requested size: 128.36073pt x 34.70856pt.
-File: ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//posit_2operands_op
-erator.pdf Graphic file (type pdf)
-<use ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//posit_2operands_ope
-rator.pdf>
-Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs/
-/posit_2operands_operator.pdf  used on input line 272.
-(pdftex.def)             Requested size: 128.36073pt x 49.00154pt.
- [69
-
-]
-File: ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//posit_denormalize.
-pdf Graphic file (type pdf)
-<use ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//posit_denormalize.p
-df>
-Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs/
-/posit_denormalize.pdf  used on input line 272.
-(pdftex.def)             Requested size: 128.36073pt x 34.70856pt.
-File: ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//posit_normalize.pd
-f Graphic file (type pdf)
-<use ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//posit_normalize.pdf
->
-Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs/
-/posit_normalize.pdf  used on input line 272.
-(pdftex.def)             Requested size: 128.36073pt x 34.70856pt.
-File: ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//posit_2operands_op
-erator.pdf Graphic file (type pdf)
-<use ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//posit_2operands_ope
-rator.pdf>
-Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs/
-/posit_2operands_operator.pdf  used on input line 272.
-(pdftex.def)             Requested size: 128.36073pt x 49.00154pt.
- [70
-
-]
-<../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//neuron_quire.pdf, id=86
-75, 428.0904pt x 133.62566pt>
-File: ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//neuron_quire.pdf G
-raphic file (type pdf)
-<use ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//neuron_quire.pdf>
-Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs/
-/neuron_quire.pdf  used on input line 338.
-(pdftex.def)             Requested size: 308.06367pt x 96.16553pt.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 338.
- [71
-
- <../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//neuron_quire.pdf>]
-./chapter3.tex:427: Misplaced \noalign.
-\rowcolor ->\noalign 
-                     {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
-l.427 \end{frame}
-                 
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-[72
-
-]
-./chapter3.tex:427: Misplaced \noalign.
-\rowcolor ->\noalign 
-                     {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
-l.427 \end{frame}
-                 
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-[73
-
-]
-./chapter3.tex:427: Misplaced \noalign.
-\rowcolor ->\noalign 
-                     {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
-l.427 \end{frame}
-                 
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-[74
-
-] (./main.toc) [75
-
-] [76
-
-] [77
-
-] [78
-
-] [79
-
-]
-<../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//p9.png, id=9707, 894.34
-125pt x 671.50874pt>
-File: ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//p9.png Graphic fil
-e (type png)
-<use ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//p9.png>
-Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs/
-/p9.png  used on input line 516.
-(pdftex.def)             Requested size: 171.14764pt x 128.49991pt.
- [80
-
- <../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//p9.png>]
-
-./chapter3.tex:533: LaTeX Error: Unicode character � (U+FFFD)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.533 \end{frame}
-                 
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-[81
-
-]
-
-./chapter3.tex:533: LaTeX Error: Unicode character � (U+FFFD)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.533 \end{frame}
-                 
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-[82
-
-]
-
-./chapter3.tex:533: LaTeX Error: Unicode character � (U+FFFD)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.533 \end{frame}
-                 
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-[83
-
-]
-<../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//data_parallelism.pdf, i
-d=10219, 422.90918pt x 287.24466pt>
-File: ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//data_parallelism.p
-df Graphic file (type pdf)
-<use ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//data_parallelism.pd
-f>
-Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs/
-/data_parallelism.pdf  used on input line 558.
-(pdftex.def)             Requested size: 171.14764pt x 116.24579pt.
-<../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//16mlp.png, id=10220, 78
-4.9325pt x 763.85374pt>
-File: ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//16mlp.png Graphic 
-file (type png)
-<use ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//16mlp.png>
-Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs/
-/16mlp.png  used on input line 558.
-(pdftex.def)             Requested size: 154.03183pt x 149.88914pt.
- [84
-
- <../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//data_parallelism.pdf> 
-<../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//16mlp.png>]
-[85
-
-] (./main.toc) [86
-
-] [87
-
-] [88
-
-] [89
-
-]) (./chapter4.tex (./main.toc) [90
-
-]
-[91
-
-] [92
-
-] [93
-
-] (./main.toc) [94
-
-]
-<../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//overall_SA_2.pdf, id=11
-612, 370.38446pt x 241.6528pt>
+<../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//overall_SA_2.pdf, id=57
+45, 370.38446pt x 241.6528pt>
 File: ../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//overall_SA_2.pdf G
 raphic file (type pdf)
 <use ../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//overall_SA_2.pdf>
 Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter4/Figs/
-/overall_SA_2.pdf  used on input line 87.
+/overall_SA_2.pdf  used on input line 88.
 (pdftex.def)             Requested size: 171.14764pt x 111.6631pt.
- [95
+
+[58
 
  <../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//overall_SA_2.pdf>]
 File: ../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//overall_SA_2.pdf G
 raphic file (type pdf)
 <use ../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//overall_SA_2.pdf>
 Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter4/Figs/
-/overall_SA_2.pdf  used on input line 87.
+/overall_SA_2.pdf  used on input line 88.
 (pdftex.def)             Requested size: 171.14764pt x 111.6631pt.
- [96
+
+[59
 
 ]
 File: ../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//overall_SA_2.pdf G
 raphic file (type pdf)
 <use ../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//overall_SA_2.pdf>
 Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter4/Figs/
-/overall_SA_2.pdf  used on input line 87.
+/overall_SA_2.pdf  used on input line 88.
 (pdftex.def)             Requested size: 171.14764pt x 111.6631pt.
- [97
+ [60
 
 ]
 LaTeX Font Info:    Trying to load font information for TS1+lmss on input line 
-123.
-
-(/usr/share/texmf/tex/latex/lm/ts1lmss.fd
+124.
+ (/usr/share/texmf/tex/latex/lm/ts1lmss.fd
 File: ts1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [98
+) [61
 
 ]
 <../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//overall_SA_a2s3.png, id
-=12053, 370.29985pt x 241.64581pt>
+=6097, 370.29985pt x 241.64581pt>
 File: ../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//overall_SA_a2s3.pn
 g Graphic file (type png)
 <use ../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//overall_SA_a2s3.png
 >
 Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter4/Figs/
-/overall_SA_a2s3.png  used on input line 211.
+/overall_SA_a2s3.png  used on input line 212.
 (pdftex.def)             Requested size: 188.26346pt x 122.85425pt.
 
 
-./chapter4.tex:211: LaTeX Error: \caption outside figure or table.
+./chapter4.tex:212: LaTeX Error: \caption outside figure or table.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.211 \end{frame}
+l.212 \end{frame}
                  
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-[99
+[62
 
  <../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//overall_SA_a2s3.png>]
-<../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//overall_SA_PE.png, id=1
-2162, 370.29985pt x 241.64581pt>
+<../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//overall_SA_PE.png, id=6
+184, 370.29985pt x 241.64581pt>
 File: ../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//overall_SA_PE.png 
 Graphic file (type png)
 <use ../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//overall_SA_PE.png>
 Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter4/Figs/
-/overall_SA_PE.png  used on input line 211.
+/overall_SA_PE.png  used on input line 212.
 (pdftex.def)             Requested size: 188.26346pt x 122.85425pt.
 
 
-./chapter4.tex:211: LaTeX Error: \caption outside figure or table.
+./chapter4.tex:212: LaTeX Error: \caption outside figure or table.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.211 \end{frame}
+l.212 \end{frame}
                  
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-[100
+[63
 
  <../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//overall_SA_PE.png>]
 <../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//overall_SA_l2a.png, id=
-12271, 370.29985pt x 241.64581pt>
+6270, 370.29985pt x 241.64581pt>
 File: ../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//overall_SA_l2a.png
  Graphic file (type png)
 <use ../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//overall_SA_l2a.png>
 
 Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter4/Figs/
-/overall_SA_l2a.png  used on input line 211.
+/overall_SA_l2a.png  used on input line 212.
 (pdftex.def)             Requested size: 188.26346pt x 122.85425pt.
 
-
-./chapter4.tex:211: LaTeX Error: \caption outside figure or table.
+./chapter4.tex:212: LaTeX Error: \caption outside figure or table.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.211 \end{frame}
+l.212 \end{frame}
                  
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-[101
+[64
 
  <../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//overall_SA_l2a.png>]
-<../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//PE_S3.pdf, id=12379, 27
-0.7644pt x 283.51793pt>
+<../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//PE_S3.pdf, id=6355, 270
+.7644pt x 283.51793pt>
 File: ../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//PE_S3.pdf Graphic 
 file (type pdf)
 <use ../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//PE_S3.pdf>
 Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter4/Figs/
-/PE_S3.pdf  used on input line 238.
+/PE_S3.pdf  used on input line 239.
 (pdftex.def)             Requested size: 164.30403pt x 172.05017pt.
-<../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//alg_pe.png, id=12380, 5
-64.1075pt x 583.17876pt>
+<../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//alg_pe.png, id=6356, 56
+4.1075pt x 583.17876pt>
 File: ../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//alg_pe.png Graphic
  file (type png)
 <use ../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//alg_pe.png>
 Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter4/Figs/
-/alg_pe.png  used on input line 238.
+/alg_pe.png  used on input line 239.
 (pdftex.def)             Requested size: 136.91603pt x 141.5408pt.
- [102
+ [65
 
  <../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//PE_S3.pdf> <../../../P
 hD/paper_factory/thesis_louis/Chapter4/Figs//alg_pe.png>]
-<../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//S3FDP.pdf, id=12505, 28
-2.1039pt x 414.55632pt>
+<../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//S3FDP.pdf, id=6457, 282
+.1039pt x 414.55632pt>
 File: ../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//S3FDP.pdf Graphic 
 file (type pdf)
 <use ../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//S3FDP.pdf>
 Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter4/Figs/
-/S3FDP.pdf  used on input line 267.
+/S3FDP.pdf  used on input line 268.
 (pdftex.def)             Requested size: 106.28233pt x 156.17935pt.
- [103
+ [66
 
  <../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//S3FDP.pdf>]
 File: ../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//S3FDP.pdf Graphic 
 file (type pdf)
 <use ../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//S3FDP.pdf>
 Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter4/Figs/
-/S3FDP.pdf  used on input line 267.
+/S3FDP.pdf  used on input line 268.
 (pdftex.def)             Requested size: 106.28233pt x 156.17935pt.
- [104
+ [67
 
 ]
 File: ../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//S3FDP.pdf Graphic 
 file (type pdf)
 <use ../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//S3FDP.pdf>
 Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter4/Figs/
-/S3FDP.pdf  used on input line 267.
+/S3FDP.pdf  used on input line 268.
 (pdftex.def)             Requested size: 106.28233pt x 156.17935pt.
- [105
+ [68
+
+] (./main.toc)
+[69
+
+] [70
+
+] [71
+
+] [72
 
 ]
-(./main.toc) [106
-
-] [107
-
-] [108
-
-] [109
-
-]
-<../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//resource_250.png, id=13
-364, 252.00737pt x 155.79161pt>
+<../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//resource_250.png, id=71
+57, 252.00737pt x 155.79161pt>
 File: ../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//resource_250.png G
 raphic file (type png)
 <use ../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//resource_250.png>
 Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter4/Figs/
-/resource_250.png  used on input line 322.
+/resource_250.png  used on input line 323.
 (pdftex.def)             Requested size: 290.9531pt x 179.87212pt.
 
-Overfull \vbox (1.73419pt too high) detected at line 322
+Overfull \vbox (1.73419pt too high) detected at line 323
  []
 
-[110
+[73
 
- <../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//resource_250.png>] [11
-1
+ <../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//resource_250.png>]
+[74
 
 ]
 <../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//art_gallery_sa_32_31_8_
-0_by_PE_highlight.png, id=13580, 1471.68pt x 1442.115pt>
+0_by_PE_highlight.png, id=7327, 1471.68pt x 1442.115pt>
 File: ../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//art_gallery_sa_32_
 31_8_0_by_PE_highlight.png Graphic file (type png)
 <use ../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//art_gallery_sa_32_3
 1_8_0_by_PE_highlight.png>
 Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter4/Figs/
-/art_gallery_sa_32_31_8_0_by_PE_highlight.png  used on input line 507.
+/art_gallery_sa_32_31_8_0_by_PE_highlight.png  used on input line 508.
 (pdftex.def)             Requested size: 162.58974pt x 159.31529pt.
 <../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//art_gallery_sa_64_63_4_
-0_by_col_highlight.png, id=13581, 1471.68pt x 1442.115pt>
+0_by_col_highlight.png, id=7328, 1471.68pt x 1442.115pt>
 File: ../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//art_gallery_sa_64_
 63_4_0_by_col_highlight.png Graphic file (type png)
 <use ../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//art_gallery_sa_64_6
 3_4_0_by_col_highlight.png>
 Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter4/Figs/
-/art_gallery_sa_64_63_4_0_by_col_highlight.png  used on input line 507.
+/art_gallery_sa_64_63_4_0_by_col_highlight.png  used on input line 508.
 (pdftex.def)             Requested size: 162.58974pt x 159.31529pt.
- [112
+ [75
 
  <../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//art_gallery_sa_32_31_8
 _0_by_PE_highlight.png> <../../../PhD/paper_factory/thesis_louis/Chapter4/Figs/
 /art_gallery_sa_64_63_4_0_by_col_highlight.png>]
+<../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//p9.png, id=7414, 894.34
+125pt x 671.50874pt>
 File: ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//p9.png Graphic fil
 e (type png)
 <use ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//p9.png>
 Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs/
-/p9.png  used on input line 541.
+/p9.png  used on input line 542.
 (pdftex.def)             Requested size: 171.14764pt x 128.49991pt.
- [113
+ [76
 
-]
+ <../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//p9.png>]
 <../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//accuracy_energy_eff_bit
-width.pdf, id=13796, 523.67746pt x 332.76343pt>
+width.pdf, id=7499, 523.67746pt x 332.76343pt>
 File: ../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//accuracy_energy_ef
 f_bitwidth.pdf Graphic file (type pdf)
 <use ../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//accuracy_energy_eff
 _bitwidth.pdf>
 Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter4/Figs/
-/accuracy_energy_eff_bitwidth.pdf  used on input line 603.
+/accuracy_energy_eff_bitwidth.pdf  used on input line 604.
 (pdftex.def)             Requested size: 290.9531pt x 184.88898pt.
 
-Overfull \vbox (3.56052pt too high) detected at line 603
+Overfull \vbox (3.56052pt too high) detected at line 604
  []
 
-[114
+[77
 
  <../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//accuracy_energy_eff_bi
 twidth.pdf>]
-<../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//zoom_16bits.png, id=156
-39, 346.95245pt x 152.44453pt>
+<../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//zoom_16bits.png, id=931
+9, 346.95245pt x 152.44453pt>
 File: ../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//zoom_16bits.png Gr
 aphic file (type png)
 <use ../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//zoom_16bits.png>
 Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter4/Figs/
-/zoom_16bits.png  used on input line 615.
+/zoom_16bits.png  used on input line 616.
 (pdftex.def)             Requested size: 342.2953pt x 150.40414pt.
 pdfTeX warning (ext4): destination with the same identifier (name{fig:accuracy}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.615 \end{frame}
-                  [115
+l.616 \end{frame}
+                  [78
 
  <../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//zoom_16bits.png>] (./m
-ain.toc) [116
+ain.toc) [79
+
+] [80
+
+] [81
+
+] [82
+
+] [83
+
+] [84
+
+] [85
+
+])
+(./chapter5.tex (./main.toc) [86
+
+]
+<../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//overall_framework.pdf, 
+id=10280, 515.46109pt x 192.48564pt>
+File: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//overall_framework.
+pdf Graphic file (type pdf)
+<use ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//overall_framework.p
+df>
+Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs/
+/overall_framework.pdf  used on input line 66.
+(pdftex.def)             Requested size: 342.2953pt x 127.82512pt.
+ [87
+
+ <../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//overall_framework.pdf>
+]
+<../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//framework_HW.pdf, id=10
+406, 291.54036pt x 181.47586pt>
+File: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//framework_HW.pdf G
+raphic file (type pdf)
+<use ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//framework_HW.pdf>
+Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs/
+/framework_HW.pdf  used on input line 94.
+(pdftex.def)             Requested size: 171.14764pt x 106.53539pt.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <9> on input line 94.
+ [88
+
+ <../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//framework_HW.pdf>]
+<../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//framework_SW.pdf, id=10
+555, 315.09605pt x 157.50043pt>
+File: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//framework_SW.pdf G
+raphic file (type pdf)
+<use ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//framework_SW.pdf>
+Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs/
+/framework_SW.pdf  used on input line 146.
+(pdftex.def)             Requested size: 222.48985pt x 111.21083pt.
+ [89
+
+ <../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//framework_SW.pdf>]
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
+46.
+ (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+File: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//framework_SW.pdf G
+raphic file (type pdf)
+<use ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//framework_SW.pdf>
+Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs/
+/framework_SW.pdf  used on input line 146.
+(pdftex.def)             Requested size: 222.48985pt x 111.21083pt.
+ [90
+
+]
+<../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//listing1.png, id=10761,
+ 1441.385pt x 106.3975pt>
+File: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//listing1.png Graph
+ic file (type png)
+<use ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//listing1.png>
+Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs/
+/listing1.png  used on input line 168.
+(pdftex.def)             Requested size: 273.83728pt x 20.21248pt.
+<../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//listing2.png, id=10762,
+ 1512.65125pt x 743.77875pt>
+File: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//listing2.png Graph
+ic file (type png)
+<use ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//listing2.png>
+Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs/
+/listing2.png  used on input line 168.
+(pdftex.def)             Requested size: 273.83728pt x 134.64613pt.
+ [91
+
+ <../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//listing1.png> <../../.
+./PhD/paper_factory/thesis_louis/Chapter5/Figs//listing2.png>]
+(./main.toc) [92
+
+]
+
+./chapter5.tex:222: LaTeX Error: Command \labelitemi undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.222 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./chapter5.tex:222: LaTeX Error: Command \labelitemii undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.222 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./chapter5.tex:222: LaTeX Error: Command \labelitemiii undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.222 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./chapter5.tex:222: LaTeX Error: Command \labelitemiv undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.222 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//4_forloops.pdf, id=1094
+0, 438.11427pt x 378.26022pt>
+File: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//4_forloops.pdf Gra
+phic file (type pdf)
+<use ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//4_forloops.pdf>
+Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs/
+/4_forloops.pdf  used on input line 222.
+(pdftex.def)             Requested size: 171.14764pt x 147.7633pt.
+
+Overfull \vbox (11.56242pt too high) detected at line 222
+ []
+
+[93
+
+ <../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//4_forloops.pdf>]
+
+./chapter5.tex:256: LaTeX Error: Command \labelitemi undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.256 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./chapter5.tex:256: LaTeX Error: Command \labelitemii undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.256 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./chapter5.tex:256: LaTeX Error: Command \labelitemiii undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.256 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./chapter5.tex:256: LaTeX Error: Command \labelitemiv undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.256 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//histograms.jpg, id=1103
+8, 489.2615pt x 194.42549pt>
+File: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//histograms.jpg Gra
+phic file (type jpg)
+<use ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//histograms.jpg>
+Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs/
+/histograms.jpg  used on input line 256.
+(pdftex.def)             Requested size: 171.14764pt x 68.01137pt.
+[94
+
+ <../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//histograms.jpg>]
+
+./chapter5.tex:313: LaTeX Error: Command \labelitemi undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.313 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./chapter5.tex:313: LaTeX Error: Command \labelitemii undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.313 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./chapter5.tex:313: LaTeX Error: Command \labelitemiii undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.313 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./chapter5.tex:313: LaTeX Error: Command \labelitemiv undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.313 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//SSH.pdf, id=11127, 242.
+22073pt x 295.36462pt>
+File: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//SSH.pdf Graphic fi
+le (type pdf)
+<use ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//SSH.pdf>
+Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs/
+/SSH.pdf  used on input line 313.
+(pdftex.def)             Requested size: 145.47653pt x 177.39139pt.
+
+./chapter5.tex:313: LaTeX Error: \caption outside figure or table.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.313 \end{frame}
+                 
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[95
+
+ <../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//SSH.pdf>]
+
+./chapter5.tex:313: LaTeX Error: Command \labelitemi undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.313 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./chapter5.tex:313: LaTeX Error: Command \labelitemii undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.313 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./chapter5.tex:313: LaTeX Error: Command \labelitemiii undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.313 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./chapter5.tex:313: LaTeX Error: Command \labelitemiv undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.313 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+File: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//SSH.pdf Graphic fi
+le (type pdf)
+<use ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//SSH.pdf>
+Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs/
+/SSH.pdf  used on input line 313.
+(pdftex.def)             Requested size: 145.47653pt x 177.39139pt.
+
+./chapter5.tex:313: LaTeX Error: \caption outside figure or table.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.313 \end{frame}
+                 
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[96
+
+]
+
+./chapter5.tex:313: LaTeX Error: Command \labelitemi undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.313 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./chapter5.tex:313: LaTeX Error: Command \labelitemii undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.313 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./chapter5.tex:313: LaTeX Error: Command \labelitemiii undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.313 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./chapter5.tex:313: LaTeX Error: Command \labelitemiv undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.313 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+File: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//SSH.pdf Graphic fi
+le (type pdf)
+<use ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//SSH.pdf>
+Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs/
+/SSH.pdf  used on input line 313.
+(pdftex.def)             Requested size: 145.47653pt x 177.39139pt.
+
+./chapter5.tex:313: LaTeX Error: \caption outside figure or table.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.313 \end{frame}
+                 
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[97
+
+]
+
+./chapter5.tex:313: LaTeX Error: Command \labelitemi undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.313 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./chapter5.tex:313: LaTeX Error: Command \labelitemii undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.313 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./chapter5.tex:313: LaTeX Error: Command \labelitemiii undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.313 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./chapter5.tex:313: LaTeX Error: Command \labelitemiv undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.313 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+File: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//SSH.pdf Graphic fi
+le (type pdf)
+<use ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//SSH.pdf>
+Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs/
+/SSH.pdf  used on input line 313.
+(pdftex.def)             Requested size: 145.47653pt x 177.39139pt.
+
+./chapter5.tex:313: LaTeX Error: \caption outside figure or table.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.313 \end{frame}
+                 
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[98
+
+]
+
+./chapter5.tex:313: LaTeX Error: Command \labelitemi undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.313 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./chapter5.tex:313: LaTeX Error: Command \labelitemii undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.313 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./chapter5.tex:313: LaTeX Error: Command \labelitemiii undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.313 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./chapter5.tex:313: LaTeX Error: Command \labelitemiv undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.313 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+File: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//SSH.pdf Graphic fi
+le (type pdf)
+<use ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//SSH.pdf>
+Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs/
+/SSH.pdf  used on input line 313.
+(pdftex.def)             Requested size: 145.47653pt x 177.39139pt.
+
+./chapter5.tex:313: LaTeX Error: \caption outside figure or table.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.313 \end{frame}
+                 
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[99
+
+]
+<../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//nn_accuracy_and_acc_per
+_power_all_subplot.png, id=11834, 439.1607pt x 380.1402pt>
+File: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//nn_accuracy_and_ac
+c_per_power_all_subplot.png Graphic file (type png)
+<use ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//nn_accuracy_and_acc
+_per_power_all_subplot.png>
+Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs/
+/nn_accuracy_and_acc_per_power_all_subplot.png  used on input line 362.
+(pdftex.def)             Requested size: 205.37926pt x 177.77843pt.
+
+
+./chapter5.tex:362: LaTeX Error: \caption outside figure or table.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.362 \end{frame}
+                 
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[100
+
+ <../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//nn_accuracy_and_acc_pe
+r_power_all_subplot.png>]
+File: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//nn_accuracy_and_ac
+c_per_power_all_subplot.png Graphic file (type png)
+<use ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//nn_accuracy_and_acc
+_per_power_all_subplot.png>
+Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs/
+/nn_accuracy_and_acc_per_power_all_subplot.png  used on input line 362.
+(pdftex.def)             Requested size: 205.37926pt x 177.77843pt.
+
+
+./chapter5.tex:362: LaTeX Error: \caption outside figure or table.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.362 \end{frame}
+                 
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[101
+
+]
+File: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//nn_accuracy_and_ac
+c_per_power_all_subplot.png Graphic file (type png)
+<use ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//nn_accuracy_and_acc
+_per_power_all_subplot.png>
+Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs/
+/nn_accuracy_and_acc_per_power_all_subplot.png  used on input line 362.
+(pdftex.def)             Requested size: 205.37926pt x 177.77843pt.
+
+
+./chapter5.tex:362: LaTeX Error: \caption outside figure or table.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.362 \end{frame}
+                 
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[102
+
+]
+File: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//nn_accuracy_and_ac
+c_per_power_all_subplot.png Graphic file (type png)
+<use ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//nn_accuracy_and_acc
+_per_power_all_subplot.png>
+Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs/
+/nn_accuracy_and_acc_per_power_all_subplot.png  used on input line 362.
+(pdftex.def)             Requested size: 205.37926pt x 177.77843pt.
+
+
+./chapter5.tex:362: LaTeX Error: \caption outside figure or table.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.362 \end{frame}
+                 
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[103
+
+]
+File: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//nn_accuracy_and_ac
+c_per_power_all_subplot.png Graphic file (type png)
+<use ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//nn_accuracy_and_acc
+_per_power_all_subplot.png>
+Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs/
+/nn_accuracy_and_acc_per_power_all_subplot.png  used on input line 362.
+(pdftex.def)             Requested size: 205.37926pt x 177.77843pt.
+
+
+./chapter5.tex:362: LaTeX Error: \caption outside figure or table.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.362 \end{frame}
+                 
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[104
+
+]
+<../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//zoom_accuracy.png, id=1
+2255, 221.48718pt x 162.94698pt>
+File: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//zoom_accuracy.png 
+Graphic file (type png)
+<use ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//zoom_accuracy.png>
+Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs/
+/zoom_accuracy.png  used on input line 372.
+(pdftex.def)             Requested size: 256.72147pt x 188.88185pt.
+
+Overfull \vbox (3.24393pt too high) detected at line 372
+ []
+
+[105
+
+ <../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//zoom_accuracy.png>]
+<../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//zoom_accuracy_highlight
+.png, id=12340, 221.48718pt x 162.94698pt>
+File: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//zoom_accuracy_high
+light.png Graphic file (type png)
+<use ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//zoom_accuracy_highl
+ight.png>
+Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs/
+/zoom_accuracy_highlight.png  used on input line 382.
+(pdftex.def)             Requested size: 256.72147pt x 188.88185pt.
+
+Overfull \vbox (3.24393pt too high) detected at line 382
+ []
+
+[106
+
+ <../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//zoom_accuracy_highligh
+t.png>]
+<../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//nn_power_all_subplots.p
+df, id=12425, 215.60597pt x 111.56082pt>
+File: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//nn_power_all_subpl
+ots.pdf Graphic file (type pdf)
+<use ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//nn_power_all_subplo
+ts.pdf>
+Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs/
+/nn_power_all_subplots.pdf  used on input line 395.
+(pdftex.def)             Requested size: 332.02686pt x 171.80927pt.
+ [107
+
+ <../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//nn_power_all_subplots.
+pdf>]
+<../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//zoom_imagenet_resnet50.
+png, id=12638, 215.67108pt x 111.82178pt>
+File: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//zoom_imagenet_resn
+et50.png Graphic file (type png)
+<use ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//zoom_imagenet_resne
+t50.png>
+Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs/
+/zoom_imagenet_resnet50.png  used on input line 437.
+(pdftex.def)             Requested size: 342.2953pt x 177.48521pt.
+
+Overfull \vbox (1.29172pt too high) detected at line 437
+ []
+
+[108
+
+ <../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//zoom_imagenet_resnet50
+.png>]
+<../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//zoom_imagenet_resnet50_
+2.png, id=12723, 215.67108pt x 111.82178pt>
+File: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//zoom_imagenet_resn
+et50_2.png Graphic file (type png)
+<use ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//zoom_imagenet_resne
+t50_2.png>
+Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs/
+/zoom_imagenet_resnet50_2.png  used on input line 437.
+(pdftex.def)             Requested size: 342.2953pt x 177.48521pt.
+
+Overfull \vbox (1.29172pt too high) detected at line 437
+ []
+
+[109
+
+ <../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//zoom_imagenet_resnet50
+_2.png>]
+<../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//zoom_imagenet_resnet50_
+3.png, id=12810, 215.67108pt x 111.82178pt>
+File: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//zoom_imagenet_resn
+et50_3.png Graphic file (type png)
+<use ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//zoom_imagenet_resne
+t50_3.png>
+Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs/
+/zoom_imagenet_resnet50_3.png  used on input line 437.
+(pdftex.def)             Requested size: 342.2953pt x 177.48521pt.
+
+Overfull \vbox (1.29172pt too high) detected at line 437
+ []
+
+[110
+
+ <../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//zoom_imagenet_resnet50
+_3.png>]
+<../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//zoom_imagenet_resnet50_
+4.png, id=12896, 215.67108pt x 111.82178pt>
+File: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//zoom_imagenet_resn
+et50_4.png Graphic file (type png)
+<use ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//zoom_imagenet_resne
+t50_4.png>
+Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs/
+/zoom_imagenet_resnet50_4.png  used on input line 437.
+(pdftex.def)             Requested size: 342.2953pt x 177.48521pt.
+
+Overfull \vbox (1.29172pt too high) detected at line 437
+ []
+
+[111
+
+ <../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//zoom_imagenet_resnet50
+_4.png>] [112
+
+] (./main.toc) [113
+
+] [114
+
+] [115
+
+] [116
 
 ] [117
 
-] [118
+]) (./chapter6.tex
+(./main.toc) [118
 
 ] [119
 
@@ -4346,818 +4788,11 @@ ain.toc) [116
 
 ] [122
 
-])
-(./chapter5.tex (./main.toc) [123
-
-] [124
-
-] [125
-
-] [126
-
-] (./main.toc) [127
-
-]
-<../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//overall_framework.pdf, 
-id=17317, 515.46109pt x 192.48564pt>
-File: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//overall_framework.
-pdf Graphic file (type pdf)
-<use ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//overall_framework.p
-df>
-Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs/
-/overall_framework.pdf  used on input line 64.
-(pdftex.def)             Requested size: 342.2953pt x 127.82512pt.
-
-[128
-
- <../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//overall_framework.pdf>
-]
-<../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//framework_HW.pdf, id=17
-467, 291.54036pt x 181.47586pt>
-File: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//framework_HW.pdf G
-raphic file (type pdf)
-<use ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//framework_HW.pdf>
-Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs/
-/framework_HW.pdf  used on input line 92.
-(pdftex.def)             Requested size: 171.14764pt x 106.53539pt.
- [129
-
- <../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//framework_HW.pdf>]
-<../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//framework_SW.pdf, id=17
-637, 315.09605pt x 157.50043pt>
-File: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//framework_SW.pdf G
-raphic file (type pdf)
-<use ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//framework_SW.pdf>
-Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs/
-/framework_SW.pdf  used on input line 144.
-(pdftex.def)             Requested size: 222.48985pt x 111.21083pt.
- [130
-
- <../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//framework_SW.pdf>]
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
-44.
- (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
-File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-File: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//framework_SW.pdf G
-raphic file (type pdf)
-<use ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//framework_SW.pdf>
-Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs/
-/framework_SW.pdf  used on input line 144.
-(pdftex.def)             Requested size: 222.48985pt x 111.21083pt.
- [131
-
-]
-<../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//listing1.png, id=17890,
- 1441.385pt x 106.3975pt>
-File: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//listing1.png Graph
-ic file (type png)
-<use ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//listing1.png>
-Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs/
-/listing1.png  used on input line 166.
-(pdftex.def)             Requested size: 273.83728pt x 20.21248pt.
-<../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//listing2.png, id=17891,
- 1512.65125pt x 743.77875pt>
-File: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//listing2.png Graph
-ic file (type png)
-<use ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//listing2.png>
-Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs/
-/listing2.png  used on input line 166.
-(pdftex.def)             Requested size: 273.83728pt x 134.64613pt.
- [132
-
- <../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//listing1.png> <../../.
-./PhD/paper_factory/thesis_louis/Chapter5/Figs//listing2.png>] (./main.toc) [13
-3
-
-]
-
-./chapter5.tex:220: LaTeX Error: Command \labelitemi undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.220 \end{frame}
-                 
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-./chapter5.tex:220: LaTeX Error: Command \labelitemii undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.220 \end{frame}
-                 
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-./chapter5.tex:220: LaTeX Error: Command \labelitemiii undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.220 \end{frame}
-                 
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-./chapter5.tex:220: LaTeX Error: Command \labelitemiv undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.220 \end{frame}
-                 
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-<../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//4_forloops.pdf, id=1811
-5, 438.11427pt x 378.26022pt>
-File: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//4_forloops.pdf Gra
-phic file (type pdf)
-<use ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//4_forloops.pdf>
-Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs/
-/4_forloops.pdf  used on input line 220.
-(pdftex.def)             Requested size: 171.14764pt x 147.7633pt.
-
-Overfull \vbox (11.56242pt too high) detected at line 220
- []
-
-[134
-
- <../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//4_forloops.pdf>]
-
-./chapter5.tex:254: LaTeX Error: Command \labelitemi undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.254 \end{frame}
-                 
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-./chapter5.tex:254: LaTeX Error: Command \labelitemii undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.254 \end{frame}
-                 
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-./chapter5.tex:254: LaTeX Error: Command \labelitemiii undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.254 \end{frame}
-                 
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-./chapter5.tex:254: LaTeX Error: Command \labelitemiv undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.254 \end{frame}
-                 
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-<../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//histograms.jpg, id=1823
-6, 489.2615pt x 194.42549pt>
-File: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//histograms.jpg Gra
-phic file (type jpg)
-<use ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//histograms.jpg>
-Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs/
-/histograms.jpg  used on input line 254.
-(pdftex.def)             Requested size: 171.14764pt x 68.01137pt.
-[135
-
- <../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//histograms.jpg>]
-
-./chapter5.tex:311: LaTeX Error: Command \labelitemi undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.311 \end{frame}
-                 
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-./chapter5.tex:311: LaTeX Error: Command \labelitemii undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.311 \end{frame}
-                 
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-./chapter5.tex:311: LaTeX Error: Command \labelitemiii undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.311 \end{frame}
-                 
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-./chapter5.tex:311: LaTeX Error: Command \labelitemiv undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.311 \end{frame}
-                 
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-<../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//SSH.pdf, id=18348, 242.
-22073pt x 295.36462pt>
-File: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//SSH.pdf Graphic fi
-le (type pdf)
-<use ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//SSH.pdf>
-Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs/
-/SSH.pdf  used on input line 311.
-(pdftex.def)             Requested size: 145.47653pt x 177.39139pt.
-
-./chapter5.tex:311: LaTeX Error: \caption outside figure or table.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.311 \end{frame}
-                 
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[136
-
- <../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//SSH.pdf>]
-
-./chapter5.tex:311: LaTeX Error: Command \labelitemi undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.311 \end{frame}
-                 
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-./chapter5.tex:311: LaTeX Error: Command \labelitemii undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.311 \end{frame}
-                 
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-./chapter5.tex:311: LaTeX Error: Command \labelitemiii undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.311 \end{frame}
-                 
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-./chapter5.tex:311: LaTeX Error: Command \labelitemiv undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.311 \end{frame}
-                 
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-File: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//SSH.pdf Graphic fi
-le (type pdf)
-<use ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//SSH.pdf>
-Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs/
-/SSH.pdf  used on input line 311.
-(pdftex.def)             Requested size: 145.47653pt x 177.39139pt.
-
-./chapter5.tex:311: LaTeX Error: \caption outside figure or table.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.311 \end{frame}
-                 
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[137
-
-]
-
-./chapter5.tex:311: LaTeX Error: Command \labelitemi undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.311 \end{frame}
-                 
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-./chapter5.tex:311: LaTeX Error: Command \labelitemii undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.311 \end{frame}
-                 
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-./chapter5.tex:311: LaTeX Error: Command \labelitemiii undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.311 \end{frame}
-                 
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-./chapter5.tex:311: LaTeX Error: Command \labelitemiv undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.311 \end{frame}
-                 
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-File: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//SSH.pdf Graphic fi
-le (type pdf)
-<use ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//SSH.pdf>
-Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs/
-/SSH.pdf  used on input line 311.
-(pdftex.def)             Requested size: 145.47653pt x 177.39139pt.
-
-./chapter5.tex:311: LaTeX Error: \caption outside figure or table.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.311 \end{frame}
-                 
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[138
-
-]
-
-./chapter5.tex:311: LaTeX Error: Command \labelitemi undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.311 \end{frame}
-                 
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-./chapter5.tex:311: LaTeX Error: Command \labelitemii undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.311 \end{frame}
-                 
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-./chapter5.tex:311: LaTeX Error: Command \labelitemiii undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.311 \end{frame}
-                 
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-./chapter5.tex:311: LaTeX Error: Command \labelitemiv undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.311 \end{frame}
-                 
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-File: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//SSH.pdf Graphic fi
-le (type pdf)
-<use ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//SSH.pdf>
-Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs/
-/SSH.pdf  used on input line 311.
-(pdftex.def)             Requested size: 145.47653pt x 177.39139pt.
-
-./chapter5.tex:311: LaTeX Error: \caption outside figure or table.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.311 \end{frame}
-                 
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[139
-
-]
-
-./chapter5.tex:311: LaTeX Error: Command \labelitemi undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.311 \end{frame}
-                 
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-./chapter5.tex:311: LaTeX Error: Command \labelitemii undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.311 \end{frame}
-                 
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-./chapter5.tex:311: LaTeX Error: Command \labelitemiii undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.311 \end{frame}
-                 
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-./chapter5.tex:311: LaTeX Error: Command \labelitemiv undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.311 \end{frame}
-                 
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-File: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//SSH.pdf Graphic fi
-le (type pdf)
-<use ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//SSH.pdf>
-Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs/
-/SSH.pdf  used on input line 311.
-(pdftex.def)             Requested size: 145.47653pt x 177.39139pt.
-
-./chapter5.tex:311: LaTeX Error: \caption outside figure or table.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.311 \end{frame}
-                 
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[140
-
-]
-<../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//nn_accuracy_and_acc_per
-_power_all_subplot.png, id=19170, 439.1607pt x 380.1402pt>
-File: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//nn_accuracy_and_ac
-c_per_power_all_subplot.png Graphic file (type png)
-<use ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//nn_accuracy_and_acc
-_per_power_all_subplot.png>
-Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs/
-/nn_accuracy_and_acc_per_power_all_subplot.png  used on input line 360.
-(pdftex.def)             Requested size: 205.37926pt x 177.77843pt.
-
-
-./chapter5.tex:360: LaTeX Error: \caption outside figure or table.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.360 \end{frame}
-                 
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[141
-
- <../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//nn_accuracy_and_acc_pe
-r_power_all_subplot.png>]
-File: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//nn_accuracy_and_ac
-c_per_power_all_subplot.png Graphic file (type png)
-<use ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//nn_accuracy_and_acc
-_per_power_all_subplot.png>
-Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs/
-/nn_accuracy_and_acc_per_power_all_subplot.png  used on input line 360.
-(pdftex.def)             Requested size: 205.37926pt x 177.77843pt.
-
-
-./chapter5.tex:360: LaTeX Error: \caption outside figure or table.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.360 \end{frame}
-                 
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[142
-
-]
-File: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//nn_accuracy_and_ac
-c_per_power_all_subplot.png Graphic file (type png)
-<use ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//nn_accuracy_and_acc
-_per_power_all_subplot.png>
-Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs/
-/nn_accuracy_and_acc_per_power_all_subplot.png  used on input line 360.
-(pdftex.def)             Requested size: 205.37926pt x 177.77843pt.
-
-
-./chapter5.tex:360: LaTeX Error: \caption outside figure or table.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.360 \end{frame}
-                 
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[143
-
-]
-File: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//nn_accuracy_and_ac
-c_per_power_all_subplot.png Graphic file (type png)
-<use ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//nn_accuracy_and_acc
-_per_power_all_subplot.png>
-Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs/
-/nn_accuracy_and_acc_per_power_all_subplot.png  used on input line 360.
-(pdftex.def)             Requested size: 205.37926pt x 177.77843pt.
-
-
-./chapter5.tex:360: LaTeX Error: \caption outside figure or table.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.360 \end{frame}
-                 
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[144
-
-]
-File: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//nn_accuracy_and_ac
-c_per_power_all_subplot.png Graphic file (type png)
-<use ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//nn_accuracy_and_acc
-_per_power_all_subplot.png>
-Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs/
-/nn_accuracy_and_acc_per_power_all_subplot.png  used on input line 360.
-(pdftex.def)             Requested size: 205.37926pt x 177.77843pt.
-
-
-./chapter5.tex:360: LaTeX Error: \caption outside figure or table.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.360 \end{frame}
-                 
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[145
-
-]
-<../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//zoom_accuracy.png, id=1
-9707, 221.48718pt x 162.94698pt>
-File: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//zoom_accuracy.png 
-Graphic file (type png)
-<use ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//zoom_accuracy.png>
-Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs/
-/zoom_accuracy.png  used on input line 370.
-(pdftex.def)             Requested size: 256.72147pt x 188.88185pt.
-
-Overfull \vbox (3.24393pt too high) detected at line 370
- []
-
-[146
-
- <../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//zoom_accuracy.png>]
-<../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//zoom_accuracy_highlight
-.png, id=19815, 221.48718pt x 162.94698pt>
-File: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//zoom_accuracy_high
-light.png Graphic file (type png)
-<use ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//zoom_accuracy_highl
-ight.png>
-Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs/
-/zoom_accuracy_highlight.png  used on input line 380.
-(pdftex.def)             Requested size: 256.72147pt x 188.88185pt.
-
-Overfull \vbox (3.24393pt too high) detected at line 380
- []
-
-[147
-
- <../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//zoom_accuracy_highligh
-t.png>]
-<../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//nn_power_all_subplots.p
-df, id=19924, 215.60597pt x 111.56082pt>
-File: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//nn_power_all_subpl
-ots.pdf Graphic file (type pdf)
-<use ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//nn_power_all_subplo
-ts.pdf>
-Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs/
-/nn_power_all_subplots.pdf  used on input line 393.
-(pdftex.def)             Requested size: 332.02686pt x 171.80927pt.
- [148
-
- <../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//nn_power_all_subplots.
-pdf>]
-<../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//zoom_imagenet_resnet50.
-png, id=20159, 215.67108pt x 111.82178pt>
-File: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//zoom_imagenet_resn
-et50.png Graphic file (type png)
-<use ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//zoom_imagenet_resne
-t50.png>
-Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs/
-/zoom_imagenet_resnet50.png  used on input line 435.
-(pdftex.def)             Requested size: 342.2953pt x 177.48521pt.
-
-Overfull \vbox (1.29172pt too high) detected at line 435
- []
-
-[149
-
- <../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//zoom_imagenet_resnet50
-.png>]
-<../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//zoom_imagenet_resnet50_
-2.png, id=20268, 215.67108pt x 111.82178pt>
-File: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//zoom_imagenet_resn
-et50_2.png Graphic file (type png)
-<use ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//zoom_imagenet_resne
-t50_2.png>
-Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs/
-/zoom_imagenet_resnet50_2.png  used on input line 435.
-(pdftex.def)             Requested size: 342.2953pt x 177.48521pt.
-
-Overfull \vbox (1.29172pt too high) detected at line 435
- []
-
-[150
-
- <../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//zoom_imagenet_resnet50
-_2.png>]
-<../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//zoom_imagenet_resnet50_
-3.png, id=20378, 215.67108pt x 111.82178pt>
-File: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//zoom_imagenet_resn
-et50_3.png Graphic file (type png)
-<use ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//zoom_imagenet_resne
-t50_3.png>
-Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs/
-/zoom_imagenet_resnet50_3.png  used on input line 435.
-(pdftex.def)             Requested size: 342.2953pt x 177.48521pt.
-
-Overfull \vbox (1.29172pt too high) detected at line 435
- []
-
-[151
-
- <../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//zoom_imagenet_resnet50
-_3.png>]
-<../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//zoom_imagenet_resnet50_
-4.png, id=20488, 215.67108pt x 111.82178pt>
-File: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//zoom_imagenet_resn
-et50_4.png Graphic file (type png)
-<use ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//zoom_imagenet_resne
-t50_4.png>
-Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs/
-/zoom_imagenet_resnet50_4.png  used on input line 435.
-(pdftex.def)             Requested size: 342.2953pt x 177.48521pt.
-
-Overfull \vbox (1.29172pt too high) detected at line 435
- []
-
-[152
-
- <../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//zoom_imagenet_resnet50
-_4.png>] [153
-
-] (./main.toc) [154
-
-] [155
-
-] [156
-
-] [157
-
-] [158
-
-]) (./chapter6.tex
-(./main.toc) [159
-
-] [160
-
-] [161
-
-] [162
-
-] [163
-
-] (./main.toc) [164
+] (./main.toc) [123
 
 ]
 <../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//non_restoring_schematic
-.pdf, id=22200, 191.68935pt x 223.79993pt>
+.pdf, id=14309, 191.68935pt x 223.79993pt>
 File: ../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//non_restoring_sche
 matic.pdf Graphic file (type pdf)
 <use ../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//non_restoring_schem
@@ -5178,7 +4813,7 @@ l.120 \end{frame}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-[165
+[124
 
  <../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//non_restoring_schemati
 c.pdf>]
@@ -5202,7 +4837,7 @@ l.120 \end{frame}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-[166
+[125
 
 ]
 
@@ -5400,10 +5035,10 @@ l.182 \end{frame}
                  
 (That was another \errmessage.)
 
-[167
+[126
 
 ]
-<../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//baseline.png, id=22529,
+<../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//baseline.png, id=14569,
  203.93431pt x 278.48871pt>
 File: ../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//baseline.png Graph
 ic file (type png)
@@ -5411,10 +5046,10 @@ ic file (type png)
 Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter6/Figs/
 /baseline.png  used on input line 232.
 (pdftex.def)             Requested size: 122.19756pt x 166.87354pt.
- [168
+ [127
 
  <../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//baseline.png>]
-<../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//SSP.png, id=22638, 203.
+<../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//SSP.png, id=14656, 203.
 93431pt x 278.48871pt>
 File: ../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//SSP.png Graphic fi
 le (type png)
@@ -5422,10 +5057,10 @@ le (type png)
 Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter6/Figs/
 /SSP.png  used on input line 232.
 (pdftex.def)             Requested size: 122.19756pt x 166.87354pt.
- [169
+ [128
 
  <../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//SSP.png>]
-<../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//SFP.png, id=22748, 203.
+<../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//SFP.png, id=14741, 203.
 93431pt x 278.48871pt>
 File: ../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//SFP.png Graphic fi
 le (type png)
@@ -5434,10 +5069,10 @@ Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter6/Figs/
 /SFP.png  used on input line 232.
 (pdftex.def)             Requested size: 122.19756pt x 166.87354pt.
 
-[170
+[129
 
  <../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//SFP.png>]
-<../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//SAP.png, id=22857, 203.
+<../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//SAP.png, id=14827, 203.
 93431pt x 278.48871pt>
 File: ../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//SAP.png Graphic fi
 le (type png)
@@ -5445,21 +5080,21 @@ le (type png)
 Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter6/Figs/
 /SAP.png  used on input line 232.
 (pdftex.def)             Requested size: 122.19756pt x 166.87354pt.
- [171
+ [130
 
- <../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//SAP.png>] [172
+ <../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//SAP.png>] [131
 
-] [173
-
-]
-[174
-
-] [175
-
-] [176
+] [132
 
 ]
-<../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//SUF.pdf, id=23611, 758.
+[133
+
+] [134
+
+] [135
+
+]
+<../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//SUF.pdf, id=15443, 758.
 91692pt x 511.10197pt>
 File: ../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//SUF.pdf Graphic fi
 le (type pdf)
@@ -5467,14 +5102,14 @@ le (type pdf)
 Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter6/Figs/
 /SUF.pdf  used on input line 290.
 (pdftex.def)             Requested size: 222.48985pt x 149.83792pt.
- [177
+ [136
 
  <../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//SUF.pdf>] (./main.toc)
- [178
+ [137
 
 ]
 <../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//latency_vs_area_compari
-son.pdf, id=23892, 509.29349pt x 761.5694pt>
+son.pdf, id=15678, 509.29349pt x 761.5694pt>
 File: ../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//latency_vs_area_co
 mparison.pdf Graphic file (type pdf)
 <use ../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//latency_vs_area_com
@@ -5483,7 +5118,7 @@ Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter6/Figs/
 /latency_vs_area_comparison.pdf  used on input line 348.
 (pdftex.def)             Requested size: 128.36073pt x 191.93741pt.
 <../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//latency_vs_power_compar
-ison.pdf, id=23893, 509.29349pt x 761.5694pt>
+ison.pdf, id=15679, 509.29349pt x 761.5694pt>
 File: ../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//latency_vs_power_c
 omparison.pdf Graphic file (type pdf)
 <use ../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//latency_vs_power_co
@@ -5491,13 +5126,13 @@ mparison.pdf>
 Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter6/Figs/
 /latency_vs_power_comparison.pdf  used on input line 348.
 (pdftex.def)             Requested size: 128.36073pt x 191.93741pt.
- [179
+ [138
 
  <../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//latency_vs_area_compar
 ison.pdf> <../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//latency_vs_po
 wer_comparison.pdf>]
 <../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//zoom_latency_vs_asap7.p
-ng, id=24873, 485.95345pt x 312.96233pt>
+ng, id=16648, 485.95345pt x 312.96233pt>
 File: ../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//zoom_latency_vs_as
 ap7.png Graphic file (type png)
 <use ../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//zoom_latency_vs_asa
@@ -5509,12 +5144,12 @@ Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter6/Figs/
 Overfull \vbox (9.9201pt too high) detected at line 364
  []
 
-[180
+[139
 
  <../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//zoom_latency_vs_asap7.
 png>]
 <../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//nb_units_across_technod
-es_comparison_SAP.pdf, id=24981, 509.29349pt x 761.5694pt>
+es_comparison_SAP.pdf, id=16734, 509.29349pt x 761.5694pt>
 File: ../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//nb_units_across_te
 chnodes_comparison_SAP.pdf Graphic file (type pdf)
 <use ../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//nb_units_across_tec
@@ -5526,7 +5161,7 @@ Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter6/Figs/
 Overfull \vbox (2.44197pt too high) detected at line 410
  []
 
-[181
+[140
 
  <../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//nb_units_across_techno
 des_comparison_SAP.pdf>]
@@ -5541,11 +5176,11 @@ Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter6/Figs/
 Overfull \vbox (2.44197pt too high) detected at line 410
  []
 
-[182
+[141
 
 ]
 <../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//nb_units_power_across_t
-echnodes_comparison_SAP.pdf, id=25216, 509.29349pt x 761.5694pt>
+echnodes_comparison_SAP.pdf, id=16922, 509.29349pt x 761.5694pt>
 File: ../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//nb_units_power_acr
 oss_technodes_comparison_SAP.pdf Graphic file (type pdf)
 <use ../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//nb_units_power_acro
@@ -5557,12 +5192,12 @@ Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter6/Figs/
 Overfull \vbox (2.44197pt too high) detected at line 441
  []
 
-[183
+[142
 
  <../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//nb_units_power_across_
 technodes_comparison_SAP.pdf>]
 <../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//zoom_efficiencies_asap7
-.png, id=25342, 488.75168pt x 335.12631pt>
+.png, id=17024, 488.75168pt x 335.12631pt>
 File: ../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//zoom_efficiencies_
 asap7.png Graphic file (type png)
 <use ../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//zoom_efficiencies_a
@@ -5570,12 +5205,12 @@ sap7.png>
 Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter6/Figs/
 /zoom_efficiencies_asap7.png  used on input line 457.
 (pdftex.def)             Requested size: 273.83728pt x 187.76149pt.
- [184
+ [143
 
  <../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//zoom_efficiencies_asap
 7.png>]
 <../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//nb_units_power_density_
-across_technodes_comparison_SAP.pdf, id=25450, 509.29349pt x 761.5694pt>
+across_technodes_comparison_SAP.pdf, id=17109, 509.29349pt x 761.5694pt>
 File: ../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//nb_units_power_den
 sity_across_technodes_comparison_SAP.pdf Graphic file (type pdf)
 <use ../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//nb_units_power_dens
@@ -5588,12 +5223,12 @@ Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter6/Figs/
 Overfull \vbox (0.15335pt too high) detected at line 485
  []
 
-[185
+[144
 
  <../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//nb_units_power_density
 _across_technodes_comparison_SAP.pdf>]
 <../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//zoom_area_per_power_eff
-iciencies_asap7.png, id=25579, 489.9906pt x 200.08466pt>
+iciencies_asap7.png, id=17215, 489.9906pt x 200.08466pt>
 File: ../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//zoom_area_per_powe
 r_efficiencies_asap7.png Graphic file (type png)
 <use ../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//zoom_area_per_power
@@ -5601,30 +5236,30 @@ _efficiencies_asap7.png>
 Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter6/Figs/
 /zoom_area_per_power_efficiencies_asap7.png  used on input line 501.
 (pdftex.def)             Requested size: 342.2953pt x 139.7774pt.
- [186
+ [145
 
  <../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//zoom_area_per_power_ef
 ficiencies_asap7.png>]
-(./main.toc) [187
+(./main.toc) [146
 
-] [188
+] [147
 
-] [189
+] [148
 
-] [190
+] [149
 
-] [191
+] [150
 
 ]) (./closing.tex (./main.toc)
-[192
+[151
 
-] [193
+] [152
 
-] [194
+] [153
 
-] [195
+] [154
 
-] [196
+] [155
 
 ]
 
@@ -5677,10 +5312,10 @@ If that doesn't work, type  X <return>  to quit.
 
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <8> not available
 (Font)              Font shape `T1/lmss/m/sl' tried instead on input line 49.
-[197
+[156
 
 ]
-<./figs//qart.png, id=27078, 457.71pt x 457.71pt>
+<./figs//qart.png, id=18457, 457.71pt x 457.71pt>
 File: ./figs//qart.png Graphic file (type png)
 <use ./figs//qart.png>
 Package pdftex.def Info: ./figs//qart.png  used on input line 127.
@@ -5698,10 +5333,10 @@ l.127 \end{frame}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-[198
+[157
 
  <./figs//qart.png (PNG copy)>]
-<./figs//teras.png, id=27186, 1004.75375pt x 679.53876pt>
+<./figs//teras.png, id=18543, 1004.75375pt x 679.53876pt>
 File: ./figs//teras.png Graphic file (type png)
 <use ./figs//teras.png>
 Package pdftex.def Info: ./figs//teras.png  used on input line 147.
@@ -5710,10 +5345,10 @@ Package pdftex.def Info: ./figs//teras.png  used on input line 147.
 Overfull \vbox (9.00566pt too high) detected at line 147
  []
 
-[199
+[158
 
  <./figs//teras.png>]
-<./figs//tapeout_pic.jpg, id=27296, 1959.32pt x 1469.49pt>
+<./figs//tapeout_pic.jpg, id=18629, 1959.32pt x 1469.49pt>
 File: ./figs//tapeout_pic.jpg Graphic file (type jpg)
 <use ./figs//tapeout_pic.jpg>
 Package pdftex.def Info: ./figs//tapeout_pic.jpg  used on input line 147.
@@ -5722,323 +5357,323 @@ Package pdftex.def Info: ./figs//tapeout_pic.jpg  used on input line 147.
 Overfull \vbox (3.50108pt too high) detected at line 147
  []
 
-[200
+[159
 
  <./figs//tapeout_pic.jpg>]
-<./figs//asap-0.png, id=27403, 124.465pt x 124.465pt>
+<./figs//asap-0.png, id=18713, 124.465pt x 124.465pt>
 File: ./figs//asap-0.png Graphic file (type png)
 <use ./figs//asap-0.png>
 Package pdftex.def Info: ./figs//asap-0.png  used on input line 160.
 (pdftex.def)             Requested size: 124.46469pt x 124.46469pt.
  <./figs//asap-0.png> <a0,fr0>
-<./figs//asap-1.png, id=27407, 124.465pt x 124.465pt>
+<./figs//asap-1.png, id=18717, 124.465pt x 124.465pt>
 File: ./figs//asap-1.png Graphic file (type png)
 <use ./figs//asap-1.png>
 Package pdftex.def Info: ./figs//asap-1.png  used on input line 160.
 (pdftex.def)             Requested size: 124.46469pt x 124.46469pt.
  <./figs//asap-1.png> <a0,fr1>
-<./figs//asap-2.png, id=27411, 124.465pt x 124.465pt>
+<./figs//asap-2.png, id=18721, 124.465pt x 124.465pt>
 File: ./figs//asap-2.png Graphic file (type png)
 <use ./figs//asap-2.png>
 Package pdftex.def Info: ./figs//asap-2.png  used on input line 160.
 (pdftex.def)             Requested size: 124.46469pt x 124.46469pt.
  <./figs//asap-2.png> <a0,fr2>
-<./figs//asap-3.png, id=27415, 124.465pt x 124.465pt>
+<./figs//asap-3.png, id=18725, 124.465pt x 124.465pt>
 File: ./figs//asap-3.png Graphic file (type png)
 <use ./figs//asap-3.png>
 Package pdftex.def Info: ./figs//asap-3.png  used on input line 160.
 (pdftex.def)             Requested size: 124.46469pt x 124.46469pt.
  <./figs//asap-3.png> <a0,fr3>
-<./figs//asap-4.png, id=27419, 124.465pt x 124.465pt>
+<./figs//asap-4.png, id=18729, 124.465pt x 124.465pt>
 File: ./figs//asap-4.png Graphic file (type png)
 <use ./figs//asap-4.png>
 Package pdftex.def Info: ./figs//asap-4.png  used on input line 160.
 (pdftex.def)             Requested size: 124.46469pt x 124.46469pt.
  <./figs//asap-4.png> <a0,fr4>
-<./figs//asap-5.png, id=27423, 124.465pt x 124.465pt>
+<./figs//asap-5.png, id=18733, 124.465pt x 124.465pt>
 File: ./figs//asap-5.png Graphic file (type png)
 <use ./figs//asap-5.png>
 Package pdftex.def Info: ./figs//asap-5.png  used on input line 160.
 (pdftex.def)             Requested size: 124.46469pt x 124.46469pt.
  <./figs//asap-5.png> <a0,fr5>
-<./figs//asap-6.png, id=27427, 124.465pt x 124.465pt>
+<./figs//asap-6.png, id=18737, 124.465pt x 124.465pt>
 File: ./figs//asap-6.png Graphic file (type png)
 <use ./figs//asap-6.png>
 Package pdftex.def Info: ./figs//asap-6.png  used on input line 160.
 (pdftex.def)             Requested size: 124.46469pt x 124.46469pt.
  <./figs//asap-6.png>
 <a0,fr6>
-<./figs//asap-7.png, id=27431, 124.465pt x 124.465pt>
+<./figs//asap-7.png, id=18741, 124.465pt x 124.465pt>
 File: ./figs//asap-7.png Graphic file (type png)
 <use ./figs//asap-7.png>
 Package pdftex.def Info: ./figs//asap-7.png  used on input line 160.
 (pdftex.def)             Requested size: 124.46469pt x 124.46469pt.
  <./figs//asap-7.png> <a0,fr7>
-<./figs//asap-8.png, id=27435, 124.465pt x 124.465pt>
+<./figs//asap-8.png, id=18745, 124.465pt x 124.465pt>
 File: ./figs//asap-8.png Graphic file (type png)
 <use ./figs//asap-8.png>
 Package pdftex.def Info: ./figs//asap-8.png  used on input line 160.
 (pdftex.def)             Requested size: 124.46469pt x 124.46469pt.
  <./figs//asap-8.png> <a0,fr8>
-<./figs//asap-9.png, id=27439, 124.465pt x 124.465pt>
+<./figs//asap-9.png, id=18749, 124.465pt x 124.465pt>
 File: ./figs//asap-9.png Graphic file (type png)
 <use ./figs//asap-9.png>
 Package pdftex.def Info: ./figs//asap-9.png  used on input line 160.
 (pdftex.def)             Requested size: 124.46469pt x 124.46469pt.
  <./figs//asap-9.png> <a0,fr9>
-<./figs//asap-10.png, id=27443, 124.465pt x 124.465pt>
+<./figs//asap-10.png, id=18753, 124.465pt x 124.465pt>
 File: ./figs//asap-10.png Graphic file (type png)
 <use ./figs//asap-10.png>
 Package pdftex.def Info: ./figs//asap-10.png  used on input line 160.
 (pdftex.def)             Requested size: 124.46469pt x 124.46469pt.
  <./figs//asap-10.png> <a0,fr10>
-<./figs//asap-11.png, id=27447, 124.465pt x 124.465pt>
+<./figs//asap-11.png, id=18757, 124.465pt x 124.465pt>
 File: ./figs//asap-11.png Graphic file (type png)
 <use ./figs//asap-11.png>
 Package pdftex.def Info: ./figs//asap-11.png  used on input line 160.
 (pdftex.def)             Requested size: 124.46469pt x 124.46469pt.
  <./figs//asap-11.png>
 <a0,fr11>
-<./figs//asap-12.png, id=27451, 124.465pt x 124.465pt>
+<./figs//asap-12.png, id=18761, 124.465pt x 124.465pt>
 File: ./figs//asap-12.png Graphic file (type png)
 <use ./figs//asap-12.png>
 Package pdftex.def Info: ./figs//asap-12.png  used on input line 160.
 (pdftex.def)             Requested size: 124.46469pt x 124.46469pt.
  <./figs//asap-12.png> <a0,fr12>
-<./figs//asap-13.png, id=27455, 124.465pt x 124.465pt>
+<./figs//asap-13.png, id=18765, 124.465pt x 124.465pt>
 File: ./figs//asap-13.png Graphic file (type png)
 <use ./figs//asap-13.png>
 Package pdftex.def Info: ./figs//asap-13.png  used on input line 160.
 (pdftex.def)             Requested size: 124.46469pt x 124.46469pt.
  <./figs//asap-13.png> <a0,fr13>
-<./figs//asap-14.png, id=27459, 124.465pt x 124.465pt>
+<./figs//asap-14.png, id=18769, 124.465pt x 124.465pt>
 File: ./figs//asap-14.png Graphic file (type png)
 <use ./figs//asap-14.png>
 Package pdftex.def Info: ./figs//asap-14.png  used on input line 160.
 (pdftex.def)             Requested size: 124.46469pt x 124.46469pt.
  <./figs//asap-14.png> <a0,fr14>
-<./figs//asap-15.png, id=27463, 124.465pt x 124.465pt>
+<./figs//asap-15.png, id=18773, 124.465pt x 124.465pt>
 File: ./figs//asap-15.png Graphic file (type png)
 <use ./figs//asap-15.png>
 Package pdftex.def Info: ./figs//asap-15.png  used on input line 160.
 (pdftex.def)             Requested size: 124.46469pt x 124.46469pt.
  <./figs//asap-15.png> <a0,fr15>
-<./figs//asap-16.png, id=27467, 124.465pt x 124.465pt>
+<./figs//asap-16.png, id=18777, 124.465pt x 124.465pt>
 File: ./figs//asap-16.png Graphic file (type png)
 <use ./figs//asap-16.png>
 Package pdftex.def Info: ./figs//asap-16.png  used on input line 160.
 (pdftex.def)             Requested size: 124.46469pt x 124.46469pt.
  <./figs//asap-16.png> <a0,fr16>
-<./figs//asap-17.png, id=27471, 124.465pt x 124.465pt>
+<./figs//asap-17.png, id=18781, 124.465pt x 124.465pt>
 File: ./figs//asap-17.png Graphic file (type png)
 <use ./figs//asap-17.png>
 Package pdftex.def Info: ./figs//asap-17.png  used on input line 160.
 (pdftex.def)             Requested size: 124.46469pt x 124.46469pt.
  <./figs//asap-17.png> <a0,fr17>
-<./figs//asap-18.png, id=27475, 124.465pt x 124.465pt>
+<./figs//asap-18.png, id=18785, 124.465pt x 124.465pt>
 File: ./figs//asap-18.png Graphic file (type png)
 <use ./figs//asap-18.png>
 Package pdftex.def Info: ./figs//asap-18.png  used on input line 160.
 (pdftex.def)             Requested size: 124.46469pt x 124.46469pt.
  <./figs//asap-18.png> <a0,fr18>
-<./figs//asap-19.png, id=27479, 124.465pt x 124.465pt>
+<./figs//asap-19.png, id=18789, 124.465pt x 124.465pt>
 File: ./figs//asap-19.png Graphic file (type png)
 <use ./figs//asap-19.png>
 Package pdftex.def Info: ./figs//asap-19.png  used on input line 160.
 (pdftex.def)             Requested size: 124.46469pt x 124.46469pt.
  <./figs//asap-19.png> <a0,fr19>
-<./figs//asap-20.png, id=27483, 124.465pt x 124.465pt>
+<./figs//asap-20.png, id=18793, 124.465pt x 124.465pt>
 File: ./figs//asap-20.png Graphic file (type png)
 <use ./figs//asap-20.png>
 Package pdftex.def Info: ./figs//asap-20.png  used on input line 160.
 (pdftex.def)             Requested size: 124.46469pt x 124.46469pt.
  <./figs//asap-20.png> <a0,fr20>
-<./figs//asap-21.png, id=27488, 124.465pt x 124.465pt>
+<./figs//asap-21.png, id=18797, 124.465pt x 124.465pt>
 File: ./figs//asap-21.png Graphic file (type png)
 <use ./figs//asap-21.png>
 Package pdftex.def Info: ./figs//asap-21.png  used on input line 160.
 (pdftex.def)             Requested size: 124.46469pt x 124.46469pt.
  <./figs//asap-21.png> <a0,fr21>
-<./figs//asap-22.png, id=27492, 124.465pt x 124.465pt>
+<./figs//asap-22.png, id=18801, 124.465pt x 124.465pt>
 File: ./figs//asap-22.png Graphic file (type png)
 <use ./figs//asap-22.png>
 Package pdftex.def Info: ./figs//asap-22.png  used on input line 160.
 (pdftex.def)             Requested size: 124.46469pt x 124.46469pt.
  <./figs//asap-22.png> <a0,fr22>
-<./figs//asap-23.png, id=27496, 124.465pt x 124.465pt>
+<./figs//asap-23.png, id=18805, 124.465pt x 124.465pt>
 File: ./figs//asap-23.png Graphic file (type png)
 <use ./figs//asap-23.png>
 Package pdftex.def Info: ./figs//asap-23.png  used on input line 160.
 (pdftex.def)             Requested size: 124.46469pt x 124.46469pt.
  <./figs//asap-23.png> <a0,fr23>
-<./figs//asap-24.png, id=27500, 124.465pt x 124.465pt>
+<./figs//asap-24.png, id=18809, 124.465pt x 124.465pt>
 File: ./figs//asap-24.png Graphic file (type png)
 <use ./figs//asap-24.png>
 Package pdftex.def Info: ./figs//asap-24.png  used on input line 160.
 (pdftex.def)             Requested size: 124.46469pt x 124.46469pt.
  <./figs//asap-24.png> <a0,fr24>
-<./figs//asap-25.png, id=27504, 124.465pt x 124.465pt>
+<./figs//asap-25.png, id=18813, 124.465pt x 124.465pt>
 File: ./figs//asap-25.png Graphic file (type png)
 <use ./figs//asap-25.png>
 Package pdftex.def Info: ./figs//asap-25.png  used on input line 160.
 (pdftex.def)             Requested size: 124.46469pt x 124.46469pt.
  <./figs//asap-25.png> <a0,fr25>
-<./figs//asap-26.png, id=27508, 124.465pt x 124.465pt>
+<./figs//asap-26.png, id=18817, 124.465pt x 124.465pt>
 File: ./figs//asap-26.png Graphic file (type png)
 <use ./figs//asap-26.png>
 Package pdftex.def Info: ./figs//asap-26.png  used on input line 160.
 (pdftex.def)             Requested size: 124.46469pt x 124.46469pt.
  <./figs//asap-26.png> <a0,fr26>
-<./figs//asap-27.png, id=27512, 124.465pt x 124.465pt>
+<./figs//asap-27.png, id=18821, 124.465pt x 124.465pt>
 File: ./figs//asap-27.png Graphic file (type png)
 <use ./figs//asap-27.png>
 Package pdftex.def Info: ./figs//asap-27.png  used on input line 160.
 (pdftex.def)             Requested size: 124.46469pt x 124.46469pt.
  <./figs//asap-27.png> <a0,fr27>
-<./figs//asap-28.png, id=27516, 124.465pt x 124.465pt>
+<./figs//asap-28.png, id=18825, 124.465pt x 124.465pt>
 File: ./figs//asap-28.png Graphic file (type png)
 <use ./figs//asap-28.png>
 Package pdftex.def Info: ./figs//asap-28.png  used on input line 160.
 (pdftex.def)             Requested size: 124.46469pt x 124.46469pt.
  <./figs//asap-28.png>
 <a0,fr28>
-<./figs//asap-29.png, id=27520, 124.465pt x 124.465pt>
+<./figs//asap-29.png, id=18829, 124.465pt x 124.465pt>
 File: ./figs//asap-29.png Graphic file (type png)
 <use ./figs//asap-29.png>
 Package pdftex.def Info: ./figs//asap-29.png  used on input line 160.
 (pdftex.def)             Requested size: 124.46469pt x 124.46469pt.
  <./figs//asap-29.png> <a0,fr29>
-<./figs//asap-30.png, id=27524, 124.465pt x 124.465pt>
+<./figs//asap-30.png, id=18833, 124.465pt x 124.465pt>
 File: ./figs//asap-30.png Graphic file (type png)
 <use ./figs//asap-30.png>
 Package pdftex.def Info: ./figs//asap-30.png  used on input line 160.
 (pdftex.def)             Requested size: 124.46469pt x 124.46469pt.
  <./figs//asap-30.png> <a0,fr30>
-<./figs//asap-31.png, id=27528, 124.465pt x 124.465pt>
+<./figs//asap-31.png, id=18837, 124.465pt x 124.465pt>
 File: ./figs//asap-31.png Graphic file (type png)
 <use ./figs//asap-31.png>
 Package pdftex.def Info: ./figs//asap-31.png  used on input line 160.
 (pdftex.def)             Requested size: 124.46469pt x 124.46469pt.
  <./figs//asap-31.png> <a0,fr31>
-<./figs//asap-32.png, id=27532, 124.465pt x 124.465pt>
+<./figs//asap-32.png, id=18841, 124.465pt x 124.465pt>
 File: ./figs//asap-32.png Graphic file (type png)
 <use ./figs//asap-32.png>
 Package pdftex.def Info: ./figs//asap-32.png  used on input line 160.
 (pdftex.def)             Requested size: 124.46469pt x 124.46469pt.
  <./figs//asap-32.png> <a0,fr32>
-<./figs//asap-33.png, id=27536, 124.465pt x 124.465pt>
+<./figs//asap-33.png, id=18845, 124.465pt x 124.465pt>
 File: ./figs//asap-33.png Graphic file (type png)
 <use ./figs//asap-33.png>
 Package pdftex.def Info: ./figs//asap-33.png  used on input line 160.
 (pdftex.def)             Requested size: 124.46469pt x 124.46469pt.
  <./figs//asap-33.png> <a0,fr33>
-<./figs//asap-34.png, id=27540, 124.465pt x 124.465pt>
+<./figs//asap-34.png, id=18849, 124.465pt x 124.465pt>
 File: ./figs//asap-34.png Graphic file (type png)
 <use ./figs//asap-34.png>
 Package pdftex.def Info: ./figs//asap-34.png  used on input line 160.
 (pdftex.def)             Requested size: 124.46469pt x 124.46469pt.
  <./figs//asap-34.png> <a0,fr34>
-<./figs//asap-35.png, id=27544, 124.465pt x 124.465pt>
+<./figs//asap-35.png, id=18853, 124.465pt x 124.465pt>
 File: ./figs//asap-35.png Graphic file (type png)
 <use ./figs//asap-35.png>
 Package pdftex.def Info: ./figs//asap-35.png  used on input line 160.
 (pdftex.def)             Requested size: 124.46469pt x 124.46469pt.
  <./figs//asap-35.png> <a0,fr35>
-<./figs//asap-36.png, id=27548, 124.465pt x 124.465pt>
+<./figs//asap-36.png, id=18857, 124.465pt x 124.465pt>
 File: ./figs//asap-36.png Graphic file (type png)
 <use ./figs//asap-36.png>
 Package pdftex.def Info: ./figs//asap-36.png  used on input line 160.
 (pdftex.def)             Requested size: 124.46469pt x 124.46469pt.
  <./figs//asap-36.png> <a0,fr36>
-<./figs//asap-37.png, id=27552, 124.465pt x 124.465pt>
+<./figs//asap-37.png, id=18861, 124.465pt x 124.465pt>
 File: ./figs//asap-37.png Graphic file (type png)
 <use ./figs//asap-37.png>
 Package pdftex.def Info: ./figs//asap-37.png  used on input line 160.
 (pdftex.def)             Requested size: 124.46469pt x 124.46469pt.
  <./figs//asap-37.png> <a0,fr37>
-<./figs//asap-38.png, id=27556, 124.465pt x 124.465pt>
+<./figs//asap-38.png, id=18865, 124.465pt x 124.465pt>
 File: ./figs//asap-38.png Graphic file (type png)
 <use ./figs//asap-38.png>
 Package pdftex.def Info: ./figs//asap-38.png  used on input line 160.
 (pdftex.def)             Requested size: 124.46469pt x 124.46469pt.
  <./figs//asap-38.png> <a0,fr38>
-<./figs//asap-39.png, id=27560, 124.465pt x 124.465pt>
+<./figs//asap-39.png, id=18869, 124.465pt x 124.465pt>
 File: ./figs//asap-39.png Graphic file (type png)
 <use ./figs//asap-39.png>
 Package pdftex.def Info: ./figs//asap-39.png  used on input line 160.
 (pdftex.def)             Requested size: 124.46469pt x 124.46469pt.
  <./figs//asap-39.png> <a0,fr39>
-<./figs//asap-40.png, id=27564, 124.465pt x 124.465pt>
+<./figs//asap-40.png, id=18873, 124.465pt x 124.465pt>
 File: ./figs//asap-40.png Graphic file (type png)
 <use ./figs//asap-40.png>
 Package pdftex.def Info: ./figs//asap-40.png  used on input line 160.
 (pdftex.def)             Requested size: 124.46469pt x 124.46469pt.
  <./figs//asap-40.png> <a0,fr40>
-<./figs//asap-41.png, id=27568, 124.465pt x 124.465pt>
+<./figs//asap-41.png, id=18877, 124.465pt x 124.465pt>
 File: ./figs//asap-41.png Graphic file (type png)
 <use ./figs//asap-41.png>
 Package pdftex.def Info: ./figs//asap-41.png  used on input line 160.
 (pdftex.def)             Requested size: 124.46469pt x 124.46469pt.
  <./figs//asap-41.png> <a0,fr41>
-<./figs//asap-42.png, id=27572, 124.465pt x 124.465pt>
+<./figs//asap-42.png, id=18881, 124.465pt x 124.465pt>
 File: ./figs//asap-42.png Graphic file (type png)
 <use ./figs//asap-42.png>
 Package pdftex.def Info: ./figs//asap-42.png  used on input line 160.
 (pdftex.def)             Requested size: 124.46469pt x 124.46469pt.
  <./figs//asap-42.png> <a0,fr42>
-<./figs//asap-43.png, id=27576, 124.465pt x 124.465pt>
+<./figs//asap-43.png, id=18885, 124.465pt x 124.465pt>
 File: ./figs//asap-43.png Graphic file (type png)
 <use ./figs//asap-43.png>
 Package pdftex.def Info: ./figs//asap-43.png  used on input line 160.
 (pdftex.def)             Requested size: 124.46469pt x 124.46469pt.
  <./figs//asap-43.png> <a0,fr43>
-<./figs//asap-44.png, id=27580, 124.465pt x 124.465pt>
+<./figs//asap-44.png, id=18889, 124.465pt x 124.465pt>
 File: ./figs//asap-44.png Graphic file (type png)
 <use ./figs//asap-44.png>
 Package pdftex.def Info: ./figs//asap-44.png  used on input line 160.
 (pdftex.def)             Requested size: 124.46469pt x 124.46469pt.
  <./figs//asap-44.png> <a0,fr44>
-<./figs//asap-45.png, id=27584, 124.465pt x 124.465pt>
+<./figs//asap-45.png, id=18893, 124.465pt x 124.465pt>
 File: ./figs//asap-45.png Graphic file (type png)
 <use ./figs//asap-45.png>
 Package pdftex.def Info: ./figs//asap-45.png  used on input line 160.
 (pdftex.def)             Requested size: 124.46469pt x 124.46469pt.
  <./figs//asap-45.png>
 <a0,fr45>
-<./figs//asap-46.png, id=27588, 124.465pt x 124.465pt>
+<./figs//asap-46.png, id=18897, 124.465pt x 124.465pt>
 File: ./figs//asap-46.png Graphic file (type png)
 <use ./figs//asap-46.png>
 Package pdftex.def Info: ./figs//asap-46.png  used on input line 160.
 (pdftex.def)             Requested size: 124.46469pt x 124.46469pt.
  <./figs//asap-46.png> <a0,fr46>
-<./figs//asap-47.png, id=27592, 124.465pt x 124.465pt>
+<./figs//asap-47.png, id=18901, 124.465pt x 124.465pt>
 File: ./figs//asap-47.png Graphic file (type png)
 <use ./figs//asap-47.png>
 Package pdftex.def Info: ./figs//asap-47.png  used on input line 160.
 (pdftex.def)             Requested size: 124.46469pt x 124.46469pt.
  <./figs//asap-47.png> <a0,fr47>
-<./figs//asap-48.png, id=27596, 124.465pt x 124.465pt>
+<./figs//asap-48.png, id=18905, 124.465pt x 124.465pt>
 File: ./figs//asap-48.png Graphic file (type png)
 <use ./figs//asap-48.png>
 Package pdftex.def Info: ./figs//asap-48.png  used on input line 160.
 (pdftex.def)             Requested size: 124.46469pt x 124.46469pt.
  <./figs//asap-48.png> <a0,fr48>
-<./figs//asap-49.png, id=27600, 124.465pt x 124.465pt>
+<./figs//asap-49.png, id=18909, 124.465pt x 124.465pt>
 File: ./figs//asap-49.png Graphic file (type png)
 <use ./figs//asap-49.png>
 Package pdftex.def Info: ./figs//asap-49.png  used on input line 160.
 (pdftex.def)             Requested size: 124.46469pt x 124.46469pt.
- <./figs//asap-49.png> <a0,fr49> [201
+ <./figs//asap-49.png> <a0,fr49> [160
 
 ])
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\translate ' on input line 86.
+(hyperref)                removing `\translate ' on input line 73.
 
-(./appendix.tex [202
+(./appendix.tex [161
 
 ]
-<../../../PhD/paper_factory/thesis_louis/Chapter2/Figs//posit_7_2.pdf, id=27775
+<../../../PhD/paper_factory/thesis_louis/Chapter2/Figs//posit_7_2.pdf, id=19084
 , 429.72685pt x 435.89531pt>
 File: ../../../PhD/paper_factory/thesis_louis/Chapter2/Figs//posit_7_2.pdf Grap
 hic file (type pdf)
@@ -6046,11 +5681,11 @@ hic file (type pdf)
 Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter2/Figs/
 /posit_7_2.pdf  used on input line 60.
 (pdftex.def)             Requested size: 171.14764pt x 173.60344pt.
- [203
+ [162
 
  <../../../PhD/paper_factory/thesis_louis/Chapter2/Figs//posit_7_2.pdf>]
 <../../../PhD/paper_factory/thesis_louis/Chapter2/Figs//projective_reals_4_0_2.
-pdf, id=27846, 124.49332pt x 117.30927pt>
+pdf, id=19155, 124.49332pt x 117.30927pt>
 File: ../../../PhD/paper_factory/thesis_louis/Chapter2/Figs//projective_reals_4
 _0_2.pdf Graphic file (type pdf)
 <use ../../../PhD/paper_factory/thesis_louis/Chapter2/Figs//projective_reals_4_
@@ -6058,12 +5693,12 @@ _0_2.pdf Graphic file (type pdf)
 Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter2/Figs/
 /projective_reals_4_0_2.pdf  used on input line 68.
 (pdftex.def)             Requested size: 171.14764pt x 161.28194pt.
- [204
+ [163
 
  <../../../PhD/paper_factory/thesis_louis/Chapter2/Figs//projective_reals_4_0_2
 .pdf>]
 <../../../PhD/paper_factory/thesis_louis/Chapter2/Figs//projective_reals_4_1_2.
-pdf, id=27910, 124.49336pt x 117.30927pt>
+pdf, id=19221, 124.49336pt x 117.30927pt>
 File: ../../../PhD/paper_factory/thesis_louis/Chapter2/Figs//projective_reals_4
 _1_2.pdf Graphic file (type pdf)
 <use ../../../PhD/paper_factory/thesis_louis/Chapter2/Figs//projective_reals_4_
@@ -6071,11 +5706,11 @@ _1_2.pdf Graphic file (type pdf)
 Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter2/Figs/
 /projective_reals_4_1_2.pdf  used on input line 76.
 (pdftex.def)             Requested size: 171.14764pt x 161.28194pt.
- [205
+ [164
 
  <../../../PhD/paper_factory/thesis_louis/Chapter2/Figs//projective_reals_4_1_2
 .pdf>]
-<../../../PhD/paper_factory/thesis_louis/Chapter2/Figs//CSA_RCA.pdf, id=27976, 
+<../../../PhD/paper_factory/thesis_louis/Chapter2/Figs//CSA_RCA.pdf, id=19285, 
 304.13625pt x 150.5625pt>
 File: ../../../PhD/paper_factory/thesis_louis/Chapter2/Figs//CSA_RCA.pdf Graphi
 c file (type pdf)
@@ -6083,31 +5718,33 @@ c file (type pdf)
 Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter2/Figs/
 /CSA_RCA.pdf  used on input line 85.
 (pdftex.def)             Requested size: 308.06367pt x 152.5103pt.
- [206
+ [165
 
  <../../../PhD/paper_factory/thesis_louis/Chapter2/Figs//CSA_RCA.pdf>]
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <12> on input line 112.
- [207
+ [166
 
-] [208
+] [167
 
 ]
+<../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//neuron_quire.pdf, id=19
+739, 428.0904pt x 133.62566pt>
 File: ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//neuron_quire.pdf G
 raphic file (type pdf)
 <use ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//neuron_quire.pdf>
 Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs/
 /neuron_quire.pdf  used on input line 154.
 (pdftex.def)             Requested size: 308.06367pt x 96.16553pt.
-<../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//neuron_fma.pdf, id=2842
-9, 428.0904pt x 95.98502pt>
+<../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//neuron_fma.pdf, id=1974
+0, 428.0904pt x 95.98502pt>
 File: ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//neuron_fma.pdf Gra
 phic file (type pdf)
 <use ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//neuron_fma.pdf>
 Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs/
 /neuron_fma.pdf  used on input line 154.
 (pdftex.def)             Requested size: 308.06367pt x 69.07692pt.
-<../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//neuron.pdf, id=28430, 4
+<../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//neuron.pdf, id=19741, 4
 28.0904pt x 177.54622pt>
 File: ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//neuron.pdf Graphic
  file (type pdf)
@@ -6115,26 +5752,28 @@ File: ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//neuron.pdf Graphic
 Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs/
 /neuron.pdf  used on input line 154.
 (pdftex.def)             Requested size: 308.06367pt x 127.77356pt.
-pdfTeX warning (ext4): destination with the same identifier (name{fig:neuron_va
-riations}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.154 \end{frame}
-                 
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <14.4> on input line 154.
+
 Overfull \vbox (157.92334pt too high) detected at line 154
  []
 
-[209
+[168
 
- <../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//neuron_fma.pdf> <../..
-/../PhD/paper_factory/thesis_louis/Chapter3/Figs//neuron.pdf
+ <../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//neuron_quire.pdf> <../
+../../PhD/paper_factory/thesis_louis/Chapter3/Figs//neuron_fma.pdf
+
+pdfTeX warning: pdflatex (file ../../../PhD/paper_factory/thesis_louis/Chapter3
+/Figs//neuron_fma.pdf): PDF inclusion: multiple pdfs with page group included i
+n a single page
+> <../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//neuron.pdf
 
 pdfTeX warning: pdflatex (file ../../../PhD/paper_factory/thesis_louis/Chapter3
 /Figs//neuron.pdf): PDF inclusion: multiple pdfs with page group included in a 
 single page
 >]
 <../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//overlay_design.pdf, id=
-28552, 557.08125pt x 150.5625pt>
+19892, 557.08125pt x 150.5625pt>
 File: ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//overlay_design.pdf
  Graphic file (type pdf)
 <use ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//overlay_design.pdf>
@@ -6142,7 +5781,7 @@ File: ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//overlay_design.pdf
 Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs/
 /overlay_design.pdf  used on input line 191.
 (pdftex.def)             Requested size: 184.84007pt x 49.95686pt.
-<../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//zoom1.pdf, id=28553, 55
+<../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//zoom1.pdf, id=19893, 55
 7.08125pt x 250.9375pt>
 File: ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//zoom1.pdf Graphic 
 file (type pdf)
@@ -6151,7 +5790,7 @@ Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs/
 /zoom1.pdf  used on input line 191.
 (pdftex.def)             Requested size: 164.30403pt x 74.01059pt.
 <../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//layer_schematic.pdf, id
-=28554, 433.0685pt x 426.47462pt>
+=19894, 433.0685pt x 426.47462pt>
 File: ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//layer_schematic.pd
 f Graphic file (type pdf)
 <use ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//layer_schematic.pdf
@@ -6159,7 +5798,7 @@ f Graphic file (type pdf)
 Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs/
 /layer_schematic.pdf  used on input line 191.
 (pdftex.def)             Requested size: 136.91603pt x 134.82826pt.
- [210
+ [169
 
  <../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//overlay_design.pdf> <.
 ./../../PhD/paper_factory/thesis_louis/Chapter3/Figs//zoom1.pdf
@@ -6173,7 +5812,7 @@ pdfTeX warning: pdflatex (file ../../../PhD/paper_factory/thesis_louis/Chapter3
 /Figs//layer_schematic.pdf): PDF inclusion: multiple pdfs with page group inclu
 ded in a single page
 >]
-<../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//capi_snap.pdf, id=34608
+<../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//capi_snap.pdf, id=25949
 , 415.929pt x 142.11362pt>
 File: ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//capi_snap.pdf Grap
 hic file (type pdf)
@@ -6181,11 +5820,11 @@ hic file (type pdf)
 Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs/
 /capi_snap.pdf  used on input line 230.
 (pdftex.def)             Requested size: 342.2953pt x 116.95894pt.
- [211
+ [170
 
  <../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//capi_snap.pdf>]
-<../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//deep_positron.pdf, id=3
-4682, 442.70999pt x 513.55734pt>
+<../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//deep_positron.pdf, id=2
+6022, 442.70999pt x 513.55734pt>
 File: ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//deep_positron.pdf 
 Graphic file (type pdf)
 <use ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//deep_positron.pdf>
@@ -6196,11 +5835,11 @@ Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs/
 Overfull \vbox (22.34558pt too high) detected at line 239
  []
 
-[212
+[171
 
  <../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//deep_positron.pdf>]
 <../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//floorplan_anotated.pdf,
- id=34771, 557.83406pt x 550.30594pt>
+ id=26110, 557.83406pt x 550.30594pt>
 File: ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//floorplan_anotated
 .pdf Graphic file (type pdf)
 <use ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//floorplan_anotated.
@@ -6208,11 +5847,11 @@ pdf>
 Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs/
 /floorplan_anotated.pdf  used on input line 248.
 (pdftex.def)             Requested size: 171.14764pt x 168.8381pt.
- [213
+ [172
 
  <../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//floorplan_anotated.pdf
 >]
-<../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//positron.pdf, id=34831,
+<../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//positron.pdf, id=26171,
  548.0475pt x 94.3525pt>
 File: ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//positron.pdf Graph
 ic file (type pdf)
@@ -6220,11 +5859,11 @@ ic file (type pdf)
 Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs/
 /positron.pdf  used on input line 257.
 (pdftex.def)             Requested size: 342.2953pt x 58.93127pt.
- [214
+ [173
 
  <../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//positron.pdf>]
 <../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//hidden_layer_carry.pdf,
- id=36312, 392.9216pt x 473.2669pt>
+ id=27652, 392.9216pt x 473.2669pt>
 File: ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//hidden_layer_carry
 .pdf Graphic file (type pdf)
 <use ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//hidden_layer_carry.
@@ -6232,11 +5871,11 @@ pdf>
 Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs/
 /hidden_layer_carry.pdf  used on input line 266.
 (pdftex.def)             Requested size: 136.91603pt x 164.91652pt.
- [215
+ [174
 
  <../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//hidden_layer_carry.pdf
 >]
-<../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//tb.pdf, id=36373, 352.7
+<../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//tb.pdf, id=27713, 352.7
 515pt x 179.6387pt>
 File: ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//tb.pdf Graphic fil
 e (type pdf)
@@ -6244,7 +5883,7 @@ e (type pdf)
 Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs/
 /tb.pdf  used on input line 292.
 (pdftex.def)             Requested size: 171.14764pt x 87.1548pt.
- [216
+ [175
 
  <../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//tb.pdf>]
 File: ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//tb.pdf Graphic fil
@@ -6253,7 +5892,7 @@ e (type pdf)
 Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs/
 /tb.pdf  used on input line 292.
 (pdftex.def)             Requested size: 171.14764pt x 87.1548pt.
- [217
+ [176
 
 ]
 File: ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//tb.pdf Graphic fil
@@ -6262,7 +5901,7 @@ e (type pdf)
 Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs/
 /tb.pdf  used on input line 292.
 (pdftex.def)             Requested size: 171.14764pt x 87.1548pt.
- [218
+ [177
 
 ]
 File: ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//overlay_design.pdf
@@ -6293,7 +5932,28 @@ l.312 \end{frame}
 Overfull \vbox (5.62726pt too high) detected at line 312
  []
 
-[219
+[178
+
+]
+<../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//16mlp.png, id=27956, 78
+4.9325pt x 763.85374pt>
+File: ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//16mlp.png Graphic 
+file (type png)
+<use ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//16mlp.png>
+Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs/
+/16mlp.png  used on input line 341.
+(pdftex.def)             Requested size: 136.91603pt x 133.23349pt.
+ [179
+
+ <../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//16mlp.png>]
+File: ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//16mlp.png Graphic 
+file (type png)
+<use ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//16mlp.png>
+Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs/
+/16mlp.png  used on input line 341.
+(pdftex.def)             Requested size: 136.91603pt x 133.23349pt.
+
+[180
 
 ]
 File: ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//16mlp.png Graphic 
@@ -6302,33 +5962,10 @@ file (type png)
 Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs/
 /16mlp.png  used on input line 341.
 (pdftex.def)             Requested size: 136.91603pt x 133.23349pt.
-pdfTeX warning (ext4): destination with the same identifier (name{fig:16mlp}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.341 \end{frame}
-                  [220
+ [181
 
 ]
-File: ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//16mlp.png Graphic 
-file (type png)
-<use ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//16mlp.png>
-Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs/
-/16mlp.png  used on input line 341.
-(pdftex.def)             Requested size: 136.91603pt x 133.23349pt.
- [221
-
-]
-File: ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//16mlp.png Graphic 
-file (type png)
-<use ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs//16mlp.png>
-Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter3/Figs/
-/16mlp.png  used on input line 341.
-(pdftex.def)             Requested size: 136.91603pt x 133.23349pt.
- [222
-
-]
-<../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//batched.pdf, id=36785, 
+<../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//batched.pdf, id=28129, 
 528.3429pt x 190.78944pt>
 File: ../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//batched.pdf Graphi
 c file (type pdf)
@@ -6336,26 +5973,26 @@ c file (type pdf)
 Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter4/Figs/
 /batched.pdf  used on input line 367.
 (pdftex.def)             Requested size: 273.83728pt x 98.88792pt.
- [223
+ [182
 
  <../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//batched.pdf>]
-<../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//throughput.pdf, id=3685
-2, 252.0pt x 103.82971pt>
+<../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//throughput.pdf, id=2819
+4, 252.0pt x 103.82971pt>
 File: ../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//throughput.pdf Gra
 phic file (type pdf)
 <use ../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//throughput.pdf>
 Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter4/Figs/
 /throughput.pdf  used on input line 399.
 (pdftex.def)             Requested size: 171.14764pt x 70.52086pt.
-<../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//performance.pdf, id=368
-53, 252.0pt x 103.82971pt>
+<../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//performance.pdf, id=281
+95, 252.0pt x 103.82971pt>
 File: ../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//performance.pdf Gr
 aphic file (type pdf)
 <use ../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//performance.pdf>
 Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter4/Figs/
 /performance.pdf  used on input line 399.
 (pdftex.def)             Requested size: 171.14764pt x 70.52086pt.
- [224
+ [183
 
  <../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//throughput.pdf> <../..
 /../PhD/paper_factory/thesis_louis/Chapter4/Figs//performance.pdf
@@ -6365,7 +6002,7 @@ pdfTeX warning: pdflatex (file ../../../PhD/paper_factory/thesis_louis/Chapter4
 in a single page
 >]
 <../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//throughput_no_hssd.pdf,
- id=37003, 515.99997pt x 109.78513pt>
+ id=28345, 515.99997pt x 109.78513pt>
 File: ../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//throughput_no_hssd
 .pdf Graphic file (type pdf)
 <use ../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//throughput_no_hssd.
@@ -6373,7 +6010,7 @@ pdf>
 Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter4/Figs/
 /throughput_no_hssd.pdf  used on input line 418.
 (pdftex.def)             Requested size: 342.2953pt x 72.83028pt.
- [225
+ [184
 
  <../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//throughput_no_hssd.pdf
 >]
@@ -6384,33 +6021,33 @@ pdf>
 Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter4/Figs/
 /throughput_no_hssd.pdf  used on input line 418.
 (pdftex.def)             Requested size: 342.2953pt x 72.83028pt.
- [226
+ [185
 
 ]
-<../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//overall_SA_OS.pdf, id=3
-7983, 418.32262pt x 251.08214pt>
+<../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//overall_SA_OS.pdf, id=2
+9326, 418.32262pt x 251.08214pt>
 File: ../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//overall_SA_OS.pdf 
 Graphic file (type pdf)
 <use ../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//overall_SA_OS.pdf>
 Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter4/Figs/
 /overall_SA_OS.pdf  used on input line 427.
 (pdftex.def)             Requested size: 273.83728pt x 164.36229pt.
- [227
+ [186
 
  <../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//overall_SA_OS.pdf>]
-<../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//overall_SA_WS.pdf, id=3
-8048, 542.42009pt x 246.12943pt>
+<../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//overall_SA_WS.pdf, id=2
+9391, 542.42009pt x 246.12943pt>
 File: ../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//overall_SA_WS.pdf 
 Graphic file (type pdf)
 <use ../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//overall_SA_WS.pdf>
 Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter4/Figs/
 /overall_SA_WS.pdf  used on input line 436.
 (pdftex.def)             Requested size: 342.2953pt x 155.32149pt.
- [228
+ [187
 
  <../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//overall_SA_WS.pdf>]
 <../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//mpw5_multi_macro_highli
-ghted.png, id=38119, 1505.625pt x 1505.625pt>
+ghted.png, id=29462, 1505.625pt x 1505.625pt>
 File: ../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//mpw5_multi_macro_h
 ighlighted.png Graphic file (type png)
 <use ../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//mpw5_multi_macro_hi
@@ -6418,12 +6055,12 @@ ghlighted.png>
 Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter4/Figs/
 /mpw5_multi_macro_highlighted.png  used on input line 445.
 (pdftex.def)             Requested size: 154.03183pt x 154.01741pt.
- [229
+ [188
 
  <../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//mpw5_multi_macro_highl
 ighted.png>]
 <../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//compressed_sa2.png, id=
-38177, 8222.72pt x 5741.45pt>
+29520, 8222.72pt x 5741.45pt>
 File: ../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//compressed_sa2.png
  Graphic file (type png)
 <use ../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//compressed_sa2.png>
@@ -6431,11 +6068,11 @@ File: ../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//compressed_sa2.png
 Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter4/Figs/
 /compressed_sa2.png  used on input line 454.
 (pdftex.def)             Requested size: 290.9531pt x 203.07385pt.
- [230
+ [189
 
  <../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//compressed_sa2.png>]
 <../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//SA_8x8_e4m3_rulers_cong
-estion2.png, id=38235, 1176.48837pt x 1524.39279pt>
+estion2.png, id=29577, 1176.48837pt x 1524.39279pt>
 File: ../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//SA_8x8_e4m3_rulers
 _congestion2.png Graphic file (type png)
 <use ../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//SA_8x8_e4m3_rulers_
@@ -6443,11 +6080,11 @@ congestion2.png>
 Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter4/Figs/
 /SA_8x8_e4m3_rulers_congestion2.png  used on input line 463.
 (pdftex.def)             Requested size: 154.03183pt x 199.57364pt.
- [231
+ [190
 
  <../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//SA_8x8_e4m3_rulers_con
 gestion2.png>]
-<../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//SA_64x64.jpg, id=38292,
+<../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//SA_64x64.jpg, id=29635,
  2055.68pt x 2055.68pt>
 File: ../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//SA_64x64.jpg Graph
 ic file (type jpg)
@@ -6455,10 +6092,10 @@ ic file (type jpg)
 Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter4/Figs/
 /SA_64x64.jpg  used on input line 472.
 (pdftex.def)             Requested size: 188.26346pt x 188.23402pt.
- [232
+ [191
 
  <../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//SA_64x64.jpg>]
-<../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//teras_neo.png, id=38349
+<../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//teras_neo.png, id=29691
 , 2163.08125pt x 2168.1pt>
 File: ../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//teras_neo.png Grap
 hic file (type png)
@@ -6466,21 +6103,21 @@ hic file (type png)
 Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter4/Figs/
 /teras_neo.png  used on input line 481.
 (pdftex.def)             Requested size: 171.14764pt x 171.53276pt.
- [233
+ [192
 
  <../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//teras_neo.png>]
-<../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//backpressure.pdf, id=38
-406, 413.545pt x 137.17082pt>
+<../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//backpressure.pdf, id=29
+749, 413.545pt x 137.17082pt>
 File: ../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//backpressure.pdf G
 raphic file (type pdf)
 <use ../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//backpressure.pdf>
 Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter4/Figs/
 /backpressure.pdf  used on input line 490.
 (pdftex.def)             Requested size: 290.9531pt x 96.50868pt.
- [234
+ [193
 
  <../../../PhD/paper_factory/thesis_louis/Chapter4/Figs//backpressure.pdf>]
-<../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//santacruz.jpg, id=38471
+<../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//santacruz.jpg, id=29815
 , 1027.84pt x 578.16pt>
 File: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//santacruz.jpg Grap
 hic file (type jpg)
@@ -6488,10 +6125,10 @@ hic file (type jpg)
 Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs/
 /santacruz.jpg  used on input line 540.
 (pdftex.def)             Requested size: 290.9531pt x 163.6569pt.
- [235
+ [194
 
  <../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//santacruz.jpg>]
-<../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//out_1.png, id=38530, 10
+<../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//out_1.png, id=29872, 10
 27.84pt x 578.16pt>
 File: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//out_1.png Graphic 
 file (type png)
@@ -6499,10 +6136,10 @@ file (type png)
 Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs/
 /out_1.png  used on input line 540.
 (pdftex.def)             Requested size: 290.9531pt x 163.6569pt.
- [236
+ [195
 
  <../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//out_1.png (PNG copy)>]
-<../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//out_2.png, id=38587, 10
+<../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//out_2.png, id=29930, 10
 27.84pt x 578.16pt>
 File: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//out_2.png Graphic 
 file (type png)
@@ -6510,10 +6147,10 @@ file (type png)
 Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs/
 /out_2.png  used on input line 540.
 (pdftex.def)             Requested size: 290.9531pt x 163.6569pt.
- [237
+ [196
 
  <../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//out_2.png (PNG copy)>]
-<../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//out_3.png, id=38645, 10
+<../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//out_3.png, id=29987, 10
 27.84pt x 578.16pt>
 File: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//out_3.png Graphic 
 file (type png)
@@ -6521,10 +6158,10 @@ file (type png)
 Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs/
 /out_3.png  used on input line 540.
 (pdftex.def)             Requested size: 290.9531pt x 163.6569pt.
- [238
+ [197
 
  <../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//out_3.png (PNG copy)>]
-<../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//out_4.png, id=38702, 10
+<../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//out_4.png, id=30045, 10
 27.84pt x 578.16pt>
 File: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//out_4.png Graphic 
 file (type png)
@@ -6532,10 +6169,10 @@ file (type png)
 Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs/
 /out_4.png  used on input line 540.
 (pdftex.def)             Requested size: 290.9531pt x 163.6569pt.
- [239
+ [198
 
  <../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//out_4.png (PNG copy)>]
-<../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//out_5.png, id=38760, 10
+<../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//out_5.png, id=30102, 10
 27.84pt x 578.16pt>
 File: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//out_5.png Graphic 
 file (type png)
@@ -6544,10 +6181,10 @@ Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs/
 /out_5.png  used on input line 540.
 (pdftex.def)             Requested size: 290.9531pt x 163.6569pt.
 
-[240
+[199
 
  <../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//out_5.png (PNG copy)>]
-<../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//out_6.png, id=38817, 10
+<../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//out_6.png, id=30161, 10
 27.84pt x 578.16pt>
 File: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//out_6.png Graphic 
 file (type png)
@@ -6555,10 +6192,10 @@ file (type png)
 Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs/
 /out_6.png  used on input line 540.
 (pdftex.def)             Requested size: 290.9531pt x 163.6569pt.
- [241
+ [200
 
  <../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//out_6.png (PNG copy)>]
-<../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//out_7.png, id=38876, 10
+<../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//out_7.png, id=30218, 10
 27.84pt x 578.16pt>
 File: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//out_7.png Graphic 
 file (type png)
@@ -6566,11 +6203,11 @@ file (type png)
 Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter5/Figs/
 /out_7.png  used on input line 540.
 (pdftex.def)             Requested size: 290.9531pt x 163.6569pt.
- [242
+ [201
 
  <../../../PhD/paper_factory/thesis_louis/Chapter5/Figs//out_7.png (PNG copy)>]
 <../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//division_bit_serial_32_
-3_5.pdf, id=38932, 432.0pt x 133.49533pt>
+3_5.pdf, id=30275, 432.0pt x 133.49533pt>
 File: ../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//division_bit_seria
 l_32_3_5.pdf Graphic file (type pdf)
 <use ../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//division_bit_serial
@@ -6578,12 +6215,12 @@ _32_3_5.pdf>
 Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter6/Figs/
 /division_bit_serial_32_3_5.pdf  used on input line 553.
 (pdftex.def)             Requested size: 342.2953pt x 105.78198pt.
- [243
+ [202
 
  <../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//division_bit_serial_32
 _3_5.pdf>]
 <../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//division_bit_serial_112
-_m72_6_log.pdf, id=39012, 432.0pt x 133.49533pt>
+_m72_6_log.pdf, id=30355, 432.0pt x 133.49533pt>
 File: ../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//division_bit_seria
 l_112_m72_6_log.pdf Graphic file (type pdf)
 <use ../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//division_bit_serial
@@ -6591,12 +6228,12 @@ _112_m72_6_log.pdf>
 Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter6/Figs/
 /division_bit_serial_112_m72_6_log.pdf  used on input line 565.
 (pdftex.def)             Requested size: 342.2953pt x 105.78198pt.
- [244
+ [203
 
  <../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//division_bit_serial_11
 2_m72_6_log.pdf>]
 <../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//division_bit_serial_132
-_14_8.pdf, id=39094, 432.0pt x 266.99066pt>
+_14_8.pdf, id=30436, 432.0pt x 266.99066pt>
 File: ../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//division_bit_seria
 l_132_14_8.pdf Graphic file (type pdf)
 <use ../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//division_bit_serial
@@ -6608,12 +6245,12 @@ Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter6/Figs/
 Overfull \vbox (35.37048pt too high) detected at line 577
  []
 
-[245
+[204
 
  <../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//division_bit_serial_13
 2_14_8.pdf>]
 <../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//posit_div_scale.png, id
-=39175, 1480.53125pt x 1058.95625pt>
+=30517, 1480.53125pt x 1058.95625pt>
 File: ../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//posit_div_scale.pn
 g Graphic file (type png)
 <use ../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//posit_div_scale.png
@@ -6625,11 +6262,11 @@ Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter6/Figs/
 Overfull \vbox (2.29503pt too high) detected at line 590
  []
 
-[246
+[205
 
  <../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//posit_div_scale.png>]
 <../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//posit_div_not_scale.png
-, id=39232, 1916.15875pt x 991.705pt>
+, id=30576, 1916.15875pt x 991.705pt>
 File: ../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//posit_div_not_scal
 e.png Graphic file (type png)
 <use ../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//posit_div_not_scale
@@ -6637,12 +6274,12 @@ e.png Graphic file (type png)
 Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter6/Figs/
 /posit_div_not_scale.png  used on input line 602.
 (pdftex.def)             Requested size: 256.72147pt x 132.86053pt.
- [247
+ [206
 
  <../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//posit_div_not_scale.pn
 g>]
 <../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//scaled_posit_div.png, i
-d=39291, 1156.32pt x 847.7271pt>
+d=30633, 1156.32pt x 847.7271pt>
 File: ../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//scaled_posit_div.p
 ng Graphic file (type png)
 <use ../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//scaled_posit_div.pn
@@ -6650,11 +6287,11 @@ g>
 Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter6/Figs/
 /scaled_posit_div.png  used on input line 614.
 (pdftex.def)             Requested size: 246.45303pt x 180.67967pt.
- [248
+ [207
 
  <../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//scaled_posit_div.png>]
 <../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//nb_units_across_technod
-es_comparison_SAP_baseline_ieee32.pdf, id=39348, 509.29349pt x 761.5694pt>
+es_comparison_SAP_baseline_ieee32.pdf, id=30691, 509.29349pt x 761.5694pt>
 File: ../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//nb_units_across_te
 chnodes_comparison_SAP_baseline_ieee32.pdf Graphic file (type pdf)
 <use ../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//nb_units_across_tec
@@ -6667,12 +6304,12 @@ ne 626.
 Overfull \vbox (2.94965pt too high) detected at line 626
  []
 
-[249
+[208
 
  <../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//nb_units_across_techno
 des_comparison_SAP_baseline_ieee32.pdf>]
 <../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//nb_units_across_technod
-es_comparison_SAP_baseline_ieee64.pdf, id=39420, 509.29349pt x 761.5694pt>
+es_comparison_SAP_baseline_ieee64.pdf, id=30763, 509.29349pt x 761.5694pt>
 File: ../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//nb_units_across_te
 chnodes_comparison_SAP_baseline_ieee64.pdf Graphic file (type pdf)
 <use ../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//nb_units_across_tec
@@ -6685,12 +6322,12 @@ ne 638.
 Overfull \vbox (2.94965pt too high) detected at line 638
  []
 
-[250
+[209
 
  <../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//nb_units_across_techno
 des_comparison_SAP_baseline_ieee64.pdf>]
 <../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//nb_units_across_technod
-es_comparison_SAP_baseline_ieee64_log.pdf, id=39495, 509.29349pt x 761.5694pt>
+es_comparison_SAP_baseline_ieee64_log.pdf, id=30837, 509.29349pt x 761.5694pt>
 File: ../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//nb_units_across_te
 chnodes_comparison_SAP_baseline_ieee64_log.pdf Graphic file (type pdf)
 <use ../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//nb_units_across_tec
@@ -6703,12 +6340,12 @@ t line 650.
 Overfull \vbox (3.50522pt too high) detected at line 650
  []
 
-[251
+[210
 
  <../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//nb_units_across_techno
 des_comparison_SAP_baseline_ieee64_log.pdf>]
 <../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//nb_units_power_across_t
-echnodes_comparison_SAP_baseline_ieee32.pdf, id=39575, 509.29349pt x 761.5694pt
+echnodes_comparison_SAP_baseline_ieee32.pdf, id=30918, 509.29349pt x 761.5694pt
 >
 File: ../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//nb_units_power_acr
 oss_technodes_comparison_SAP_baseline_ieee32.pdf Graphic file (type pdf)
@@ -6722,12 +6359,12 @@ put line 662.
 Overfull \vbox (2.94965pt too high) detected at line 662
  []
 
-[252
+[211
 
  <../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//nb_units_power_across_
 technodes_comparison_SAP_baseline_ieee32.pdf>]
 <../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//nb_units_power_across_t
-echnodes_comparison_SAP_baseline_ieee64.pdf, id=39650, 509.29349pt x 761.5694pt
+echnodes_comparison_SAP_baseline_ieee64.pdf, id=30994, 509.29349pt x 761.5694pt
 >
 File: ../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//nb_units_power_acr
 oss_technodes_comparison_SAP_baseline_ieee64.pdf Graphic file (type pdf)
@@ -6741,11 +6378,11 @@ put line 674.
 Overfull \vbox (2.94965pt too high) detected at line 674
  []
 
-[253
+[212
 
  <../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//nb_units_power_across_
 technodes_comparison_SAP_baseline_ieee64.pdf>]
-<../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//asap7.png, id=39729, 15
+<../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//asap7.png, id=31071, 15
 05.625pt x 900.36375pt>
 File: ../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//asap7.png Graphic 
 file (type png)
@@ -6753,10 +6390,10 @@ file (type png)
 Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter6/Figs/
 /asap7.png  used on input line 686.
 (pdftex.def)             Requested size: 290.9531pt x 173.98343pt.
- [254
+ [213
 
  <../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//asap7.png>]
-<../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//nangate45.png, id=39786
+<../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//nangate45.png, id=31129
 , 1505.625pt x 900.36375pt>
 File: ../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//nangate45.png Grap
 hic file (type png)
@@ -6764,10 +6401,10 @@ hic file (type png)
 Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter6/Figs/
 /nangate45.png  used on input line 698.
 (pdftex.def)             Requested size: 290.9531pt x 173.98343pt.
- [255
+ [214
 
  <../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//nangate45.png>]
-<../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//sky130hd.png, id=39844,
+<../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//sky130hd.png, id=31187,
  1504.8722pt x 900.36375pt>
 File: ../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//sky130hd.png Graph
 ic file (type png)
@@ -6775,10 +6412,10 @@ ic file (type png)
 Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter6/Figs/
 /sky130hd.png  used on input line 710.
 (pdftex.def)             Requested size: 290.9531pt x 174.0796pt.
- [256
+ [215
 
  <../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//sky130hd.png>]
-<../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//gf180.png, id=39902, 15
+<../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//gf180.png, id=31244, 15
 05.625pt x 900.36375pt>
 File: ../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//gf180.png Graphic 
 file (type png)
@@ -6786,7 +6423,7 @@ file (type png)
 Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter6/Figs/
 /gf180.png  used on input line 722.
 (pdftex.def)             Requested size: 290.9531pt x 173.98343pt.
- [257
+ [216
 
  <../../../PhD/paper_factory/thesis_louis/Chapter6/Figs//gf180.png>])
 \tf@nav=\write8
@@ -6803,19 +6440,19 @@ Package pdftex.def Info: ../../../PhD/paper_factory/thesis_louis/Chapter6/Figs/
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: FE18720AD5EF8C3FCAA73A3E4699B307;4229.
+(rerunfilecheck)             Checksum: 72DE28DF4092D512D622471E0ADADE16;1124.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 44387 strings out of 478287
- 969370 string characters out of 5849290
- 1733181 words of memory out of 5000000
- 60930 multiletter control sequences out of 15000+600000
+ 44097 strings out of 478287
+ 961195 string characters out of 5849290
+ 1693201 words of memory out of 5000000
+ 60758 multiletter control sequences out of 15000+600000
  593852 words of font info for 135 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,22n,122p,1870b,1808s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 128i,22n,122p,1870b,1716s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{cite.0@li_robustness-aware_2021} has been referen
 ced but does not exist, replaced by a fixed one
 
@@ -6833,12 +6470,6 @@ xist, replaced by a fixed one
 
 pdfTeX warning (dest): name{cite.0@de_dinechin_fpga-specific_2008} has been ref
 erenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{cite.0@ding_activation_2018} has been referenced bu
-t does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{cite.0@osorio_rios_evaluating_2020} has been refere
-nced but does not exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{cite.0@sousa2024ptfloat} has been referenced but do
 es not exist, replaced by a fixed one
@@ -6889,9 +6520,9 @@ pdfTeX warning (dest): name{cite.0@shafique_eda_2014} has been referenced but d
 oes not exist, replaced by a fixed one
 
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvip
-s/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/t
-exmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-t
-s1.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/share/texlive/t
+s/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/t
+exmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-m
+athsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}</usr/share/texlive/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/typ
@@ -6919,10 +6550,10 @@ texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/
 lmsy6.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/f
 onts/type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtti10
 .pfb>
-Output written on main.pdf (257 pages, 63092410 bytes).
+Output written on main.pdf (216 pages, 62079935 bytes).
 PDF statistics:
- 40221 PDF objects out of 45951 (max. 8388607)
- 33404 compressed objects within 335 object streams
- 589 named destinations out of 1000 (max. 500000)
- 8155 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31540 PDF objects out of 31911 (max. 8388607)
+ 25109 compressed objects within 252 object streams
+ 494 named destinations out of 1000 (max. 500000)
+ 6673 words of extra memory for PDF output out of 10000 (max. 10000000)
 

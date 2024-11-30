@@ -15,16 +15,17 @@
 %====================================================
 %========== DEFINITION OF AUTHORS ETC...=============
 %====================================================
-\author[Thesis Defense]{LEDOUX Louis}
+\author[TARAN Seminar]{LEDOUX Louis}
 \institute[]{Universitat Politècnica de Catalunya (UPC)\\ Barcelona Supercomputing Center (BSC)
 \vspace{2mm} \\
-Advisors:  \\ Dr. Marc Casas \\ Dr. Eduard Ayguad\'e
-\vspace{2mm}}
-\title[]{Floating-Point Arithmetic Paradigms for High-Performance Computing: Software Algorithms and Hardware Designs}
+%Advisors:  \\ Dr. Marc Casas \\ Dr. Eduard Ayguad\'e
+%\vspace{2mm}
+}
+\title[]{The Walls and the Dark Silicon Era: An Arithmetic Perspective}
 
 
- %\date[\today]{\small{Thesis Defense} \\ \small{\today}}
- \date[October 2, 2024]{\small{Thesis Defense} \\ \small{October 2, 2024}}
+%\date[\today]{\small{Thesis Defense} \\ \small{\today}}
+\date[December 2nd, 2024]{\small{TARAN Seminar} \\ \small{December 2nd, 2024}}
 
 %====================================================
 %========== BEGINNING OF DOCUMENT ===================
@@ -35,25 +36,14 @@ Advisors:  \\ Dr. Marc Casas \\ Dr. Eduard Ayguad\'e
 
 
 \begin{frame}[plain]
-%\transboxin
 	\titlepage
 	\begin{center}%
 		\vspace{-0.2cm}
-  		\includegraphics[height=1cm]{./figs/darkblue-logo.pdf}
+		\includegraphics[height=1cm]{./figs/darkblue-logo.pdf}
 		\hspace{2mm}
-  		\includegraphics[height=1cm]{./figs/bsc_logo_2.jpg}
+		\includegraphics[height=1cm]{./figs/bsc_logo_2.jpg}
 	\end{center}
-%\note[item]{you  note here}
 \end{frame}
-
-
-%\begin{frame}[plain]
-%    \frametitle{Agenda}  % Set the title for the Table of Contents slide
-%
-%    \tableofcontents[hidesubsections]  % Command to display the TOC without subsections
-%
-%    \note[item]{This slide outlines the main topics we will cover in today's presentation.}
-%\end{frame}
 
 \begin{frame}
 \frametitle{Agenda}
@@ -70,20 +60,16 @@ Advisors:  \\ Dr. Marc Casas \\ Dr. Eduard Ayguad\'e
 
 \section{Introduction}
  \input{introduction.tex}
-%\section{Background} % no section as there is no more space in top line
 \input{background.tex}
-\section{Posit AI acceleration}
-\input{chapter3.tex} % posit / openpower
-\section{Generator of Systolic Arrays}
-\input{chapter4.tex} % gemm HW / fccm
-\section{Numerically-tailored BLAS}
-\input{chapter5.tex} % gemm SW / fpl
-\section{Floating-Point Divisions}
-\input{chapter6.tex} % div / date & wip
+\section{Accuracy vs. Energy Efficiency}
+\input{chapter4.tex}
+%\section{Accuracy vs. Energy Efficiency 2}
+\input{chapter5.tex}
+\section{Latency vs. Parallelism}
+\input{chapter6.tex}
 \section{Closing}
 \input{closing.tex}
 \appendix
 \input{appendix.tex}
-
 
  \end{document}
