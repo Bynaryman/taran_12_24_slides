@@ -1,24 +1,24 @@
 \beamer@sectionintoc {1}{Introduction}{3}{0}{1}
 \beamer@subsectionintoc {1}{1}{Introduction}{3}{0}{1}
 \beamer@subsectionintoc {1}{2}{Background}{19}{0}{1}
-\beamer@sectionintoc {2}{Accuracy vs. Energy Efficiency}{53}{0}{2}
-\beamer@subsectionintoc {2}{1}{Executive Summary}{53}{0}{2}
-\beamer@subsectionintoc {2}{2}{Numerically-tailored GEMMs}{57}{0}{2}
-\beamer@subsubsectionintoc {2}{2}{1}{Systolic Array Generator}{57}{0}{2}
-\beamer@subsubsectionintoc {2}{2}{2}{Evaluation}{69}{0}{2}
-\beamer@subsubsectionintoc {2}{2}{3}{Conclusions}{79}{0}{2}
-\beamer@subsectionintoc {2}{3}{Bridging to real workloads}{86}{0}{2}
-\beamer@subsubsectionintoc {2}{3}{1}{Open Source SW/HW Co-designed Framework}{86}{0}{2}
-\beamer@subsubsectionintoc {2}{3}{2}{Workload Evaluation}{92}{0}{2}
-\beamer@subsectionintoc {2}{4}{Conclusions}{113}{0}{2}
-\beamer@sectionintoc {3}{Latency vs. Parallelism}{118}{0}{3}
-\beamer@subsectionintoc {3}{1}{Executive Summary}{118}{0}{3}
-\beamer@subsectionintoc {3}{2}{Algorithmic Contribution}{123}{0}{3}
-\beamer@subsectionintoc {3}{3}{Results}{137}{0}{3}
-\beamer@subsectionintoc {3}{4}{Conclusions}{146}{0}{3}
-\beamer@sectionintoc {4}{Closing}{151}{0}{4}
-\beamer@sectionintoc {5}{Chapter 2}{161}{1}{5}
-\beamer@sectionintoc {6}{Chapter 3}{167}{1}{6}
-\beamer@sectionintoc {7}{Chapter 4}{182}{1}{7}
-\beamer@sectionintoc {8}{Chapter 5}{194}{1}{8}
-\beamer@sectionintoc {9}{Chapter 6}{202}{1}{9}
+\beamer@sectionintoc {2}{Accuracy vs. Energy Efficiency}{52}{0}{2}
+\beamer@subsectionintoc {2}{1}{Executive Summary}{52}{0}{2}
+\beamer@subsectionintoc {2}{2}{Numerically-tailored GEMMs}{56}{0}{2}
+\beamer@subsubsectionintoc {2}{2}{1}{Systolic Array Generator}{56}{0}{2}
+\beamer@subsubsectionintoc {2}{2}{2}{Evaluation}{67}{0}{2}
+\beamer@subsubsectionintoc {2}{2}{3}{Conclusions}{76}{0}{2}
+\beamer@subsectionintoc {2}{3}{Bridging to real workloads}{82}{0}{2}
+\beamer@subsubsectionintoc {2}{3}{1}{Open Source SW/HW Co-designed Framework}{82}{0}{2}
+\beamer@subsubsectionintoc {2}{3}{2}{Workload Evaluation}{88}{0}{2}
+\beamer@subsectionintoc {2}{4}{Conclusions}{108}{0}{2}
+\beamer@sectionintoc {3}{Latency vs. Parallelism}{112}{0}{3}
+\beamer@subsectionintoc {3}{1}{Executive Summary}{112}{0}{3}
+\beamer@subsectionintoc {3}{2}{Algorithmic Contribution}{117}{0}{3}
+\beamer@subsectionintoc {3}{3}{Results}{131}{0}{3}
+\beamer@subsectionintoc {3}{4}{Conclusions}{140}{0}{3}
+\beamer@sectionintoc {4}{Closing}{145}{0}{4}
+\beamer@sectionintoc {5}{Chapter 2}{155}{1}{5}
+\beamer@sectionintoc {6}{Chapter 3}{161}{1}{6}
+\beamer@sectionintoc {7}{Chapter 4}{176}{1}{7}
+\beamer@sectionintoc {8}{Chapter 5}{188}{1}{8}
+\beamer@sectionintoc {9}{Chapter 6}{196}{1}{9}
