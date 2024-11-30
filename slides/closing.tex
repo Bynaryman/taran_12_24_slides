@@ -1,0 +1,160 @@
+\graphicspath{{./figs/}}
+% References if we want
+%\begin{frame}[allowframebreaks]{References}
+%\printbibliography
+%\end{frame}
+
+\begin{frame}[plain]
+    \frametitle{Agenda}
+
+    \tableofcontents[currentsection, subsectionstyle=show/shaded/hide]
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Conclusions}
+    \begin{block}<1->{First Contribution}
+	    Provided early insight in an \textbf{HPC environment} of an emerging floating-point format: \textbf{Posits}.
+    \end{block}
+	\vspace{-1mm}
+    \begin{block}<2->{Second Contribution}
+	    Ensured \textbf{fairness} between formats comparison and provided a \textbf{generator of accelerated GEMM} kernels focused on \textbf{arithmetic}.
+    \end{block}
+	\vspace{-1mm}
+    \begin{block}<3->{Third Contribution}
+	    Connected \textbf{silicon layout} to \textbf{HPC software}. Systematic enchancement \textbf{accuracy and energy} consumption for \textbf{distinct HPC codes}.
+    \end{block}
+	\vspace{-1mm}
+    \begin{block}<4->{Last Contribution}
+	Revisited \textbf{Circuitry} for floating-point \textbf{division} motivated by modern opportunities: \textbf{Vector Processing} and \textbf{Open Silicon}.
+    \end{block}
+
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Dissemination: Publications}
+\scriptsize
+\begin{myitemize}
+	\item \textbf{L. Ledoux} and M. Casas, “A Generator of Numerically-Tailored and High-Throughput Accelerators for Batched GEMMs,” in 2022 IEEE 30th Annual International Symposium on Field-Programmable Custom Computing Machines (FCCM), May 2022, pp. 1–10. \textit{\url{doi: 10.1109/FCCM53951.2022.9786164}}
+	\item \textbf{L. Ledoux} and M. Casas, “An Open-Source Framework for Efficient Numerically-Tailored Computations,” in 2023 33rd International Conference on Field-Programmable Logic and Applications (FPL), Sep. 2023, pp. 19–26. \textit{\url{doi: 10.1109/FPL60245.2023.00011}}
+	\item \textbf{L. Ledoux} and M. Casas, “The Grafted Superset Approach: Bridging Python to Silicon with Asynchronous Compilation and Beyond” in 2024 4th Workshop on Open-Source Design Automation (OSDA), hosted at DATE, March 25, 2024, at Palacio De Congresos Valencia, Spain. \textit{Available online soon.}
+	\item \textbf{L. Ledoux} and M. Casas, “LLMMMM: Large Language Models Matrix-Matrix Multiplications Characterization on Open Silicon” in 2024 11th BSCSymposium, May 2024, \textit{Available online soon.}
+	\item \textbf{L. Ledoux} and M. Casas, “Open-Source GEMM Hardware Kernels Generator: Toward Numerically-Tailored Computations” in 2023 10th BSCSymposium, May 2023, \textit{Available: \url{https://arxiv.org/abs/2305.18328}}
+	\item \textbf{L. Ledoux} and M. Casas, “Accelerating DL inference with (Open)CAPI and posit numbers,” in OpenPOWER summit 2019, Lyon, France: linux foundation, Oct. 2019. \textit{Available: \url{https://hal.science/hal-04094850}}
+
+\end{myitemize}
+\normalsize
+\end{frame}
+
+%\begin{frame}
+%
+%\frametitle{Dissemination: open source code, reproducibility}
+%\scriptsize
+%\begin{myitemize}
+%	\item \textbf{OSFNTC:} Discussed in Chapters~\ref{chapter:generator} and~\ref{chapter5:framework}, this repository contains the implementation of the Open-Source Framework for Numerically-Tailored Computations.
+%		\textit{Available:\url{https://github.com/Bynaryman/OSFNTC}}
+%
+%	\item \textbf{Teras and Wrapped\_teras:} Presented in Chapter~\ref{chapter:generator}, these contain the code and GDS files of the tapedout chips of a Systolic Array with posits<8,0> with quire on the shuttle mpw by skywater efabless and google in 130nm.
+%		\textit{Available:\url{https://github.com/Bynaryman/teras}, and \url{https://github.com/Bynaryman/wrapped\_teras}}.
+%
+%    \item \textbf{POF (Posit Operator Framework):} Introduced in Chapter~\ref{chapter:posit}, POF offers a comprehensive suite for developing and evaluating posit-based arithmetic operations as well as testbenches for evaluation of correctness.
+%	    \textit{Available: \url{https://github.com/Bynaryman/POF}}
+%
+%    \item \textbf{SUF (Superset Framework):} Explored in Chapter~\ref{chapter:division}, SUF extends the capabilities of traditional ASIC flow by enhancing the parallelism in an asynchronous fashion.
+%	    \textit{Available: \url{https://github.com/Bynaryman/SUF}}
+%
+%    \item \textbf{3lnn (Three-Layer Neural Network):} Detailed in Chapter~\ref{chapter:posit}, this repository contains the evaluated neural network topology and the pre-trained weights in posit bitstrings.
+%	    \textit{Available: \url{https://github.com/Bynaryman/mnist-3lnn}}
+%
+%    \item \textbf{Flopoco / Virtex FPGA family:} In Chapters~\ref{chapter:posit},~\ref{chapter:generator}, and~\ref{chapter5:framework} we deffer the pipelining task of our arithmetic operators to FloPoCo. The model of our FPGA is to be found here:\url{https://gitlab.com/flopoco/flopoco/-/blob/master/code/HighLevelArithmetic/src/Targets/VirtexUltrascalePlus.cpp}, but more specially with commit hash: \url{https://gitlab.com/flopoco/flopoco/-/commit/0e0db94d2c5dc1084d477b9cb9b8b34d1a23a9e1}.
+%
+%    \item \textbf{VH2V:} Featured in Chapters with ASIC flow, VH2V is used as a VHDL to Verilog translator optimized for arithmetic properties, tailored for FloPoCo outputs.
+%	    \textit{Available: \url{https://github.com/Bynaryman/vh2v}}
+%\end{myitemize}
+%\normalsize
+%\end{frame}
+
+%\begin{frame}
+%\frametitle{Open Source Thesis: Reproducibility and Collaborations}
+%\scriptsize
+%\begin{myitemize}
+%    \item \textbf{OSFNTC:} Implementation of the Open-Source Framework for Numerically-Tailored Computations. \textit{Available: \url{https://github.com/Bynaryman/OSFNTC}}
+%
+%    \item \textbf{Teras and Wrapped\_teras:} Code and GDS files for the Systolic Array with posits<8,0> on the SkyWater shuttle. \textit{Available: \url{https://github.com/Bynaryman/teras}, \url{https://github.com/Bynaryman/wrapped\_teras}}.
+%
+%    \item \textbf{POF (Posit Operator Framework):} Suite for developing and testing posit-based arithmetic operations. \textit{Available: \url{https://github.com/Bynaryman/POF}}
+%
+%    \item \textbf{SUF (Superset Framework):} Enhances ASIC flow by adding asynchronous parallelism. \textit{Available: \url{https://github.com/Bynaryman/SUF}}
+%
+%    \item \textbf{3lnn (Three-Layer Neural Network):} Neural network topology and pre-trained weights in posit format. \textit{Available: \url{https://github.com/Bynaryman/mnist-3lnn}}
+%
+%    \item \textbf{Flopoco / Virtex FPGA family:} Pipeline tool for arithmetic operators used in FPGA design. \textit{Commit: \url{https://gitlab.com/flopoco/flopoco/-/commit/0e0db94d2c5dc1084d477b9cb9b8b34d1a23a9e1}}
+%
+%    \item \textbf{VH2V:} VHDL to Verilog translator optimized for arithmetic operations. \textit{Available: \url{https://github.com/Bynaryman/vh2v}}
+%\end{myitemize}
+%\normalsize
+%\end{frame}
+
+\begin{frame}
+\frametitle{Open Source Thesis: Reproducibility and Collaborations}
+\scriptsize
+\begin{columns} % Use the columns environment to place text and image side by side
+
+\begin{column}{0.75\textwidth} % Adjust width to fit your content needs
+\begin{itemize}
+    \item \textbf{OSFNTC:} Implementation of the Open-Source Framework for Numerically-Tailored Computations. \textit{Available: \url{https://github.com/Bynaryman/OSFNTC}}
+    \item \textbf{Teras and Wrapped\_teras:} Code and GDS files for the Systolic Array with posits<8,0> on the SkyWater shuttle. \textit{Available: \url{https://github.com/Bynaryman/teras}, \url{https://github.com/Bynaryman/wrapped\_teras}}.
+    \item \textbf{POF (Posit Operator Framework):} Suite for developing and testing posit-based arithmetic operations. \textit{Available: \url{https://github.com/Bynaryman/POF}}
+    \item \textbf{SUF (Superset Framework):} Enhances ASIC flow by adding asynchronous parallelism. \textit{Available: \url{https://github.com/Bynaryman/SUF}}
+    \item \textbf{3lnn (Three-Layer Neural Network):} Neural network topology and pre-trained weights in posit format. \textit{Available: \url{https://github.com/Bynaryman/mnist-3lnn}}
+    \item \textbf{Flopoco / Virtex FPGA family:} Pipeline tool for arithmetic operators used in FPGA design. \textit{Commit: \url{https://gitlab.com/flopoco/flopoco/-/commit/0e0db94d2c5dc1084d477b9cb9b8b34d1a23a9e1}}
+    \item \textbf{VH2V:} VHDL to Verilog translator optimized for arithmetic operations. \textit{Available: \url{https://github.com/Bynaryman/vh2v}}
+\end{itemize}
+\end{column}
+
+\begin{column}{0.25\textwidth}
+%\begin{figure}[H]
+\centering
+\includegraphics[width=\columnwidth]{qart.png}
+\caption{Is that Ada indicating the repositories' URL?}
+%\end{figure}
+\end{column}
+
+\end{columns}
+\normalsize
+\end{frame}
+
+\begin{frame}
+\frametitle{Systolic Array Tapeout}
+\only<1>{
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.8\textwidth]{teras.png}
+		\caption{Raytracing Render of the GDS polygons.}
+	\end{figure}
+}
+
+\only<2>{
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.7\textwidth]{tapeout_pic.jpg}
+		\caption{Photo taken with a lens and a smartphone.}
+	\end{figure}
+}
+
+\end{frame}
+
+
+\begin{frame}[noframenumbering,plain]
+\begin{center}
+\begin{figure}[H]
+	\centering
+	%\animategraphics[autoplay,loop,width=0.3\textwidth]{12}{asap-}{0}{49}
+	\animategraphics[autoplay,palindrome,width=0.3\textwidth]{12}{asap-}{0}{49}
+\end{figure}
+
+\Huge \textcolor{cvut_blue}{Thank You}
+\end{center}
+\end{frame}

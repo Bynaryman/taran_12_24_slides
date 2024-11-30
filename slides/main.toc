@@ -1,0 +1,29 @@
+\beamer@sectionintoc {1}{Introduction}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Introduction}{3}{0}{1}
+\beamer@subsectionintoc {1}{2}{Background}{19}{0}{1}
+\beamer@sectionintoc {2}{Posit AI acceleration}{53}{0}{2}
+\beamer@subsectionintoc {2}{1}{Executive Summary and Motivations}{53}{0}{2}
+\beamer@subsectionintoc {2}{2}{Posit Operator Framework (POF)}{67}{0}{2}
+\beamer@subsectionintoc {2}{3}{Machine Learning Evaluation}{75}{0}{2}
+\beamer@subsectionintoc {2}{4}{Conclusions}{86}{0}{2}
+\beamer@sectionintoc {3}{Generator of Systolic Arrays}{90}{0}{3}
+\beamer@subsectionintoc {3}{1}{Executive Summary}{90}{0}{3}
+\beamer@subsectionintoc {3}{2}{Systolic Array Generator}{94}{0}{3}
+\beamer@subsectionintoc {3}{3}{Evaluation}{106}{0}{3}
+\beamer@subsectionintoc {3}{4}{Conclusions}{116}{0}{3}
+\beamer@sectionintoc {4}{Numerically-tailored BLAS}{123}{0}{4}
+\beamer@subsectionintoc {4}{1}{Executive Summary}{123}{0}{4}
+\beamer@subsectionintoc {4}{2}{Open Source SW/HW Co-designed Framework}{127}{0}{4}
+\beamer@subsectionintoc {4}{3}{Workload Evaluation}{133}{0}{4}
+\beamer@subsectionintoc {4}{4}{Conclusions}{154}{0}{4}
+\beamer@sectionintoc {5}{Floating-Point Divisions}{159}{0}{5}
+\beamer@subsectionintoc {5}{1}{Executive Summary}{159}{0}{5}
+\beamer@subsectionintoc {5}{2}{Algorithmic Contribution}{164}{0}{5}
+\beamer@subsectionintoc {5}{3}{Results}{178}{0}{5}
+\beamer@subsectionintoc {5}{4}{Conclusions}{187}{0}{5}
+\beamer@sectionintoc {6}{Closing}{192}{0}{6}
+\beamer@sectionintoc {7}{Chapter 2}{202}{1}{7}
+\beamer@sectionintoc {8}{Chapter 3}{208}{1}{8}
+\beamer@sectionintoc {9}{Chapter 4}{223}{1}{9}
+\beamer@sectionintoc {10}{Chapter 5}{235}{1}{10}
+\beamer@sectionintoc {11}{Chapter 6}{243}{1}{11}

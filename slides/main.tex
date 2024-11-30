@@ -1,0 +1,89 @@
+%===============================================================
+
+%Template for UPC-TALP based on CTU and modified to match UPC-TALP colors and style
+%The original template from Czech Technical University  % Author: Martin Malý.
+% They are defined by new graphical manual - 2017.
+% Share and modify as you like. Keep the name of the authors.
+% It is forbidden to use the template commercially.
+%===============================================================
+
+%\documentclass[aspectratio=169]{beamer}
+\documentclass[]{beamer}
+
+\input{preamble.tex}
+
+%====================================================
+%========== DEFINITION OF AUTHORS ETC...=============
+%====================================================
+\author[Thesis Defense]{LEDOUX Louis}
+\institute[]{Universitat Politècnica de Catalunya (UPC)\\ Barcelona Supercomputing Center (BSC)
+\vspace{2mm} \\
+Advisors:  \\ Dr. Marc Casas \\ Dr. Eduard Ayguad\'e
+\vspace{2mm}}
+\title[]{Floating-Point Arithmetic Paradigms for High-Performance Computing: Software Algorithms and Hardware Designs}
+
+
+ %\date[\today]{\small{Thesis Defense} \\ \small{\today}}
+ \date[October 2, 2024]{\small{Thesis Defense} \\ \small{October 2, 2024}}
+
+%====================================================
+%========== BEGINNING OF DOCUMENT ===================
+%====================================================
+
+
+\begin{document}
+
+
+\begin{frame}[plain]
+%\transboxin
+	\titlepage
+	\begin{center}%
+		\vspace{-0.2cm}
+  		\includegraphics[height=1cm]{./figs/darkblue-logo.pdf}
+		\hspace{2mm}
+  		\includegraphics[height=1cm]{./figs/bsc_logo_2.jpg}
+	\end{center}
+%\note[item]{you  note here}
+\end{frame}
+
+
+%\begin{frame}[plain]
+%    \frametitle{Agenda}  % Set the title for the Table of Contents slide
+%
+%    \tableofcontents[hidesubsections]  % Command to display the TOC without subsections
+%
+%    \note[item]{This slide outlines the main topics we will cover in today's presentation.}
+%\end{frame}
+
+\begin{frame}
+\frametitle{Agenda}
+	\begin{enumerate}
+		\item Introduction
+		\item Background
+		\item Accelerating Deep Learning Inference with the Posit Number System
+		\item A Generator of Numerically-Tailored Accelerators for Batched GEMMs
+		\item An Open-Source Framework for Efficient Numerically-Tailored Computations
+		\item Divisions in Vector Processing: Leveraging Opportunities from a Paradigm Shift
+		\item Closing
+	\end{enumerate}
+\end{frame}
+
+\section{Introduction}
+ \input{introduction.tex}
+%\section{Background} % no section as there is no more space in top line
+\input{background.tex}
+\section{Posit AI acceleration}
+\input{chapter3.tex} % posit / openpower
+\section{Generator of Systolic Arrays}
+\input{chapter4.tex} % gemm HW / fccm
+\section{Numerically-tailored BLAS}
+\input{chapter5.tex} % gemm SW / fpl
+\section{Floating-Point Divisions}
+\input{chapter6.tex} % div / date & wip
+\section{Closing}
+\input{closing.tex}
+\appendix
+\input{appendix.tex}
+
+
+ \end{document}

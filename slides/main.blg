@@ -1,0 +1,71 @@
+This is BibTeX, Version 0.99d (TeX Live 2022/dev/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+The style file: biblatex.bst
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=200001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: main-blx.bib
+Database file #2: references.bib
+I was expecting an "="---line 9971 of file references.bib
+ :  
+ :  note = {ISSN: 1558-4615},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Biblatex version: 3.17
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+You've used 25 entries,
+            6399 wiz_defined-function locations,
+            1437 strings with 32295 characters,
+and the built_in function-call counts, 398637 in all, are:
+= -- 34782
+> -- 5328
+< -- 1612
++ -- 14838
+- -- 2631
+* -- 29839
+:= -- 50177
+add.period$ -- 0
+call.type$ -- 25
+change.case$ -- 643
+chr.to.int$ -- 151
+cite$ -- 48
+duplicate$ -- 44234
+empty$ -- 30379
+format.name$ -- 3836
+if$ -- 76743
+int.to.chr$ -- 0
+int.to.str$ -- 68
+missing$ -- 0
+newline$ -- 1615
+num.names$ -- 1435
+pop$ -- 11167
+preamble$ -- 1
+purify$ -- 929
+quote$ -- 0
+skip$ -- 6587
+stack$ -- 0
+substring$ -- 64982
+swap$ -- 6417
+text.length$ -- 1382
+text.prefix$ -- 36
+top$ -- 1
+type$ -- 834
+warning$ -- 0
+while$ -- 6326
+width$ -- 0
+write$ -- 1591
+(There was 1 error message)

@@ -1,0 +1,665 @@
+\graphicspath{{../../../PhD/paper_factory/thesis_louis/Chapter4/Figs/}{../../../PhD/paper_factory/thesis_louis/Chapter3/Figs/}}
+\subsection{Executive Summary}
+\begin{frame}
+    \frametitle{Current Progress}
+
+    % Adding a thematic title for the slide that fits with the chapter
+    \centering
+    \huge ``A Generator of Numerically-Tailored Accelerators for Batched GEMMs''
+    \normalsize
+
+    \vspace{1em} % Add some vertical space before the table of contents
+
+    % Only shows the current section and its subsections, hides everything else
+    \tableofcontents[currentsection,
+                     subsectionstyle=show/shaded/hide,
+                     sectionstyle=show/hide]
+
+    % Explanation of options:
+    % - currentsection: Highlights the current section
+    % - subsectionstyle=show/show/hide: The current subsection and its siblings in the current section are shown
+    % - sectionstyle=show/hide: Shows only the current section, hides other sections
+\end{frame}
+
+\begin{frame}
+    \frametitle{Executive Summary}
+        \begin{alertblock}<1->{General Matrix Multiplication kernel acceleration}
+		A \textbf{large variety of scientific applications} rely on \textbf{GEMM} multiplication kernel. The numerical requirements are \textbf{very heterogeneous}, e.g., AI or weather forecasting.
+        \end{alertblock}
+
+        \begin{exampleblock}<2->{State-of-the-Art Accelerators}
+		Matrix-Matrix Multiplication (MMM) accelerators \textbf{have no focus on precision/accuracy}, but on performance.
+        \end{exampleblock}
+
+        \begin{block}<3->{Our Proposal}
+		Generation of scalable Systolic Arrays with \textbf{adaptative precision} Processing Elements.
+        \end{block}
+\end{frame}
+
+
+\subsection{Systolic Array Generator}
+\begin{frame}
+    \frametitle{Current Progress}
+
+    % Only shows the current section and its subsections, hides everything else
+    \tableofcontents[currentsection,
+                     subsectionstyle=show/shaded/hide,
+                     sectionstyle=show/hide]
+
+    % Explanation of options:
+    % - currentsection: Highlights the current section
+    % - subsectionstyle=show/show/hide: The current subsection and its siblings in the current section are shown
+    % - sectionstyle=show/hide: Shows only the current section, hides other sections
+\end{frame}
+
+\begin{frame}
+    \frametitle{Systolic Array Generator: Overview}
+
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{itemize}
+                \item<1-> BLAS level 3 GEMM routine
+                \item<1-> Generator 2D Systolic Arrays
+                \item<1-> Target agnostic
+                \item<2-> Performance:
+                \begin{itemize}
+		    \item Scalable
+                    \item HSSD Extraction scheme
+                \end{itemize}
+		\item<3-> \textbf{Arithmetic focus}:
+                \begin{itemize}
+                    \item S3: Computer format agnostic
+		    \item 3 Accumulators
+                \end{itemize}
+            \end{itemize}
+        \end{column}
+
+        \begin{column}{0.5\textwidth}
+	    \begin{figure}[H]
+            \centering
+            \includegraphics[width=\textwidth]{overall_SA_2.pdf}
+            \caption{$3 \times 3$ Systolic Array.}
+            \label{fig:overall_SA}
+	    \end{figure}
+        \end{column}
+    \end{columns}
+	%\only<4->{\onlyfootcite{flopoco2}}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Systolic Array Generator: S3 Format}
+
+            \begin{itemize}
+		    \item \textbf{S}ign \textbf{S}cale \textbf{S}ignificand
+		    \item All our datapaths are in \textbf{S3} format
+		    \item \textbf{Arithmetic Agnostic} once translated/mapped
+                    \item Simple arithmetic:
+			\begin{itemize}
+                    		\item necessary and sufficient bits
+                    		\item Eliminate redundancy, dual zeros, special cases
+			\end{itemize}
+                    \item A quintuple format: \textlangle NaN, Sign, Scale, Implicit, Fraction\textrangle
+            \end{itemize}
+            \begin{table}
+                \centering
+                \caption{Common computer number formats and their S3 translations.}
+		    \vspace{-0.5cm}
+                \label{table:s3_examples}
+                \resizebox{0.75\textwidth}{!}{%
+                \begin{tabular}{@{}lcccll@{}}
+                \toprule
+                \textbf{Comp. Arith.} & \textbf{Value} & \(\boldsymbol{S3\ \omega S}\) & \textbf{Bias} & \(\boldsymbol{S3\ \omega F}\) & \textbf{S3 Quintuple} \\
+                \midrule
+                IEEE-754 16 & 0 & 5 & \(2^{\omega S-1}-1=15\) & 10 & \(\langle0,x,xxxxx,0,0000000000\rangle\) \\
+                Posit \( \langle 8,0 \rangle \) & 1 & 4 & \((N-2)\cdot2^{es}=6\) & 5 & \(\langle0,0,0110,1,00000\rangle\) \\
+                Posit \( \langle 16,2 \rangle \) & NaN & 7 & \((N-2)\cdot2^{es}=56\) & 11 & \(\langle1,x,xxxxxxx,x,xxxxxxxxxxx\rangle\) \\
+                bfloat16 & 3.5 & 8 & \(2^{\omega S-1}-1=127\) & 7 & \(\langle0,0,10000000,1,1100000\rangle\) \\
+                \bottomrule
+                \end{tabular}
+                }
+            \end{table}
+
+\end{frame}
+
+%frame:
+%A2S3: Arithmetic to S3​
+% as long as this unit exist the whole array is uasble, one can come up with a new artihmtic format and this unit to translate into SA
+%PEs: Processing Elements​
+% the building block cotnraining the FDP unit
+%S3FDP: S3 Fused Dot Product​
+%
+%L2A: Large Accumulator to Arithmetic
+% can round (only once at final step)in inptu format or another format, give result as is for exactness
+%        \begin{column}{0.5\textwidth}
+%	    \begin{figure}[H]
+%            \centering
+%            \includegraphics[width=\textwidth]{overall_SA_2.pdf}
+%            \caption{$3 \times 3$ Systolic Array.}
+%            \label{fig:overall_SA}
+%	    \end{figure}
+
+%\begin{frame}
+%    \frametitle{Systolic Array Components Overview}
+%
+%    \begin{columns}
+%    \begin{column}{0.5\textwidth}
+%    \begin{itemize}
+%        \item<1-> \textbf{A2S3: Arithmetic to S3}
+%        \begin{itemize}
+%            \item Translates any arithmetic format into S3, ensuring the array's adaptability.
+%        \end{itemize}
+%
+%        \item<2-> \textbf{PEs: Processing Elements}
+%        \begin{itemize}
+%            \item Fundamental blocks containing the Fused Dot Product (FDP) unit.
+%        \end{itemize}
+%
+%        \item<3-> \textbf{S3FDP: S3 Fused Dot Product}
+%        \begin{itemize}
+%            \item Handles dot product calculations within the S3 format.
+%        \end{itemize}
+%
+%        \item<4-> \textbf{L2A: Large Accumulator to Arithmetic}
+%        \begin{itemize}
+%            \item Rounds only at the final step to maintain precision, outputs in input format or another chosen format for exactness.
+%        \end{itemize}
+%    \end{itemize}
+%    \end{column}
+%
+%    \begin{column}{0.5\textwidth}
+%    \begin{figure}[H]
+%        \centering
+%        \includegraphics[width=0.5\textwidth]{overall_SA_2.pdf} % Adjust the image width as needed
+%        \caption{$3 \times 3$ Systolic Array illustrating key components.}
+%        \label{fig:overall_SA}
+%    \end{figure}
+%        \end{column}
+%    \end{columns}
+%
+%\end{frame}
+%
+\begin{frame}
+    \frametitle{Systolic Array: Building Blocks}
+
+    \begin{columns}
+        \begin{column}{0.45\textwidth}
+            \begin{itemize}
+		    \item<1->\textbf{A2S3}: Arithmetic to S3 - Translates any arithmetic format into \textbf{S3}
+		    \item<2->\textbf{PEs}: Processing Elements - Include the \textbf{S3} Fused Dot Product (\textbf{S3FDP})
+		    \item<3->\textbf{L2A}: Large Accumulator to Arithmetic - output results in the chosen format (\textbf{exact}, \textbf{same}, \textbf{specific}).
+            \end{itemize}
+        \end{column}
+
+        \begin{column}{0.55\textwidth}
+            \centering
+            \only<1>{
+            \includegraphics[width=\textwidth]{overall_SA_a2s3.png}
+            \caption{Systolic Array key components.\\ $n+m$ "A2S3"}
+            }
+            \only<2>{
+            \includegraphics[width=\textwidth]{overall_SA_PE.png}
+            \caption{Systolic Array key components.\\ $n*m$ "PE"}
+            }
+            \only<3>{
+            \includegraphics[width=\textwidth]{overall_SA_l2a.png}
+            \caption{Systolic Array key components.\\ $m$ "L2A"}
+            }
+        \end{column}
+    \end{columns}
+
+\end{frame}
+
+\begin{frame}
+	\frametitle{Processing Element (PE)}
+
+    \begin{columns}
+        \begin{column}{0.6\textwidth}
+	\begin{figure}[H]
+		\centering
+		%\includegraphics[width=\columnwidth]{figs/PE.pdf}
+		\includegraphics[width=0.8\textwidth]{PE_S3.pdf}
+		\vspace{-0.3cm}
+		\caption{Schematic of a PE. HSSD highlighted.}
+		%\vspace{-0.6cm}
+	\end{figure}
+
+        \end{column}
+
+        \begin{column}{0.4\textwidth}
+	    \begin{figure}[H]
+            \centering
+            \includegraphics[width=\textwidth]{alg_pe.png}
+            \caption{}
+	    \end{figure}
+        \end{column}
+    \end{columns}
+
+\end{frame}
+
+\begin{frame}
+	\frametitle{S3 Fused-Dot-Product (S3FDP)}
+
+    Adaptative Kulisch Fixed-Point Accumulator~\cite{de_dinechin_fpga-specific_2008}
+    \begin{columns}
+        \begin{column}{0.55\textwidth}
+	    \begin{enumerate}
+		\item<1-> Exact Product into extended S3
+		\item<2-> S3 translation and alignment to fixed-point
+		\item<3-> Accumulation with RCA or CSA (radix-$2^{k}$ approach)
+	    \end{enumerate}
+
+        \end{column}
+
+        \begin{column}{0.45\textwidth}
+	    \begin{figure}[H]
+            \centering
+	    \vspace{0.2cm}
+            \includegraphics[width=0.69\textwidth]{S3FDP.pdf}
+	    \vspace{-0.3cm}
+            \caption{Circuit design of a generic S3FDP}
+	    \end{figure}
+        \end{column}
+    \end{columns}
+
+    %\only<1->{\onlyfootcite{de_dinechin_fpga-specific_2008}}
+
+\end{frame}
+
+\subsection{Evaluation}
+\begin{frame}
+    \frametitle{Current Progress}
+
+    % Only shows the current section and its subsections, hides everything else
+    \tableofcontents[currentsection,
+                     subsectionstyle=show/shaded/hide,
+                     sectionstyle=show/hide]
+
+    % Explanation of options:
+    % - currentsection: Highlights the current section
+    % - subsectionstyle=show/show/hide: The current subsection and its siblings in the current section are shown
+    % - sectionstyle=show/hide: Shows only the current section, hides other sections
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{Design Space Exploration (DSE)}
+
+	\begin{alertblock}<1->{\textbf{22} arithmetic formats}
+	bfloat16, "ieee8", ieee16, ieee32, ieee64, tfp8, tfp16, tfp32, tfp64, posit<4,0>, posit<8,0>, posit<8,1>, posit<8,2>, posit<16,0>, posit<16,1>, posit<16,2>, posit<32,0>, posit<32,1>, posit<32,2>, posit<64,1>, posit<64,2>, posit<64,3>.
+    \end{alertblock}
+
+	\begin{alertblock}<2->{\textbf{3} Accumulator Configurations}
+        $\alpha$ - Small accumulator with small MSB for AI; $\beta$ - Exact accumulator (Kulisch and Quire), preventing roundoff errors; $\gamma$ - 100-bit accumulator.
+    \end{alertblock}
+
+    \begin{block}<3->{Combinations}
+        \textbf{A total of \textbf{66} combinations (arithmetic, accumulator)} explored in our design space exploration.
+    \end{block}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Design Space Exploration Results}
+
+    %\begin{columns}
+        %\begin{column}{0.5\textwidth}
+%            \begin{itemize}
+%                %\item Beta accumulators resources scale quadratically w-r-t the exponent size
+%                %\item Table below shows resource and power for IEEE formats for our designs against Xilinx IP FMAs
+%            \end{itemize}
+        %\end{column}
+
+        %\begin{column}{0.5\textwidth}
+            \begin{figure}
+                \centering
+                \includegraphics[width=0.85\textwidth]{resource_250.png}
+                \caption{Routed resource of S3FDPs@250MHz}
+                \label{fig:resource_utilization}
+            \end{figure}
+        %\end{column}
+    %\end{columns}
+
+\end{frame}
+\begin{frame}{IEEE754 comparison}
+    Hardware cost of "IEEE754" S3 vs. Xilinx FMA IP.
+    \begin{columns}
+
+        % Column 1
+        \begin{column}{0.5\textwidth}
+%            % 8-bit Table
+%            \begin{table}
+%            \caption{8-bit configurations}
+%	    \vspace{-0.2cm}
+%            \centering
+%                \resizebox{0.85\textwidth}{!}{%
+%            \begin{tabular}{@{} lcccc @{}}
+%                \toprule
+%		    Config. & \cellcolor{green!25}$\alpha$ & $\beta$ & $\gamma$ & \textit{FMA} \\
+%                \midrule
+%		    LUTs & 85 & 109 & 166 & 233 \\
+%                FFs  & 18 & 42  & 102 & 342 \\
+%                DSPs & 0  & 0   & 0   & 1   \\
+%                CARRY8s & 2  & 6   & 13  & 17  \\
+%                Power(PE)(W) & 0.003 & 0.004 & 0.006 & 0.016 \\
+%                Power(system)(W) & 2.828 & 4.807 & 9.860 & 15.872 \\
+%                En. Eff.(system)(GFlops/s/W) & 175.4 & 103.2 & 50.3 & 31.3 \\
+%                \bottomrule
+%            \end{tabular}
+%		    }
+%            \end{table}
+		\begin{table}
+		\caption{8-bit configurations}
+		\vspace{-0.2cm}
+		\centering
+		\resizebox{0.85\textwidth}{!}{%
+		\begin{tabular}{@{} lcccc @{}}
+		    \toprule
+		    Config. & $\alpha$ & $\beta$ & $\gamma$ & \textit{FMA} \\
+		    \midrule
+		    LUTs & \cellcolor{green!25}85 & \cellcolor{yellow!25}109 & \cellcolor{orange!25}166 & \cellcolor{red!25}233 \\
+		    FFs  & \cellcolor{green!25}18 & \cellcolor{yellow!25}42  & \cellcolor{orange!25}102 & \cellcolor{red!25}342 \\
+		    DSPs & \cellcolor{green!25}0  & \cellcolor{green!25}0   & \cellcolor{green!25}0   & \cellcolor{red!25}1   \\
+		    CARRY8s & \cellcolor{green!25}2 & \cellcolor{yellow!25}6 & \cellcolor{orange!25}13 & \cellcolor{red!25}17  \\
+		    Power(PE)(W) & \cellcolor{green!25}0.003 & \cellcolor{yellow!25}0.004 & \cellcolor{orange!25}0.006 & \cellcolor{red!25}0.016 \\
+		    Power(system)(W) & \cellcolor{green!25}2.828 & \cellcolor{yellow!25}4.807 & \cellcolor{orange!25}9.860 & \cellcolor{red!25}15.872 \\
+		    En. Eff.(system)(GFlops/s/W) & \cellcolor{green!25}175.4 & \cellcolor{yellow!25}103.2 & \cellcolor{orange!25}50.3 & \cellcolor{red!25}31.3 \\
+		    \bottomrule
+		\end{tabular}
+		}
+		\end{table}
+	    \begin{table}
+		\caption{32-bit configurations}
+		\vspace{-0.2cm}
+		\centering
+		\resizebox{0.85\textwidth}{!}{%
+		\begin{tabular}{@{} lcccc @{}}
+		    \toprule
+		    Config. & $\alpha$ & $\beta$ & $\gamma$ & \textit{FMA} \\
+		    \midrule
+		    LUTs & \cellcolor{green!25}345 & \cellcolor{red!25}1039 & \cellcolor{yellow!25}416 & \cellcolor{orange!25}769 \\
+		    FFs  & \cellcolor{green!25}225 & \cellcolor{orange!25}865  & \cellcolor{yellow!25}317 & \cellcolor{red!25}1278 \\
+		    DSPs & \cellcolor{green!25}2   & \cellcolor{green!25}2    & \cellcolor{green!25}2   & \cellcolor{green!25}2    \\
+		    CARRY8s & \cellcolor{green!25}12 & \cellcolor{yellow!25}19  & \cellcolor{orange!25}37  & \cellcolor{red!25}73  \\
+		    Power(PE)(W) & \cellcolor{green!25}0.019 & \cellcolor{orange!25}0.058 & \cellcolor{yellow!25}0.023 & \cellcolor{red!25}0.066 \\
+		    Power(system)(W) & \cellcolor{green!25}1.233 & \cellcolor{red!25}5.329 & \cellcolor{yellow!25}1.554 & \cellcolor{orange!25}3.696 \\
+		    En. Eff.(system)(GFlops/s/W) & \cellcolor{green!25}22.7 & \cellcolor{red!25}5.6 & \cellcolor{yellow!25}18.09 & \cellcolor{orange!25}7.6 \\
+		    \bottomrule
+		\end{tabular}
+		}
+		\end{table}
+
+
+        \end{column}
+
+        % Column 2
+        \begin{column}{0.5\textwidth}
+            % 16-bit Table
+%            \begin{table}
+%            \caption{16-bit configurations}
+%	    \vspace{-0.2cm}
+%            \centering
+%                \resizebox{0.85\textwidth}{!}{%
+%            \begin{tabular}{@{} lcccc @{}}
+%                \toprule
+%                Config. & \cellcolor{green!25}$\alpha$ & $\beta$ & $\gamma$ & \textit{FMA} \\
+%                \midrule
+%                LUTs & 134 & 187 & 200 & 425 \\
+%                FFs  & 34  & 124 & 102 & 680 \\
+%                DSPs & 1   & 1   & 1   & 1   \\
+%                CARRY8s & 4  & 16  & 13  & 22  \\
+%                Power(PE)(W) & 0.008 & 0.018 & 0.014 & 0.032 \\
+%                Power(system)(W) & 2.121 & 3.177 & 3.749 & 7.680 \\
+%                En. Eff.(system)(GFlops/s/W) & 56.6 & 37.8 & 32.0 & 15.6 \\
+%                \bottomrule
+%            \end{tabular}
+%		    }
+%            \end{table}
+
+		\begin{table}
+		\caption{16-bit configurations}
+		\vspace{-0.2cm}
+		\centering
+		\resizebox{0.85\textwidth}{!}{%
+		\begin{tabular}{@{} lcccc @{}}
+		    \toprule
+		    Config. & $\alpha$ & $\beta$ & $\gamma$ & \textit{FMA} \\
+		    \midrule
+		    LUTs & \cellcolor{green!25}134 & \cellcolor{yellow!25}187 & \cellcolor{orange!25}200 & \cellcolor{red!25}425 \\
+		    FFs  & \cellcolor{green!25}34  & \cellcolor{yellow!25}124 & \cellcolor{orange!25}102 & \cellcolor{red!25}680 \\
+		    DSPs & \cellcolor{green!25}1   & \cellcolor{green!25}1   & \cellcolor{green!25}1   & \cellcolor{green!25}1   \\
+		    CARRY8s & \cellcolor{green!25}4  & \cellcolor{yellow!25}16 & \cellcolor{orange!25}13 & \cellcolor{red!25}22  \\
+		    Power(PE)(W) & \cellcolor{green!25}0.008 & \cellcolor{orange!25}0.018 & \cellcolor{yellow!25}0.014 & \cellcolor{red!25}0.032 \\
+		    Power(system)(W) & \cellcolor{green!25}2.121 & \cellcolor{yellow!25}3.177 & \cellcolor{orange!25}3.749 & \cellcolor{red!25}7.680 \\
+		    En. Eff.(system)(GFlops/s/W) & \cellcolor{green!25}56.6 & \cellcolor{yellow!25}37.8 & \cellcolor{orange!25}32.0 & \cellcolor{red!25}15.6 \\
+		    \bottomrule
+		\end{tabular}
+		}
+		\end{table}
+
+            % 64-bit Table
+%            \begin{table}
+%            \caption{64-bit configurations}
+%	    \vspace{-0.2cm}
+%            \centering
+%                \resizebox{0.85\textwidth}{!}{%
+%            \begin{tabular}{@{} lcccc @{}}
+%                \toprule
+%                Config. & \cellcolor{green!25}$\alpha$ & $\beta$ & $\gamma$ & \textit{FMA} \\
+%                \midrule
+%                LUTs        & 1806 & 11414 & 1668 & 1785 \\
+%                FFs         & 1383 & 8996  & 1089 & 2884 \\
+%                DSPs        & 6    & 6     & 6    & 10   \\
+%                CARRY8s     & 38   & 272   & 34   & 70   \\
+%                Power(PE)(W) & 0.085 & 0.460 & 0.081 & 0.191 \\
+%                Power(system)(W) & 1.002 & 13.633 & 0.971 & 2.292 \\
+%                En. Eff.(system)(GFlops/s/W) & 6.0 & 0.4 & 6.2 & 2.6 \\
+%                \bottomrule
+%            \end{tabular}
+%		    }
+%            \end{table}
+
+	    \begin{table}
+		\caption{64-bit configurations}
+		\vspace{-0.2cm}
+		\centering
+		\resizebox{0.85\textwidth}{!}{%
+		\begin{tabular}{@{} lcccc @{}}
+		    \toprule
+		    Config. & $\alpha$ & $\beta$ & $\gamma$ & \textit{FMA} \\
+		    \midrule
+		    LUTs        & \cellcolor{orange!25}1806 & \cellcolor{red!25}11414 & \cellcolor{green!25}1668 & \cellcolor{yellow!25}1785 \\
+		    FFs         & \cellcolor{yellow!25}1383 & \cellcolor{red!25}8996  & \cellcolor{green!25}1089 & \cellcolor{orange!25}2884 \\
+		    DSPs        & \cellcolor{green!25}6    & \cellcolor{green!25}6    & \cellcolor{green!25}6    & \cellcolor{red!25}10   \\
+		    CARRY8s     & \cellcolor{yellow!25}38   & \cellcolor{red!25}272   & \cellcolor{green!25}34   & \cellcolor{orange!25}70   \\
+		    Power(PE)(W) & \cellcolor{yellow!25}0.085 & \cellcolor{red!25}0.460 & \cellcolor{green!25}0.081 & \cellcolor{orange!25}0.191 \\
+		    Power(system)(W) & \cellcolor{yellow!25}1.002 & \cellcolor{red!25}13.633 & \cellcolor{green!25}0.971 & \cellcolor{orange!25}2.292 \\
+		    En. Eff.(system)(GFlops/s/W) & \cellcolor{yellow!25}6.0 & \cellcolor{red!25}0.4 & \cellcolor{green!25}6.2 & \cellcolor{orange!25}2.6 \\
+		    \bottomrule
+		\end{tabular}
+		}
+		\end{table}
+	\end{column}
+
+    \end{columns}
+\end{frame}
+
+\begin{frame}
+    \frametitle{DSE: Scalability of PnR designs}
+
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{figure}
+                \centering
+                \includegraphics[width=0.95\columnwidth]{art_gallery_sa_32_31_8_0_by_PE_highlight.png}
+                \caption{\(32 \times 31\) \(posit \langle 8,1 \rangle \beta\) array}
+            \end{figure}
+        \end{column}
+
+        \begin{column}{0.5\textwidth}
+            \begin{figure}
+                \centering
+                \includegraphics[width=0.95\columnwidth]{art_gallery_sa_64_63_4_0_by_col_highlight.png}
+                \caption{\(64 \times 63\) \(posit \langle 4,0 \rangle \beta\) array}
+            \end{figure}
+        \end{column}
+    \end{columns}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Hardware Platform Overview}
+
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{itemize}
+                \item Power9 System (IBM AC922 with AlphaData 9V3 FPGA Board):
+                \begin{itemize}
+                    \item XCVU3P-2-FFVC1517 FPGA, UltraScale+ family.
+                    \item AC922 POWER9 system, 40 cores (20 per socket), 2.3GHz.
+                \end{itemize}
+                \item FPGA Specifications:
+                \begin{itemize}
+                    \item LUTs: 384k
+                    \item Flip-Flops: 788k
+                    \item DSP Slices: 2280
+                    \item Block RAM: 25.3Mb
+                    \item UltraRAM: 90Mb
+                \end{itemize}
+                \item PCIe Gen4-8 lanes, 15.754 GB/s, supports CAPI2 and IBM SNAP.
+            \end{itemize}
+        \end{column}
+
+        \begin{column}{0.5\textwidth}
+	    \begin{figure}[H]
+            \centering
+            \includegraphics[width=\textwidth]{p9.png}
+            \caption{IBM Power9 AC922 ; CAPI2 + VU3P.}
+	    \end{figure}
+        \end{column}
+    \end{columns}
+
+\end{frame}
+
+%Title: Evaluation
+%
+%To evaluate generated accelerators, we consider:​
+%
+%Throughput (B/s)​
+%
+%Performance (Ops/s)​
+%
+%Energy Efficiency (Ops/s/W)​
+%
+%Accuracy (number of accurate bits)​
+%
+%Below, we observe throughput and performance for different arrays
+%\begin{figure}[H]
+%  \centering
+%  \includegraphics[width=\columnwidth]{throughput.pdf}
+%  %\vspace{-0.9cm}
+%  \vspace{-0.6cm}
+%	\caption{Measured and averaged vs theoretical Throughput (GBytes/s) for different Payload Sizes (Bytes).}
+%  \label{fig:throughput}
+%  %\vspace{-0.5cm}
+%\end{figure}
+%\begin{figure}[H]
+%  \centering
+%  \includegraphics[width=0.8\columnwidth]{performance.pdf}
+%  %\vspace{-0.9cm}
+%  %\vspace{-0.6cm}
+%	\caption{Measured and theoretical Performances for different array sizes and Payload Sizes.}
+%  %\vspace{1.0cm}
+%  \label{fig:performance}
+%  %\vspace{-0.7cm}
+%\end{figure}
+
+
+\begin{frame}
+    \frametitle{Evaluation: Energy Efficiency VS Accuracy}
+
+    %\begin{columns}
+        %\begin{column}{0.35\textwidth}
+        %\end{column}
+
+        %\begin{column}{0.65\textwidth}
+            \begin{figure}
+                \centering
+                \includegraphics[width=0.85\textwidth]{accuracy_energy_eff_bitwidth.pdf}
+		\vspace{-2mm}
+                \caption{Energy efficiency (top) against Accuracy (bottom)}
+                \label{fig:accuracy}
+            \end{figure}
+        %\end{column}
+    %\end{columns}
+
+%\only<1->{\onlyfootcite{fousse_mpfr_2007}}
+\note[item]{Uniform distribution between -1 and 1.}
+\note[item]{10 averaged runs.}
+\note[item]{Accuracy log2 of relative error against mpfr}
+\note[item]{FMA in lighter lines}
+\note[item]{$\beta$ is costly but precise}
+\note[item]{FMA is less accurate and costs more than FDP}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Zoom on 16-bit: Energy Efficiency VS Accuracy}
+     \begin{figure}
+         \centering
+         \includegraphics[width=\textwidth]{zoom_16bits.png}
+         %\vspace{-2mm}
+         \caption{Energy eff. and Accuracy for different payload sizes.}
+         \label{fig:accuracy}
+     \end{figure}
+
+\end{frame}
+
+\subsection{Conclusions}
+\begin{frame}
+    \frametitle{Current Progress}
+
+    % Only shows the current section and its subsections, hides everything else
+    \tableofcontents[currentsection,
+                     subsectionstyle=show/shaded/hide,
+                     sectionstyle=show/hide]
+
+    % Explanation of options:
+    % - currentsection: Highlights the current section
+    % - subsectionstyle=show/show/hide: The current subsection and its siblings in the current section are shown
+    % - sectionstyle=show/hide: Shows only the current section, hides other sections
+\end{frame}
+
+\begin{frame}
+    \frametitle{Summary of Insights and Key Contributions}
+        \begin{alertblock}<1->{Large Design Space Exploration}
+		Conducting extensive design space exploration and evaluation leading to \textbf{several profiles of GEMM kernels}.
+        \end{alertblock}
+	\vspace{-3mm}
+
+        \begin{block}<2->{State-of-the-art Enhancement}
+		Improving single-precision energy efficiency of FPGA GEMM accelerators by \textbf{1.86$\times$}.
+        \end{block}
+	\vspace{-3mm}
+
+        \begin{block}<3->{Answering Sparsity of numerical Requirements}
+		Our accelerators achieve \textbf{240 GOps/s/W with 4 accurate} bits to \textbf{0.65 GOps/s/W with over 1000} accurate bits, serving a \textbf{broad range of applications}.
+        \end{block}
+	\vspace{-3mm}
+
+        \begin{exampleblock}<4->{Findings}
+		Internal \textbf{precision budgeting} against a workload \textbf{alleviates "the walls"}.
+        \end{exampleblock}
+
+\end{frame}
+\begin{frame}
+    \frametitle{Discussions}
+
+
+   \begin{block}<1->{Workload Discussion}
+	   The range \([-1, 1]\) does not reflect real workload conditions. Other contributions propose evaluations with \textbf{artificial} matrices in ranges like \([-10, 10]\), \([-100, 100]\), up to \([-10^{8}, 10^{8}]\).
+    \end{block}
+
+        \begin{block}<2->{Future Research Directions}
+            Adopt a more \textbf{realistic} approach by bridging to software-based HPC code.
+        \end{block}
+\end{frame}

@@ -1,0 +1,201 @@
+\graphicspath{{../../../PhD/paper_factory/thesis_louis/Chapter2/Figs/}{./figs/}}
+\subsection{Introduction}
+\begin{frame}
+    \frametitle{Challenges Addressed in This Thesis}
+    \only<1->{
+    \begin{block}{A. The Walls}
+        Challenges in the ``Dark Silicon'' era, the slowdown of Moore's Law, the stalling of Dennard Scaling, the Power Wall, and the Memory Wall.
+    \end{block}
+    }
+
+    \only<1->{
+    \begin{block}{B. Numerical Sparsity of Workloads}
+	    The necessity ranges from \textbf{2} bits in Large Language Models to \textbf{1000} bits in experimental mathematics.
+    \end{block}
+    }
+
+    \only<1->{
+    \begin{block}{C. ``Communication Dominates Arithmetic''}
+	    The majority of time is spent \textbf{moving data}, which \textbf{costs orders of magnitude more than computation}.
+    \end{block}
+    }
+\end{frame}
+
+\begin{frame}
+    \frametitle{A. The Walls}
+
+    \begin{alertblock}<1->{Dark Silicon and Power Wall}
+	    Dark Silicon, restricting the simultaneous activation of transistors and pushing towards \textbf{specialized}, rather than \textbf{general-purpose}, computing solutions~\cite{shafique_eda_2014}.
+    \end{alertblock}
+
+    \begin{alertblock}<2->{Memory Wall}
+        The growing gap between processor speeds and memory latency severely limits system performance~\cite{dennard_design_1999}.
+    \end{alertblock}
+
+    \begin{block}<3->{Arithmetic Perspective}
+	    \textbf{General Purpose} Floating-Point / FPU goes against \textbf{specialization}.
+	    Floating-Point \textbf{Performance} impacted by the \textbf{Memory Wall}.
+    \end{block}
+
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{B. Numerical Sparsity of Workloads}
+
+    \begin{alertblock}<1->{Precision-Hungry Workloads}
+	  E.g. scientific computing, quantum calculations, and detailed simulations, where high precision ensures \textbf{accuracy and reproducibility}~\cite{beliakov_parallel_2013,zhang_qed_1996,ellis_one-loop_2009,lake_sir_1996}.
+    \end{alertblock}
+
+    \begin{alertblock}<2->{Precision-Resilient Workloads}
+        Emerging deep learning models demonstrate robustness to reduced precision, optimizing computational resources~\cite{johnson_rethinking_2018,courbariaux_binarized_2016}.
+    \end{alertblock}
+
+    \begin{block}<3->{General-Purpose Computing Challenge}
+	    Developers are often limited to a few floating-point formats, compilation flags, and Floating-Point Units (FPU).
+    \end{block}
+\end{frame}
+
+\begin{frame}
+    \frametitle{C. ``Communication dominates Arithmetic''}
+
+   % \begin{columns}
+   %     \begin{column}{0.4\textwidth}
+   %         \begin{itemize}
+   %    	        \item Linked to \textbf{Memory wall}
+   %             \item Etymologically, a computer computes.
+   %             \item Cost order of magnitude more.
+   %         \end{itemize}
+   %     \end{column}
+
+
+	    %\begin{column}{0.6\textwidth}
+            \centering
+
+             60\% of time spent in communication~\cite{boroumand_google_2018}.
+            \vspace{5pt} % Adds vertical space between the tables
+	    \begin{table}[H]
+            \resizebox{0.5\textwidth}{!}{%
+            \begin{tabular}{@{}lcc@{}}
+                \toprule
+                \textbf{Integer Operation} & \textbf{\# of Operations} & \textbf{Latency (Clock Cycle)} \\
+                \midrule
+                Add             & 12            & \cellcolor{green!25}1 \\
+                Multiply        & 4             & \cellcolor{green!25}1 \\
+                \midrule
+                \textbf{Memory} & \textbf{Size (KBytes)}     & \textbf{Latency (Clock Cycle)} \\
+                \midrule
+                L1 Data Cache   & 32            & \cellcolor{yellow!25}4 - 5 \\
+                L2 Cache        & 256           & \cellcolor{orange!25}12 \\
+                L3 Cache        & 8192          & \cellcolor{orange!45}36 - 58 \\
+                DRAM            & -             & \cellcolor{red!25}230 - 422 \\
+                \bottomrule
+            \end{tabular}
+            }
+            \vspace{-5pt} % Adds vertical space between the tables
+            \caption{Latency comparison~\cite{horowitz}.}
+	    \end{table}
+
+            \vspace{-4pt} % Adds vertical space between the tables
+
+	    \begin{table}[H]
+            \resizebox{0.5\textwidth}{!}{%
+            \begin{tabular}{@{}lccc@{}}
+                \toprule
+                \textbf{Arithmetic Operation} & \textbf{Bit Width} & \textbf{Energy (pJ)} & \textbf{Normalized Energy (per bit)} \\
+                \midrule
+                Integer Add        & 32 & 0.1 & 1 \\
+                Integer Multiply   & 32 & 3.1 & 31 \\
+                Float Add (16-bit) & 16 & 0.4 & \cellcolor{green!25}8 \\
+                Float Add (32-bit) & 32 & 0.9 & \cellcolor{green!25}9 \\
+                Float Multiply (16-bit) & 16 & 1.1 & \cellcolor{green!25}22 \\
+                Float Multiply (32-bit) & 32 & 3.7 & \cellcolor{green!25}37 \\
+                \midrule
+                \textbf{Memory}    & \textbf{Bit Width} & \textbf{Energy (pJ)} & \textbf{Normalized Energy (per bit)} \\
+                \midrule
+                L1 Data Cache      & 64 & 20 & \cellcolor{orange!25}100 \\
+                DRAM               & 64 & 1300 - 2600 & \cellcolor{red!25}6500 - 13000 \\
+                \bottomrule
+            \end{tabular}
+            }
+            \vspace{-5pt} % Adds vertical space between the tables
+            \caption{Energy consumption~\cite{horowitz}.}
+	    \end{table}
+            %\caption{Energy consumption~\cite{horowitz}.}
+     %   \end{column}
+    %\end{columns}
+\end{frame}
+
+\begin{frame}
+    \frametitle{``Arithmetic wall''}
+    \begin{block}{Definition of the Arithmetic wall}
+	    Collectively, these problems exhibit the \textbf{gap} between the \textbf{arithmetic solutions} and the \textbf{HPC challenges}
+    \end{block}
+\end{frame}
+
+\begin{frame}
+    \frametitle{How This Thesis Addresses Key Challenges}
+    %We factorize our contributions in three categories:
+    \begin{block}<1->{I. Format Adaptability}
+	    Beyond IEEE754: adaptative formats for more tasks. \textbf{Maximize the entropy} per datum and avoid \textbf{leaving the chips for memory}.
+	    \\ \textit{targets: A, B, and C.}
+    \end{block}
+	%\vspace{-4mm}
+
+    \begin{block}<2->{II. Arithmetic Efficiency}
+	    Every bit and wire count in the ALU. Toward \textbf{necessary} and \textbf{sufficient} circuitry.
+	    \\ \textit{targets: mainly A, but C.}
+    \end{block}
+	%\vspace{-4mm}
+
+    \begin{block}<3->{III. Bridging Software and Hardware}
+	    Providing cohesive solutions that span from high-performance computing (HPC) libraries to silicon layout.
+	    \\ \textit{targets: A, B, and C.}
+    \end{block}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Concrete Contributions}
+
+    \begin{block}<1->{First Contribution: Posit AI acceleration}
+	    ``Accelerating Deep Learning Inference with the Posit Number System'' - �\textit{OpenPOWER Summit 2019}, focuses on �\textbf{I}, \textbf{II}.
+    \end{block}
+	\vspace{-3pt}
+
+    \begin{block}<2->{Second Contribution: Generator of Systolic Arrays}
+	    ``A Generator of Numerically-Tailored Accelerators for Batched GEMMs'' - \textit{FCCM2022}, focuses on \textbf{I}, \textbf{II}.
+    \end{block}
+	\vspace{-3pt}
+
+    \begin{block}<3->{Third Contribution: Numerically-tailored BLAS}
+	    ``An Open-Source Framework for Efficient Numerically-Tailored Computations'' - \textit{FPL2023}, focuses on \textbf{III}.
+    \end{block}
+	\vspace{-3pt}
+
+    \begin{block}<4->{Last Contribution: Floating-Point Divisions}
+	    ``Divisions in Vector Processing: Leveraging Opportunities from a Paradigm Shift'' - �\textit{DATE/OSDA2024 \& WIP}, focuses on \textbf{II}.
+    \end{block}
+
+
+\end{frame}
+
+%\begin{frame}
+%    \frametitle{Concretely, 4 contributions}
+%    \only<1->{
+%    \begin{block}{I. Format Adaptability}
+%	    Beyond IEEE754: adaptative formats for more tasks. \textbf{Maximize the entropy} per datum and avoid \textbf{leaving the chips for memory}
+%    \end{block}
+%    }
+%    \only<2->{
+%    \begin{block}{II. Arithmetic Efficiency}
+%	    Every bit and wire count in the ALU. Toward \textbf{necessary} and \textbf{sufficient} circuitry.
+%    \end{block}
+%    }
+%    \only<3->{
+%    \begin{block}{III. Bridging Software and Hardware}
+%	    Providing cohesive solutions that span from high-performance computing (HPC) libraries to silicon layout.
+%    \end{block}
+%    }
+%\end{frame}
+
+

@@ -1,0 +1,555 @@
+\graphicspath{{../../../PhD/paper_factory/thesis_louis/Chapter6/Figs/}}
+\subsection{Executive Summary}
+\begin{frame}
+    \frametitle{Current Progress}
+
+    % Adding a thematic title for the slide that fits with the chapter
+    \centering
+    \huge ``Divisions in Vector Processing: Leveraging Opportunities from a Paradigm Shift''
+    \normalsize
+
+    \vspace{1em} % Add some vertical space before the table of contents
+
+    % Only shows the current section and its subsections, hides everything else
+    \tableofcontents[currentsection,
+                     subsectionstyle=show/shaded/hide,
+                     sectionstyle=show/hide]
+
+    % Explanation of options:
+    % - currentsection: Highlights the current section
+    % - subsectionstyle=show/show/hide: The current subsection and its siblings in the current section are shown
+    % - sectionstyle=show/hide: Shows only the current section, hides other sections
+\end{frame}
+
+%\begin{frame}
+%    \frametitle{Executive Summary: Vector Processing Revival}
+%
+%\scriptsize
+%
+%    \only<1->{
+%        \begin{block}{Context and Challenges}
+%            Vector processing is resurging to address the limitations of dark silicon and the end of Dennard scaling, which challenge scalar architectures. Historically crucial for high-performance computing, vector processing is being revitalized through modern instruction sets like RISC-V's "V" extension and open-source silicon projects.
+%        \end{block}
+%    }
+%
+%    \only<2->{
+%        \begin{exampleblock}{Contributions and Innovations}
+%            This chapter introduces novel division algorithms tailored for vector processing, enhancing latency and throughput trade-offs. We present a custom ASIC flow, facilitating design evaluations across multiple PDKs, which emphasizes our commitment to open-source and efficient hardware design.
+%        \end{exampleblock}
+%    }
+%
+%    \only<3->{
+%        \begin{alertblock}{Impact and Findings}
+%            Our approaches lead to significant area and power efficiencies, allowing for dense and efficient computational architectures. For every evaluated computer format, our methods support the integration of multiple units without performance loss, showcasing substantial improvements in power and area metrics.
+%        \end{alertblock}
+%    }
+%\end{frame}
+
+\begin{frame}
+    \frametitle{Executive Summary: Vector Processing Revival}
+    \scriptsize
+
+
+
+\begin{alertblock}<1->{Opportunity 1: Vector Processing}
+	Resurgence of \textbf{vector processing} exemplified by the \textbf{RISC-V "V"} extension. \textbf{Enhance Data-level parallelism (DLP)} by trading \textbf{space and time} implementations.
+\end{alertblock}
+
+    \begin{alertblock}<2->{Opportunity 2: Open Source Silicon}
+	    The momentum in \textbf{open-source silicon community} facilitates \textbf{tape-outs in academia}.
+    \end{alertblock}
+
+    \begin{block}<3->{Algorithmic Contribution: Division Algorithm}
+	    Less famous operation but useful: \textbf{N-body simulation}; proposal: \textbf{muliple slower, area/power-efficient} units.
+    \end{block}
+    \begin{block}<4->{Open ASIC Flow Contribution}
+	    \textbf{Custom Open ASIC flow} for \textbf{extensive design space exploration} to characterize the divisions.
+    \end{block}
+
+
+    \note[item]{Vector processing exploits data-level parallelism, which is highly beneficial for processing large datasets common in today's applications. This approach is particularly effective for tasks that require the same operation to be performed simultaneously on multiple pieces of data.}
+    \note[item]{With the end of Dennard scaling, improving power efficiency is crucial. Vector processors consume less power per computation compared to scalar processors by reducing the operational overhead associated with executing multiple scalar operations.}
+\end{frame}
+
+\subsection{Algorithmic Contribution}
+\begin{frame}
+    \frametitle{Current Progress}
+
+    % Only shows the current section and its subsections, hides everything else
+    \tableofcontents[currentsection,
+                     subsectionstyle=show/shaded/hide,
+                     sectionstyle=show/hide]
+
+    % Explanation of options:
+    % - currentsection: Highlights the current section
+    % - subsectionstyle=show/show/hide: The current subsection and its siblings in the current section are shown
+    % - sectionstyle=show/hide: Shows only the current section, hides other sections
+\end{frame}
+
+\begin{frame}
+\frametitle{Algorithmic Proposal}
+
+\begin{columns}
+    \begin{column}{0.5\textwidth}
+	\only<1->{
+	\textbf{Baseline,} n the mantissa size:
+        \begin{itemize}
+	    \item Non-branching with a single n-bit adder.
+            \item n iteration.
+        \end{itemize}
+	}
+	\only<2->{
+		\textbf{Unrolling Proposal}:
+        \begin{itemize}
+	    \item Serial addition of $k$ bits
+	    \item $k \in [1;n]$
+	    \item Reduces a \textbf{power hungry} section
+	    \item Reduces the \textbf{area}
+	    \item Introduces slowdown
+        \end{itemize}
+	}
+    \end{column}
+
+    \begin{column}{0.5\textwidth}
+        \centering
+        \includegraphics[width=0.75\columnwidth]{non_restoring_schematic.pdf}
+        \caption{Non-restoring division circuit}
+        \label{fig:non_restoring_schematic}
+    \end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Algorithm Finite State Machine}
+
+    \small
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+		\begin{figure}
+            \centering
+            \resizebox{!}{0.75\textheight}{%
+                \begin{tikzpicture}[>=stealth,shorten >=1pt,auto,node distance=2.8cm]
+                    \node[initial,state] (IDLE)      {IDLE};
+                    \node[state]         (INIT) [below of=IDLE] {INIT};
+                    \node[state]         (ADD)  [below of=INIT] {ADD};
+                    \node[state]         (CORRECTION) [below of=ADD] {CORR.};
+                    \node[state,accepting](DONE) [below of=CORRECTION] {DONE};
+
+                    \path[->]
+                    (IDLE) edge node {start} (INIT)
+                    (INIT) edge node {initialize} (ADD)
+                    (ADD)  edge [loop right] node {while $iter\_counter < n$} (ADD)
+                            edge node {when $iter\_counter = n$} (CORRECTION)
+                    (CORRECTION) edge node {correct} (DONE)
+                    (DONE) edge [bend left=45] node {reset} (IDLE);
+                \end{tikzpicture}
+            }
+            \caption{FSM baseline Non-restoring}
+		\end{figure}
+        \end{column}
+
+        \begin{column}{0.5\textwidth}
+		\begin{figure}
+            \centering
+            \resizebox{!}{0.75\textheight}{%
+                \begin{tikzpicture}[>=stealth,shorten >=1pt,auto,node distance=3cm]
+                    \node[initial,state] (IDLE)      {IDLE};
+                    \node[state]         (INIT) [below of=IDLE]      {INIT};
+                    \node[state,align=center]         (PRE)  [below of=INIT] {PRE\\ADD};
+                    \node[state]         (ADD)  [below of=PRE]      {ADD};
+                    \node[state,align=center]         (POST) [below of=ADD] {POST\\ADD};
+                    \node[state]         (CORRECTION) [below of=POST] {CORR.};
+                    \node[state,accepting](DONE) [below of=CORRECTION] {DONE};
+
+                    \path[->]
+                    (IDLE) edge node {start} (INIT)
+                    (INIT) edge node {preadd} (PRE)
+                    (PRE)  edge node {add} (ADD)
+                    (ADD)  edge [loop right] node[right] {while $serial\_counter < k$} (ADD)
+                            edge node {when $serial\_counter = k$} (POST)
+                    (POST) edge [bend left=60] node[left] {when $iter\_counter = n$} (PRE)
+                            edge node {when $iter\_counter = n$} (CORRECTION)
+                    (CORRECTION) edge node {finalize} (DONE);
+                \end{tikzpicture}
+            }
+            \caption{FSM modified Non-restoring}
+		\end{figure}
+        \end{column}
+    \end{columns}
+
+\normalsize
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Floating-Point Integration}
+
+\begin{columns}
+
+	\begin{column}{0.48\textwidth} % Text column width
+	    \raggedright % Make the text flush left
+	    Three cumulative contributions:
+	    \begin{itemize}
+	        \item<1-> Dual branch baseline
+	        \item<2-> Slower Slow Path \textbf{SSP}
+	        \item<3-> Slower Fast Path \textbf{SFP}
+	        \item<4-> Slower All Path \textbf{SAP}
+	    \end{itemize}
+	\end{column}
+
+	\begin{column}{0.51\textwidth} % Image column width
+	    \centering
+	    \only<1>{
+	        \begin{figure}
+	            \centering
+	            \includegraphics[width=0.7\textwidth, keepaspectratio]{baseline.png}
+	            \caption{\scriptsize Baseline}
+	        \end{figure}
+	    }
+	    \only<2>{
+	        \begin{figure}
+	            \centering
+	            \includegraphics[width=0.7\textwidth, keepaspectratio]{SSP.png}
+	            \caption{\scriptsize SSP}
+	        \end{figure}
+	    }
+	    \only<3>{
+	        \begin{figure}
+	            \centering
+	            \includegraphics[width=0.7\textwidth, keepaspectratio]{SFP.png}
+	            \caption{\scriptsize SFP}
+	        \end{figure}
+	    }
+	    \only<4>{
+	        \begin{figure}
+	            \centering
+	            \includegraphics[width=0.7\textwidth, keepaspectratio]{SAP.png}
+	            \caption{\scriptsize SAP}
+	        \end{figure}
+	    }
+	\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}
+    \frametitle{DSE Size Consideration}
+	\only<1-2>{
+    \begin{itemize}
+	\item $(n_{e},n_{m})$ baseline adder sizes
+	\item $(k_{e},k_{m})$ serial adder sizes
+        \item \( S_{\text{SSP}}, S_{\text{SFP}}, \) and \( S_{\text{SAP}} \) the experiment sets
+	\item \( |S_{\text{SSP}}|, |S_{\text{SFP}}|, \) and \( |S_{\text{SAP}}| \), their cardinalities.
+    \end{itemize}
+
+    \[
+|S_{\text{SAP}}| = n_m \cdot \left( n_e + 1 - \min_{k_e \in [1, n_e]} \left\{ k_e \geq \left\lceil \frac{n_e}{n_m \cdot \left\lceil \frac{n_m}{k_m} \right\rceil} \right\rceil \right\} \right)
+\]
+    %\(n_m\) and \(n_e\) are mantissa and exponent bitwidths; \(k_m\) and \(k_e\) the respective unrolled adder sizes.
+	}
+	\begin{alertblock}<2>{Example: IEEE754 single-precision}
+        One entry point from Arithmetic dimension: the argmin cancels out and $|S_{\text{SAP}}| =$ \( n_{m} \cdot n_{e} = 8 \times 23 = 184 \).
+	\end{alertblock}
+
+\end{frame}
+\begin{frame}
+    \frametitle{DSE Size Consideration}
+
+	\small
+	\begin{block}<1->{11 Float Formats}
+		 \textbf{IEEE754QP} with parameters $(n_{e}=15, n_{m}=112)$, \textbf{IEEE754DP} with parameters $(n_{e}=11, n_{m}=52)$, \textbf{IEEE754SP} with parameters $(n_{e}=8, n_{m}=23)$, \textbf{IEEE754HP} with parameters $(n_{e}=5, n_{m}=10)$, \textbf{BrainFloat16} with $(n_{e}=8,n_{m}=7)$, \textbf{Posit}$\mathbf{\left \langle 64,2 \right \rangle}$ with $(n_{e}=9, n_{m}=59)$, \textbf{Posit}$\mathbf{\left \langle 32,2 \right \rangle}$ with $(n_{e}=8, n_{m}=27)$, \textbf{Posit}$\mathbf{\left \langle 16,2 \right \rangle}$ with $(n_{e}=7, n_{m}=9)$, \textbf{Posit}$\mathbf{\left \langle 8,2 \right \rangle}$ with $(n_{e}=6, n_{m}=3)$, \textbf{E5M2} with $(n_{e}=5, n_{m}=2)$, and \textbf{E4M3} with $(n_{e}=4, n_{m}=3)$. Totalling in \textbf{11} evaluated floats.
+    \end{block}
+        \begin{block}<2->{Functional Specifications}
+            A total of \textbf{227} SSP designs.
+        \end{block}
+        \begin{block}<3->{Performance Specifications}
+            Combined with 5 PDKs (ranging from 180 nm to 7 nm), culminating in \textbf{1135} chips to evaluate.
+        \end{block}
+\normalsize
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{SUF: SUperset Framework, a grafted approach to ASIC}
+\begin{columns}
+\begin{column}{0.35\textwidth}
+\begin{itemize}
+    \item<1-> High-level language to GDS
+    \item<1-> Asynchronous and parralel
+    \item<1-> 1135 chips in $<2$ hours
+\end{itemize}
+\end{column}
+\begin{column}{0.65\textwidth}
+\begin{figure}
+	\centering
+	\includegraphics[width=\columnwidth]{SUF.pdf}
+	\caption{All features of SUF}
+\end{figure}
+\end{column}
+
+\end{columns}
+\end{frame}
+
+\subsection{Results}
+\begin{frame}
+    \frametitle{Current Progress}
+
+    % Only shows the current section and its subsections, hides everything else
+    \tableofcontents[currentsection,
+                     subsectionstyle=show/shaded/hide,
+                     sectionstyle=show/hide]
+
+    % Explanation of options:
+    % - currentsection: Highlights the current section
+    % - subsectionstyle=show/show/hide: The current subsection and its siblings in the current section are shown
+    % - sectionstyle=show/hide: Shows only the current section, hides other sections
+\end{frame}
+
+%\begin{frame}
+%    \frametitle{Results: SSP Latency VS. Power and Area}
+%    \begin{subfigure}[b]{0.33\textwidth}
+%        \includegraphics[width=\textwidth]{latency_vs_area_comparison.pdf}
+%        \caption{Latency vs. Area}
+%        \label{fig:latency_vs_area}
+%    \end{subfigure}
+%    \begin{subfigure}[b]{0.33\textwidth}
+%        \includegraphics[width=\textwidth]{latency_vs_power_comparison.pdf}
+%        \caption{Latency vs. Power}
+%        \label{fig:latency_vs_power}
+%    \end{subfigure}
+%
+%\end{frame}
+
+\begin{frame}
+    \frametitle{Results: SSP Latency VS. Power and Area}
+
+    \tiny
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+	\begin{figure}[H]
+            \centering
+		\vspace{1mm}
+            \includegraphics[width=0.75\columnwidth]{latency_vs_area_comparison.pdf}
+		\vspace{-3mm}
+            \caption{Latency vs. Area}
+	\end{figure}
+        \end{column}
+
+        \begin{column}{0.5\textwidth}
+	\begin{figure}[H]
+            \centering
+		\vspace{1mm}
+            \includegraphics[width=0.75\columnwidth]{latency_vs_power_comparison.pdf}
+		\vspace{-3mm}
+            \caption{Latency vs. Power}
+	\end{figure}
+        \end{column}
+    \end{columns}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Results: Latency vs. metrics zoom on ASAP7}
+
+    \tiny
+	\begin{figure}[H]
+            \centering
+		%\vspace{1mm}
+            \includegraphics[width=0.9\textwidth]{zoom_latency_vs_asap7.png}
+		\vspace{-2mm}
+		\caption{ASAP7 Latency vs. Area and Power.}
+	\end{figure}
+
+    \normalsize
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Results: SAP Area Efficiency}
+
+    \scriptsize
+    \begin{columns}
+
+    \begin{column}{0.45\columnwidth}
+
+	\only<1->{
+	Experiment:
+	\begin{itemize}
+                \item Latency VS. Parallelism
+		\item \textbf{Performance line}
+		\item Baseline: Non-Serial Non-Restoring
+		\item E.g. 2$\times$ slower $\Rightarrow$ 2$\times$ smaller $\Rightarrow$ 2$\times$ more units
+        \end{itemize}
+	}
+
+	\vspace{3mm}
+
+	\only<2->{
+        Results:
+	\begin{itemize}
+                \item \textbf{Improved Area Efficiency:} $9.40\%$.
+                %\item \textbf{Best Efficiency at Slowdown 2:} $2.32\times$ (\texttt{ieee754DP\_Non\_Restoring\_serial\_adder\_28}).
+                \item \textbf{Area gain at Slowdown 2:} $2.32\times$.
+                %\item \textbf{Best Efficiency at Slowdown 3:} $3.12\times$ (\texttt{posit64\_Non\_Restoring\_serial\_adder\_21}).
+                \item \textbf{Area gain at Slowdown 3:} $3.12\times$.
+                \item \textbf{No Gains from $4\times$ Slowdown.}
+            \end{itemize}
+	}
+	\end{column}
+
+        \begin{column}{0.55\textwidth}
+	\begin{figure}[H]
+            \centering
+		\vspace{1mm}
+            \includegraphics[width=0.75\columnwidth]{nb_units_across_technodes_comparison_SAP.pdf}
+		%\vspace{-3mm}
+            %\caption{SAP Area Efficiency}
+	\end{figure}
+        \end{column}
+    \end{columns}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Results: SAP Power Efficiency}
+
+    \scriptsize
+
+    \begin{columns}
+    \begin{column}{0.45\columnwidth}
+
+	    \textbf{Experiment}: baseline budget is \textbf{power}.
+	\vspace{3mm}
+
+	    \textbf{Results}:
+	\begin{itemize}
+                \item \textbf{Improved Power Efficiency:} $68.66\%$.
+                \item \textbf{Best Power gain:} $61.28\times$.
+                \item \textbf{Power gain at Slowdown 2:} $5.14\times$.
+                \item \textbf{Power gain at Slowdown 3:} $8.03\times$.
+            \end{itemize}
+	\end{column}
+
+        \begin{column}{0.55\textwidth}
+	\begin{figure}[H]
+            \centering
+		\vspace{1mm}
+            \includegraphics[width=0.75\columnwidth]{nb_units_power_across_technodes_comparison_SAP.pdf}
+	\end{figure}
+        \end{column}
+    \end{columns}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Results: Area and Power zooms on ASAP7}
+
+    \tiny
+	\begin{figure}[H]
+            \centering
+		%\vspace{1mm}
+            \includegraphics[width=0.8\textwidth]{zoom_efficiencies_asap7.png}
+		\vspace{-2mm}
+		\caption{How many more units in ASAP7 for Area and Power budgets.}
+	\end{figure}
+
+    \normalsize
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Results: Combining Power and Area}
+
+    \scriptsize
+    \begin{columns}
+
+    \begin{column}{0.5\columnwidth}
+        \begin{itemize}
+		\item \textbf{Power Density:} $W/m^{2}$.
+		\item \textbf{Efficent Thermal Management.}
+		\item \textbf{Ensure cooling of many smaller units.}
+        \end{itemize}
+    \end{column}
+
+    \begin{column}{0.5\textwidth}
+        \begin{figure}[H]
+            \centering
+		\vspace{1mm}
+            \includegraphics[width=0.75\columnwidth]{nb_units_power_density_across_technodes_comparison_SAP.pdf}
+		\vspace{-3mm}
+            \caption{SAP Power Density Efficiency}
+        \end{figure}
+    \end{column}
+
+    \end{columns}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Results: Power density zoom on ASAP7}
+
+    \tiny
+	\begin{figure}[H]
+            \centering
+		%\vspace{1mm}
+            \includegraphics[width=\textwidth]{zoom_area_per_power_efficiencies_asap7.png}
+		\vspace{-2mm}
+		\caption{How many more units in ASAP7 for Power Density budgets.}
+	\end{figure}
+
+    \normalsize
+
+\end{frame}
+
+\subsection{Conclusions}
+\begin{frame}
+    \frametitle{Current Progress}
+
+    % Only shows the current section and its subsections, hides everything else
+    \tableofcontents[currentsection,
+                     subsectionstyle=show/shaded/hide,
+                     sectionstyle=show/hide]
+
+    % Explanation of options:
+    % - currentsection: Highlights the current section
+    % - subsectionstyle=show/show/hide: The current subsection and its siblings in the current section are shown
+    % - sectionstyle=show/hide: Shows only the current section, hides other sections
+\end{frame}
+
+\begin{frame}
+    \frametitle{Summary of Insights and Key Contributions}
+
+    	\begin{alertblock}<1->{1135 chips}
+    	        Our SUF ASIC flow provides insights on \textbf{1135} division algorithms.
+    	\end{alertblock}
+
+        \begin{block}<2->{Vector Processing}
+		Exhibition and enchancement of \textbf{Data-Level-Parallelism} with more slower and smaller units.
+        \end{block}
+
+        \begin{block}<3->{Improved Efficiencies}
+		Our units show \textbf{improved area, power, and power density} gains.
+        \end{block}
+
+        \begin{exampleblock}<4->{Power Wall and Dark Silicon}
+		Matching the paradigm of vector processing up to the execution unit \textbf{answers the dark silicon concern}.
+        \end{exampleblock}
+
+
+\end{frame}
+
+%\begin{frame}
+%    \frametitle{Future Work}
+%
+%    \begin{block}<1->{ASAP: Aggregated Slower All Path}
+%	The exponent path can be shared among several parallel units.
+%    \end{block}
+%
+%
+%    \begin{block}<2->{Sharing is Caring}
+%    	Share the hardware with mutliplication unit \`a la newton-raphson.
+%    \end{block}
+%
+%    \begin{block}<3->{RISC-V integration}
+%	    ARA~\cite{perotti_ara_2022} or SARGANTANA~\cite{soria-pardos_sargantana_2022} are candidate to evaluate our space and time tradeoff.
+%    \end{block}
+%\end{frame}

@@ -1,0 +1,1821 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{anyt/global//global/global}
+  \entry{barrick_ocean}{inproceedings}{}
+    \name{author}{1}{}{%
+      {{hash=BD}{%
+         family={Barrick},
+         familyi={B\bibinitperiod},
+         given={D.},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BD1}
+    \strng{fullhash}{BD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Bar72}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{booktitle}{Ocean 72 - IEEE International Conference on Engineering
+  in the Ocean Environment}
+    \verb{doi}
+    \verb 10.1109/OCEANS.1972.1161190
+    \endverb
+    \field{pages}{186\bibrangedash 192}
+    \field{title}{Remote sensing of sea state by radar}
+    \field{year}{1972}
+  \endentry
+
+  \entry{bailey_high-precision_2009}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=BD}{%
+         family={Bailey},
+         familyi={B\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=BJM}{%
+         family={Borwein},
+         familyi={B\bibinitperiod},
+         given={Jonathan\bibnamedelima M},
+         giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {en}%
+    }
+    \list{publisher}{1}{%
+      {Sissa Medialab}%
+    }
+    \strng{namehash}{BDBJM1}
+    \strng{fullhash}{BDBJM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{BB09}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{booktitle}{Proceedings of {XII} {Advanced} {Computing} and
+  {Analysis} {Techniques} in {Physics} {Research} — {PoS}({ACAT08})}
+    \verb{doi}
+    \verb 10.22323/1.070.0014
+    \endverb
+    \field{pages}{014}
+    \field{title}{High-{Precision} {Computation} and {Mathematical} {Physics}}
+    \verb{url}
+    \verb https://pos.sissa.it/070/014
+    \endverb
+    \list{location}{1}{%
+      {Erice, Italy}%
+    }
+    \verb{file}
+    \verb Bailey and Borwein - 2009 - High-Precision Computation and Mathematic
+    \verb al Physic.pdf:/home/binaryman/Zotero/storage/HM87BXGM/Bailey and Borw
+    \verb ein - 2009 - High-Precision Computation and Mathematical Physic.pdf:a
+    \verb pplication/pdf
+    \endverb
+    \field{month}{10}
+    \field{year}{2009}
+  \endentry
+
+  \entry{beliakov_parallel_2013}{article}{}
+    \name{author}{2}{}{%
+      {{hash=BG}{%
+         family={Beliakov},
+         familyi={B\bibinitperiod},
+         given={Gleb},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=MY}{%
+         family={Matiyasevich},
+         familyi={M\bibinitperiod},
+         given={Yuri},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \keyw{65F40, 68W10, 11M26, Computer Science - Distributed, Parallel, and
+  Cluster Computing, Computer Science - Mathematical Software, D.1.3, G.1.0,
+  G.1.3, Mathematics - Number Theory, Mathematics - Numerical Analysis}
+    \strng{namehash}{BGMY1}
+    \strng{fullhash}{BGMY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{BM13}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{abstract}{%
+    We present a parallel algorithm for calculating very large determinants
+  with arbitrary precision on computer clusters. This algorithm minimises data
+  movements between the nodes and computes not only the determinant but also
+  all minors corresponding to a particular row or column at a little extra
+  cost, and also the determinants and minors of all submatrices in the top left
+  corner at no extra cost. We implemented the algorithm in arbitrary precision
+  arithmetic, suitable for very ill conditioned matrices, and empirically
+  estimated the loss of precision. The algorithm was applied to studies of
+  Riemann's zeta function.%
+    }
+    \field{note}{arXiv: 1308.1536}
+    \field{title}{A {Parallel} {Algorithm} for {Calculation} of {Large}
+  {Determinants} with {High} {Accuracy} for {GPUs} and {MPI} clusters}
+    \verb{url}
+    \verb http://arxiv.org/abs/1308.1536
+    \endverb
+    \verb{file}
+    \verb arXiv Fulltext PDF:/home/binaryman/Zotero/storage/XNY56YCR/Beliakov a
+    \verb nd Matiyasevich - 2013 - A Parallel Algorithm for Calculation of Larg
+    \verb e Dete.pdf:application/pdf;arXiv.org Snapshot:/home/binaryman/Zotero/
+    \verb storage/XDHYU8E9/1308.html:text/html
+    \endverb
+    \field{journaltitle}{arXiv:1308.1536 [cs, math]}
+    \field{month}{08}
+    \field{year}{2013}
+  \endentry
+
+  \entry{boroumand_google_2018}{inproceedings}{}
+    \name{author}{11}{}{%
+      {{hash=BA}{%
+         family={Boroumand},
+         familyi={B\bibinitperiod},
+         given={Amirali},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=RP}{%
+         family={Ranganathan},
+         familyi={R\bibinitperiod},
+         given={Parthasarathy},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=MO}{%
+         family={Mutlu},
+         familyi={M\bibinitperiod},
+         given={Onur},
+         giveni={O\bibinitperiod},
+      }}%
+      {{hash=GS}{%
+         family={Ghose},
+         familyi={G\bibinitperiod},
+         given={Saugata},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=KY}{%
+         family={Kim},
+         familyi={K\bibinitperiod},
+         given={Youngsok},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=AR}{%
+         family={Ausavarungnirun},
+         familyi={A\bibinitperiod},
+         given={Rachata},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=SE}{%
+         family={Shiu},
+         familyi={S\bibinitperiod},
+         given={Eric},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=TR}{%
+         family={Thakur},
+         familyi={T\bibinitperiod},
+         given={Rahul},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=KD}{%
+         family={Kim},
+         familyi={K\bibinitperiod},
+         given={Daehyun},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=KA}{%
+         family={Kuusela},
+         familyi={K\bibinitperiod},
+         given={Aki},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=KA}{%
+         family={Knies},
+         familyi={K\bibinitperiod},
+         given={Allan},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {en}%
+    }
+    \list{publisher}{1}{%
+      {ACM Press}%
+    }
+    \keyw{data\_movement}
+    \strng{namehash}{BA+1}
+    \strng{fullhash}{BARPMOGSKYARSETRKDKAKA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{shorttitle}
+    \field{labelalpha}{BRM\textsuperscript {+}18}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{abstract}{%
+    We are experiencing an explosive growth in the number of consumer devices,
+  including smartphones, tablets, web-based computers such as Chromebooks, and
+  wearable devices. For this class of devices, energy efficiency is a
+  first-class concern due to the limited battery capacity and thermal power
+  budget. We find that data movement is a major contributor to the total system
+  energy and execution time in consumer devices. The energy and performance
+  costs of moving data between the memory system and the compute units are
+  significantly higher than the costs of computation. As a result, addressing
+  data movement is crucial for consumer devices. In this work, we
+  comprehensively analyze the energy and performance impact of data movement
+  for several widely-used Google consumer workloads: (1) the Chrome web
+  browser; (2) TensorFlow Mobile, Google’s machine learning framework; (3)
+  video playback, and (4) video capture, both of which are used in many video
+  services such as YouTube and Google Hangouts. We find that
+  processing-inmemory (PIM) can significantly reduce data movement for all of
+  these workloads, by performing part of the computation close to memory. Each
+  workload contains simple primitives and functions that contribute to a
+  significant amount of the overall data movement. We investigate whether these
+  primitives and functions are feasible to implement using PIM, given the
+  limited area and power constraints of consumer devices. Our analysis shows
+  that offloading these primitives to PIM logic, consisting of either simple
+  cores or specialized accelerators, eliminates a large amount of data
+  movement, and significantly reduces total system energy (by an average of
+  55.4\% across the workloads) and execution time (by an average of 54.2\%).%
+    }
+    \field{booktitle}{Proceedings of the {Twenty}-{Third} {International}
+  {Conference} on {Architectural} {Support} for {Programming} {Languages} and
+  {Operating} {Systems} - {ASPLOS} '18}
+    \verb{doi}
+    \verb 10.1145/3173162.3173177
+    \endverb
+    \field{isbn}{978-1-4503-4911-6}
+    \field{pages}{316\bibrangedash 331}
+    \field{shorttitle}{Google {Workloads} for {Consumer} {Devices}}
+    \field{title}{Google {Workloads} for {Consumer} {Devices}: {Mitigating}
+  {Data} {Movement} {Bottlenecks}}
+    \verb{url}
+    \verb http://dl.acm.org/citation.cfm?doid=3173162.3173177
+    \endverb
+    \list{location}{1}{%
+      {Williamsburg, VA, USA}%
+    }
+    \field{year}{2018}
+  \endentry
+
+  \entry{courbariaux_binarized_2016}{misc}{}
+    \name{author}{5}{}{%
+      {{hash=CM}{%
+         family={Courbariaux},
+         familyi={C\bibinitperiod},
+         given={Matthieu},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=HI}{%
+         family={Hubara},
+         familyi={H\bibinitperiod},
+         given={Itay},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=SD}{%
+         family={Soudry},
+         familyi={S\bibinitperiod},
+         given={Daniel},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=EYR}{%
+         family={El-Yaniv},
+         familyi={E\bibinithyphendelim Y\bibinitperiod},
+         given={Ran},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=BY}{%
+         family={Bengio},
+         familyi={B\bibinitperiod},
+         given={Yoshua},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CM+1}
+    \strng{fullhash}{CMHISDEYRBY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{CHS\textsuperscript {+}16}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \verb{eprint}
+    \verb 1602.02830
+    \endverb
+    \field{title}{Binarized Neural Networks: Training Deep Neural Networks with
+  Weights and Activations Constrained to +1 or -1}
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{cs.LG}
+    \field{year}{2016}
+  \endentry
+
+  \entry{flopoco1}{inproceedings}{}
+    \name{author}{1}{}{%
+      {{hash=dDF}{%
+         prefix={de},
+         prefixi={d\bibinitperiod},
+         family={Dinechin},
+         familyi={D\bibinitperiod},
+         given={Florent},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{dDF1}
+    \strng{fullhash}{dDF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{dDi19}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{booktitle}{26th IEEE Symposium of Computer Arithmetic (ARITH-26)}
+    \field{title}{Reflections on 10 years of {FloPoCo}}
+    \verb{file}
+    \verb https://hal.inria.fr/hal-02161527/document
+    \endverb
+    \field{month}{06}
+    \field{year}{2019}
+  \endentry
+
+  \entry{dennard_design_1999}{article}{}
+    \name{author}{6}{}{%
+      {{hash=DR}{%
+         family={Dennard},
+         familyi={D\bibinitperiod},
+         given={R.H.},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=GF}{%
+         family={Gaensslen},
+         familyi={G\bibinitperiod},
+         given={F.H.},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=YHN}{%
+         family={Yu},
+         familyi={Y\bibinitperiod},
+         given={Hwa-Nien},
+         giveni={H\bibinithyphendelim N\bibinitperiod},
+      }}%
+      {{hash=RV}{%
+         family={Rideout},
+         familyi={R\bibinitperiod},
+         given={V.L.},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=BE}{%
+         family={Bassous},
+         familyi={B\bibinitperiod},
+         given={E.},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=LA}{%
+         family={Leblanc},
+         familyi={L\bibinitperiod},
+         given={A.R.},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DR+1}
+    \strng{fullhash}{DRGFYHNRVBELA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{DGY\textsuperscript {+}99}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \verb{doi}
+    \verb 10.1109/JPROC.1999.752522
+    \endverb
+    \field{issn}{1558-2256}
+    \field{note}{Conference Name: Proceedings of the IEEE}
+    \field{pages}{668\bibrangedash 678}
+    \field{title}{Design {Of} {Ion}-implanted {MOSFET}'s with {Very} {Small}
+  {Physical} {Dimensions}}
+    \field{volume}{87}
+    \field{journaltitle}{Proceedings of the IEEE}
+    \field{year}{1999}
+  \endentry
+
+  \entry{de_dinechin_fpga-specific_2008}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=dDF}{%
+         prefix={de},
+         prefixi={d\bibinitperiod},
+         family={Dinechin},
+         familyi={D\bibinitperiod},
+         given={Florent},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=PB}{%
+         family={Pasca},
+         familyi={P\bibinitperiod},
+         given={Bogdan},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=CO}{%
+         family={Cret},
+         familyi={C\bibinitperiod},
+         given={Octavian},
+         giveni={O\bibinitperiod},
+      }}%
+      {{hash=TR}{%
+         family={Tudoran},
+         familyi={T\bibinitperiod},
+         given={Radu},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {en}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{dDF+1}
+    \strng{fullhash}{dDFPBCOTR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{DPC\textsuperscript {+}08}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{abstract}{%
+    This article studies two common situations where the ﬂexibility of FPGAs
+  allows one to design application-speciﬁc ﬂoating-point operators which
+  are more efﬁcient and more accurate than those offered by processors and
+  GPUs. First, for applications involving the addition of a large number of
+  ﬂoating-point values, an ad-hoc accumulator is proposed. By tailoring its
+  parameters to the numerical requirements of the application, it can be made
+  arbitrarily accurate, at an area cost comparable for most applications to
+  that of a standard ﬂoating-point adder, and at a higher frequency. The
+  second example is the sum-of-product operation, which is the building block
+  of matrix computations. A novel architecture is proposed that feeds the
+  previous accumulator out of a ﬂoating-point multiplier without its rounding
+  logic, again improving both area and accuracy. These architectures are
+  implemented within the FloPoCo generator, freely available under the GPL.%
+    }
+    \field{booktitle}{2008 {International} {Conference} on
+  {Field}-{Programmable} {Technology}}
+    \verb{doi}
+    \verb 10.1109/FPT.2008.4762363
+    \endverb
+    \field{isbn}{978-1-4244-2795-6 978-1-4244-3783-2}
+    \field{pages}{33\bibrangedash 40}
+    \field{title}{An {FPGA}-specific approach to floating-point accumulation
+  and sum-of-products}
+    \verb{url}
+    \verb http://ieeexplore.ieee.org/document/4762363/
+    \endverb
+    \list{location}{1}{%
+      {Taipei, Taiwan}%
+    }
+    \field{month}{12}
+    \field{year}{2008}
+  \endentry
+
+  \entry{ding_activation_2018}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=DB}{%
+         family={Ding},
+         familyi={D\bibinitperiod},
+         given={Bin},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=QH}{%
+         family={Qian},
+         familyi={Q\bibinitperiod},
+         given={Huimin},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=ZJ}{%
+         family={Zhou},
+         familyi={Z\bibinitperiod},
+         given={Jun},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DBQHZJ1}
+    \strng{fullhash}{DBQHZJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{DQZ18}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{abstract}{%
+    Deep neural networks have gained remarkable achievements in many research
+  areas, especially in computer vision, and natural language processing. The
+  great successes of deep neural networks depend on several aspects in which
+  the development of activation function is one of the most important elements.
+  Being aware of this, a number of researches have concentrated on the
+  performance improvements after the revision of a certain activation function
+  in some specified neural networks. We have noticed that there are few papers
+  to review thoroughly the activation functions employed by the neural
+  networks. Therefore, considering the impact of improving the performance of
+  neural networks with deep architectures, the status and the developments of
+  commonly used activation functions will be investigated in this paper. More
+  specifically, the definitions, the impacts on the neural networks, and the
+  advantages and disadvantages of quite a few activation functions will be
+  discussed in this paper. Furthermore, experimental results on the dataset
+  MNIST are employed to compare the performance of different activation
+  functions.%
+    }
+    \field{booktitle}{2018 {Chinese} {Control} {And} {Decision} {Conference}
+  ({CCDC})}
+    \verb{doi}
+    \verb 10.1109/CCDC.2018.8407425
+    \endverb
+    \field{note}{ISSN: 1948-9447}
+    \field{pages}{1836\bibrangedash 1841}
+    \field{title}{Activation functions and their characteristics in deep neural
+  networks}
+    \verb{url}
+    \verb https://ieeexplore.ieee.org/document/8407425
+    \endverb
+    \field{month}{06}
+    \field{year}{2018}
+  \endentry
+
+  \entry{darvish_rouhani_shared_2023}{inproceedings}{}
+    \name{author}{22}{}{%
+      {{hash=DRB}{%
+         family={Darvish\bibnamedelima Rouhani},
+         familyi={D\bibinitperiod\bibinitdelim R\bibinitperiod},
+         given={Bita},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=ZR}{%
+         family={Zhao},
+         familyi={Z\bibinitperiod},
+         given={Ritchie},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=EV}{%
+         family={Elango},
+         familyi={E\bibinitperiod},
+         given={Venmugil},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=SR}{%
+         family={Shafipour},
+         familyi={S\bibinitperiod},
+         given={Rasoul},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=HM}{%
+         family={Hall},
+         familyi={H\bibinitperiod},
+         given={Mathew},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=MM}{%
+         family={Mesmakhosroshahi},
+         familyi={M\bibinitperiod},
+         given={Maral},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=MA}{%
+         family={More},
+         familyi={M\bibinitperiod},
+         given={Ankit},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=ML}{%
+         family={Melnick},
+         familyi={M\bibinitperiod},
+         given={Levi},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=GM}{%
+         family={Golub},
+         familyi={G\bibinitperiod},
+         given={Maximilian},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=VG}{%
+         family={Varatkar},
+         familyi={V\bibinitperiod},
+         given={Girish},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=SL}{%
+         family={Shao},
+         familyi={S\bibinitperiod},
+         given={Lai},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=KG}{%
+         family={Kolhe},
+         familyi={K\bibinitperiod},
+         given={Gaurav},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=MD}{%
+         family={Melts},
+         familyi={M\bibinitperiod},
+         given={Dimitry},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=KJ}{%
+         family={Klar},
+         familyi={K\bibinitperiod},
+         given={Jasmine},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=LR}{%
+         family={L'Heureux},
+         familyi={L\bibinitperiod},
+         given={Renee},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=PM}{%
+         family={Perry},
+         familyi={P\bibinitperiod},
+         given={Matt},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=BD}{%
+         family={Burger},
+         familyi={B\bibinitperiod},
+         given={Doug},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=CE}{%
+         family={Chung},
+         familyi={C\bibinitperiod},
+         given={Eric},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=DZS}{%
+         family={Deng},
+         familyi={D\bibinitperiod},
+         given={Zhaoxia\bibnamedelima (Summer)},
+         giveni={Z\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=NS}{%
+         family={Naghshineh},
+         familyi={N\bibinitperiod},
+         given={Sam},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=PJ}{%
+         family={Park},
+         familyi={P\bibinitperiod},
+         given={Jongsoo},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=NM}{%
+         family={Naumov},
+         familyi={N\bibinitperiod},
+         given={Maxim},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Association for Computing Machinery}%
+    }
+    \strng{namehash}{DRB+1}
+    \strng{fullhash}{DRBZREVSRHMMMMAMLGMVGSLKGMDKJLRPMBDCEDZSNSPJNM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{DRZE\textsuperscript {+}23}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{abstract}{%
+    This paper introduces Block Data Representations (BDR), a framework for
+  exploring and evaluating a wide spectrum of narrow-precision formats for deep
+  learning. It enables comparison of popular quantization standards, and
+  through BDR, new formats based on shared microexponents (MX) are identified,
+  which outperform other state-of-the-art quantization approaches, including
+  narrow-precision floating-point and block floating-point. MX utilizes
+  multiple levels of quantization scaling with ultra-fine scaling factors based
+  on shared microexponents in the hardware. The effectiveness of MX is
+  demonstrated on real-world models including large-scale generative
+  pretraining and inferencing, and production-scale recommendation systems.%
+    }
+    \field{booktitle}{Proceedings of the 50th {Annual} {International}
+  {Symposium} on {Computer} {Architecture}}
+    \verb{doi}
+    \verb 10.1145/3579371.3589351
+    \endverb
+    \field{isbn}{9798400700958}
+    \field{pages}{1\bibrangedash 13}
+    \field{series}{{ISCA} '23}
+    \field{title}{With {Shared} {Microexponents}, {A} {Little} {Shifting}
+  {Goes} a {Long} {Way}}
+    \verb{url}
+    \verb https://doi.org/10.1145/3579371.3589351
+    \endverb
+    \list{location}{1}{%
+      {New York, NY, USA}%
+    }
+    \field{month}{06}
+    \field{year}{2023}
+  \endentry
+
+  \entry{ellis_one-loop_2009}{article}{}
+    \name{author}{5}{}{%
+      {{hash=ERK}{%
+         family={Ellis},
+         familyi={E\bibinitperiod},
+         given={R.\bibnamedelima Keith},
+         giveni={R\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+      {{hash=GWT}{%
+         family={Giele},
+         familyi={G\bibinitperiod},
+         given={W.\bibnamedelima T.},
+         giveni={W\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+      {{hash=KZ}{%
+         family={Kunszt},
+         familyi={K\bibinitperiod},
+         given={Zoltan},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=MK}{%
+         family={Melnikov},
+         familyi={M\bibinitperiod},
+         given={Kirill},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=ZG}{%
+         family={Zanderighi},
+         familyi={Z\bibinitperiod},
+         given={Giulia},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \keyw{High Energy Physics - Phenomenology}
+    \strng{namehash}{ERK+1}
+    \strng{fullhash}{ERKGWTKZMKZG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{EGK\textsuperscript {+}09}
+    \field{sortinit}{E}
+    \field{sortinithash}{E}
+    \field{abstract}{%
+    We employ the recently developed method of generalized \$D\$-dimensional
+  unitarity to compute one-loop virtual corrections to all scattering
+  amplitudes relevant for the production of a \$W\$ boson in association with
+  three jets in hadronic collisions, treating all quarks as massless.%
+    }
+    \verb{doi}
+    \verb 10.1088/1126-6708/2009/01/012
+    \endverb
+    \field{issn}{1029-8479}
+    \field{note}{arXiv: 0810.2762}
+    \field{number}{01}
+    \field{pages}{012\bibrangedash 012}
+    \field{title}{One-loop amplitudes for {W}+3 jet production in hadron
+  collisions}
+    \verb{url}
+    \verb http://arxiv.org/abs/0810.2762
+    \endverb
+    \field{volume}{2009}
+    \verb{file}
+    \verb arXiv Fulltext PDF:/home/binaryman/Zotero/storage/LP555RL4/Ellis et a
+    \verb l. - 2009 - One-loop amplitudes for W+3 jet production in hadr.pdf:ap
+    \verb plication/pdf;arXiv.org Snapshot:/home/binaryman/Zotero/storage/3NNYT
+    \verb 53W/0810.html:text/html
+    \endverb
+    \field{journaltitle}{Journal of High Energy Physics}
+    \field{annotation}{%
+    Comment: 26 pages, 5 figures, v2 to agree with published version%
+    }
+    \field{month}{01}
+    \field{year}{2009}
+  \endentry
+
+  \entry{horowitz}{inproceedings}{}
+    \name{author}{1}{}{%
+      {{hash=HM}{%
+         family={{Horowitz}},
+         familyi={H\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \keyw{performance evaluation;power aware computing;search
+  engines;innovative computing devices;compute engines;computing
+  performance;transistors;power;voltage scaling;CMOS integrated
+  circuits;Hardware;Transistors;Voltage control;CMOS technology;Energy
+  efficiency;Logic gates}
+    \strng{namehash}{HM1}
+    \strng{fullhash}{HM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{{Hor}14}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{abstract}{%
+    Our challenge is clear: The drive for performance and the end of voltage
+  scaling have made power, and not the number of transistors, the principal
+  factor limiting further improvements in computing performance. Continuing to
+  scale compute performance will require the creation and effective use of new
+  specialized compute engines, and will require the participation of
+  application experts to be successful. If we play our cards right, and develop
+  the tools that allow our customers to become part of the design process, we
+  will create a new wave of innovative and efficient computing devices.%
+    }
+    \field{booktitle}{2014 IEEE International Solid-State Circuits Conference
+  Digest of Technical Papers (ISSCC)}
+    \verb{doi}
+    \verb 10.1109/ISSCC.2014.6757323
+    \endverb
+    \field{issn}{0193-6530}
+    \field{pages}{10\bibrangedash 14}
+    \field{title}{1.1 Computing's energy problem (and what we can do about it)}
+    \field{month}{02}
+    \field{year}{2014}
+  \endentry
+
+  \entry{johnson_rethinking_2018}{article}{}
+    \name{author}{1}{}{%
+      {{hash=JJ}{%
+         family={Johnson},
+         familyi={J\bibinitperiod},
+         given={Jeff},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{JJ1}
+    \strng{fullhash}{JJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Joh18}
+    \field{sortinit}{J}
+    \field{sortinithash}{J}
+    \field{note}{arXiv: 1811.01721}
+    \field{title}{Rethinking floating point for deep learning}
+    \verb{url}
+    \verb http://arxiv.org/abs/1811.01721
+    \endverb
+    \field{journaltitle}{arXiv:1811.01721 [cs]}
+    \field{year}{2018}
+  \endentry
+
+  \entry{kahan_pracniques_1965}{article}{}
+    \name{author}{1}{}{%
+      {{hash=KW}{%
+         family={Kahan},
+         familyi={K\bibinitperiod},
+         given={W.},
+         giveni={W\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KW1}
+    \strng{fullhash}{KW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{shorttitle}
+    \field{labelalpha}{Kah65}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \verb{doi}
+    \verb 10.1145/363707.363723
+    \endverb
+    \field{issn}{0001-0782}
+    \field{number}{1}
+    \field{pages}{40}
+    \field{shorttitle}{Pracniques}
+    \field{title}{Pracniques: further remarks on reducing truncation errors}
+    \verb{url}
+    \verb https://doi.org/10.1145/363707.363723
+    \endverb
+    \field{volume}{8}
+    \field{journaltitle}{Communications of the ACM}
+    \field{month}{01}
+    \field{year}{1965}
+  \endentry
+
+  \entry{li_robustness-aware_2021}{article}{}
+    \name{author}{6}{}{%
+      {{hash=LX}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Xiaobin},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=JH}{%
+         family={Jiang},
+         familyi={J\bibinitperiod},
+         given={Hongxu},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=ZR}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Runhua},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=TF}{%
+         family={Tian},
+         familyi={T\bibinitperiod},
+         given={Fangzheng},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=HS}{%
+         family={Huang},
+         familyi={H\bibinitperiod},
+         given={Shuangxi},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=XD}{%
+         family={Xu},
+         familyi={X\bibinitperiod},
+         given={Donghuan},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \keyw{Quantization, Robustness, Shift-add operation, Structural information
+  distillation}
+    \strng{namehash}{LX+1}
+    \strng{fullhash}{LXJHZRTFHSXD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{LJZ\textsuperscript {+}21}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{abstract}{%
+    Quantized neural networks (NN) with reduced bit precision are practical
+  solutions to minimize computational and memory resource requirements and play
+  a vital role in machine learning. However, it is still challenging to avoid
+  significant accuracy degradation due to numerical approximation and lower
+  redundancy. In this paper, a novel robustness-aware 2-bit quantization scheme
+  (RAQ) is proposed for NN, based on binary NN and generative adversarial
+  networks (GAN), which improve performance by enriching binary NN information,
+  extracting the structural information and considering the robustness of the
+  quantized NN. Specifically, using a shift-add operation to replace the
+  multiply-accumulate in the quantization process can speed the NN. A
+  structural loss is proposed to represent the difference between the original
+  NN and quantized NN, such that the structural information of data is
+  preserved after quantization. The structural information learned from NN
+  plays an important role in improving the performance and allows for further
+  fine-tuning of the quantized NN by applying the Lipschitz constraint to the
+  structural loss. For the first time, we consider the robustness of the
+  quantized NN and propose a non-sensitive perturbation loss function by
+  introducing an extraneous term of the spectral norm. The experiments were
+  conducted on CIFAR-10, SVHN and ImageNet datasets with popular NN (such as
+  MobileNetV2, ResNet20, etc.). Extensive experiments show that our new 2-bit
+  quantization scheme is more efficient than the state-of-the-art quantization
+  methods. Our scheme effectively reduced the latency by 2 × and the
+  accuracy decline by 1–4\%. Meanwhile, the experimental results also
+  demonstrate that the RAQ is robust with adversarial attacks, we not only
+  eliminate the robustness gap between full-precision and quantized models, but
+  also improve the robustness over full-precision ones by 10\%.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.neucom.2021.05.006
+    \endverb
+    \field{issn}{0925-2312}
+    \field{pages}{12\bibrangedash 22}
+    \field{title}{Robustness-aware 2-bit quantization with real-time
+  performance for neural network}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S0925231221007177
+    \endverb
+    \field{volume}{455}
+    \field{journaltitle}{Neurocomputing}
+    \field{month}{09}
+    \field{year}{2021}
+  \endentry
+
+  \entry{lake_sir_1996}{article}{}
+    \name{author}{3}{}{%
+      {{hash=LG}{%
+         family={Lake},
+         familyi={L\bibinitperiod},
+         given={George},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=QT}{%
+         family={Quinn},
+         familyi={Q\bibinitperiod},
+         given={Thomas},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=RD}{%
+         family={Richardson},
+         familyi={R\bibinitperiod},
+         given={Derek},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LGQTRD1}
+    \strng{fullhash}{LGQTRD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{LQR96}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{abstract}{%
+    The orbit of any one planet depends on the combined motion of all the
+  planets, not to mention the actions of all these on each other. To consider
+  simultaneously all these causes of motion and to define these motions by
+  exact laws allowing of convenient calculation exceeds, unless I am mistaken,
+  the forces of the entire human intellect. ---Isaac Newton 1687 Epochal
+  surveys are throwing down the gauntlet for cosmological simulation. We
+  describe three keys to meeting the challenge of N-body simulation: adaptive
+  potential solvers, adaptive integrators and volume renormalization. With
+  these techniques and a dedicated Teraflop facility, simulation can stay even
+  with observation of the Universe. We also describe some problems in the
+  formation and stability of planetary systems. Here, the challenge is to
+  perform accurate integrations that retain Hamiltonian properties for 10 13
+  timesteps. 1 The Scientific Importance of Cosmological N-body Simulation.
+  Simulations are required to calculate ...%
+    }
+    \verb{doi}
+    \verb 10.1145/314161.314166
+    \endverb
+    \field{title}{From {Sir} {Isaac} to the {Sloan} {Survey} {Calculating} the
+  {Structure} and {Chaos} {Owing} to {Gravity} in the {Universe}}
+    \verb{file}
+    \verb Full Text PDF:/home/binaryman/Zotero/storage/AQ85L4P8/Lake et al. - 1
+    \verb 996 - From Sir Isaac to the Sloan Survey Calculating the.pdf:applicat
+    \verb ion/pdf
+    \endverb
+    \field{month}{11}
+    \field{year}{1996}
+  \endentry
+
+  \entry{osorio_rios_evaluating_2020}{inproceedings}{}
+    \name{author}{6}{}{%
+      {{hash=ORJ}{%
+         family={Osorio\bibnamedelima Ríos},
+         familyi={O\bibinitperiod\bibinitdelim R\bibinitperiod},
+         given={John},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=AA}{%
+         family={Armejach},
+         familyi={A\bibinitperiod},
+         given={Adrià},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=KG}{%
+         family={Khattak},
+         familyi={K\bibinitperiod},
+         given={Gulrukh},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=PE}{%
+         family={Petit},
+         familyi={P\bibinitperiod},
+         given={Eric},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=VS}{%
+         family={Vallecorsa},
+         familyi={V\bibinitperiod},
+         given={Sofia},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=CM}{%
+         family={Casas},
+         familyi={C\bibinitperiod},
+         given={Marc},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ORJ+1}
+    \strng{fullhash}{ORJAAKGPEVSCM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{ORAK\textsuperscript {+}20}
+    \field{sortinit}{O}
+    \field{sortinithash}{O}
+    \field{abstract}{%
+    Several hardware companies are proposing native Brain Float 16-bit (BF16)
+  support for neural network training. The usage of Mixed Precision (MP)
+  arithmetic with floating-point 32-bit (FP32) and 16-bit half-precision aims
+  at improving memory and floating-point operations throughput, allowing faster
+  training of bigger models. This paper proposes a binary analysis tool
+  enabling the emulation of lower precision numerical formats in Neural Network
+  implementation without the need for hardware support. This tool is used to
+  analyze BF16 usage in the training phase of a 3D Generative Adversarial
+  Network (3DGAN) simulating High Energy Physics detectors. The binary tool
+  allows us to confirm that BF16 can provide results with similar accuracy as
+  the full-precision 3DGAN version and the costly reference numerical
+  simulation using double precision arithmetic.%
+    }
+    \field{booktitle}{2020 19th {IEEE} {International} {Conference} on
+  {Machine} {Learning} and {Applications} ({ICMLA})}
+    \verb{doi}
+    \verb 10.1109/ICMLA51294.2020.00017
+    \endverb
+    \field{pages}{49\bibrangedash 56}
+    \field{title}{Evaluating {Mixed}-{Precision} {Arithmetic} for {3D}
+  {Generative} {Adversarial} {Networks} to {Simulate} {High} {Energy} {Physics}
+  {Detectors}}
+    \verb{url}
+    \verb https://ieeexplore.ieee.org/abstract/document/9356207
+    \endverb
+    \field{month}{12}
+    \field{year}{2020}
+  \endentry
+
+  \entry{rouhani_pushing_2020}{inproceedings}{}
+    \name{author}{24}{}{%
+      {{hash=RB}{%
+         family={Rouhani},
+         familyi={R\bibinitperiod},
+         given={Bita},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=LD}{%
+         family={Lo},
+         familyi={L\bibinitperiod},
+         given={Daniel},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=ZR}{%
+         family={Zhao},
+         familyi={Z\bibinitperiod},
+         given={Ritchie},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=LM}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Ming},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=FJ}{%
+         family={Fowers},
+         familyi={F\bibinitperiod},
+         given={Jeremy},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=OK}{%
+         family={Ovtcharov},
+         familyi={O\bibinitperiod},
+         given={Kalin},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=VA}{%
+         family={Vinogradsky},
+         familyi={V\bibinitperiod},
+         given={Anna},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=MS}{%
+         family={Massengill},
+         familyi={M\bibinitperiod},
+         given={Sarah},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=YL}{%
+         family={Yang},
+         familyi={Y\bibinitperiod},
+         given={Lita},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=BR}{%
+         family={Bittner},
+         familyi={B\bibinitperiod},
+         given={Ray},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=FA}{%
+         family={Forin},
+         familyi={F\bibinitperiod},
+         given={Alessandro},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=ZH}{%
+         family={Zhu},
+         familyi={Z\bibinitperiod},
+         given={Haishan},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=NT}{%
+         family={Na},
+         familyi={N\bibinitperiod},
+         given={Taesik},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=PP}{%
+         family={Patel},
+         familyi={P\bibinitperiod},
+         given={Prerak},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=CS}{%
+         family={Che},
+         familyi={C\bibinitperiod},
+         given={Shuai},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=KLC}{%
+         family={Koppaka},
+         familyi={K\bibinitperiod},
+         given={Lok\bibnamedelima Chand},
+         giveni={L\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=SX}{%
+         family={Song},
+         familyi={S\bibinitperiod},
+         given={Xia},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=SS}{%
+         family={Som},
+         familyi={S\bibinitperiod},
+         given={Subhojit},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=DK}{%
+         family={Das},
+         familyi={D\bibinitperiod},
+         given={Kaustav},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=TS}{%
+         family={Tiwary},
+         familyi={T\bibinitperiod},
+         given={Saurabh},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=RS}{%
+         family={Reinhardt},
+         familyi={R\bibinitperiod},
+         given={Steve},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=LS}{%
+         family={Lanka},
+         familyi={L\bibinitperiod},
+         given={Sitaram},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=CE}{%
+         family={Chung},
+         familyi={C\bibinitperiod},
+         given={Eric},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=BD}{%
+         family={Burger},
+         familyi={B\bibinitperiod},
+         given={Doug},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Curran Associates Inc.}%
+    }
+    \strng{namehash}{RB+1}
+    \strng{fullhash}{RBLDZRLMFJOKVAMSYLBRFAZHNTPPCSKLCSXSSDKTSRSLSCEBD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{RLZ\textsuperscript {+}20}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{abstract}{%
+    In this paper, we explore the limits of Microsoft Floating Point (MSFP), a
+  new class of datatypes developed for production cloud-scale inferencing on
+  custom hardware. Through the co-evolution of hardware design and algorithms,
+  MSFP16 incurs 3 × lower cost compared to Bfloat16 and MSFP12 has 4 × lower
+  cost compared to INT8 while delivering a comparable or better accuracy. MSFP
+  incurs negligible impact to accuracy (\&lt;1\%), requires no changes to the
+  model topology, and is integrated with a mature cloud production pipeline.
+  MSFP supports various classes of deep learning models including CNNs, RNNs,
+  and Transformers without modification. Finally, we characterize the accuracy
+  and implementation of MSFP and demonstrate its efficacy on a number of
+  production scenarios, including models that power major online scenarios such
+  as web search, question-answering, and image classification.%
+    }
+    \field{booktitle}{Proceedings of the 34th {International} {Conference} on
+  {Neural} {Information} {Processing} {Systems}}
+    \field{isbn}{978-1-71382-954-6}
+    \field{pages}{10271\bibrangedash 10281}
+    \field{series}{{NIPS} '20}
+    \field{title}{Pushing the limits of narrow precision inferencing at cloud
+  scale with microsoft floating point}
+    \list{location}{1}{%
+      {Red Hook, NY, USA}%
+    }
+    \field{month}{12}
+    \field{year}{2020}
+  \endentry
+
+  \entry{rouhani_microscaling_2023}{misc}{}
+    \name{author}{33}{}{%
+      {{hash=RBD}{%
+         family={Rouhani},
+         familyi={R\bibinitperiod},
+         given={Bita\bibnamedelima Darvish},
+         giveni={B\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=ZR}{%
+         family={Zhao},
+         familyi={Z\bibinitperiod},
+         given={Ritchie},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=MA}{%
+         family={More},
+         familyi={M\bibinitperiod},
+         given={Ankit},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=HM}{%
+         family={Hall},
+         familyi={H\bibinitperiod},
+         given={Mathew},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=KA}{%
+         family={Khodamoradi},
+         familyi={K\bibinitperiod},
+         given={Alireza},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=DS}{%
+         family={Deng},
+         familyi={D\bibinitperiod},
+         given={Summer},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=CD}{%
+         family={Choudhary},
+         familyi={C\bibinitperiod},
+         given={Dhruv},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=CM}{%
+         family={Cornea},
+         familyi={C\bibinitperiod},
+         given={Marius},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=DE}{%
+         family={Dellinger},
+         familyi={D\bibinitperiod},
+         given={Eric},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=DK}{%
+         family={Denolf},
+         familyi={D\bibinitperiod},
+         given={Kristof},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=DS}{%
+         family={Dusan},
+         familyi={D\bibinitperiod},
+         given={Stosic},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=EV}{%
+         family={Elango},
+         familyi={E\bibinitperiod},
+         given={Venmugil},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=GM}{%
+         family={Golub},
+         familyi={G\bibinitperiod},
+         given={Maximilian},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=HA}{%
+         family={Heinecke},
+         familyi={H\bibinitperiod},
+         given={Alexander},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=JRP}{%
+         family={James-Roxby},
+         familyi={J\bibinithyphendelim R\bibinitperiod},
+         given={Phil},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=JD}{%
+         family={Jani},
+         familyi={J\bibinitperiod},
+         given={Dharmesh},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=KG}{%
+         family={Kolhe},
+         familyi={K\bibinitperiod},
+         given={Gaurav},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=LM}{%
+         family={Langhammer},
+         familyi={L\bibinitperiod},
+         given={Martin},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=LA}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Ada},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=ML}{%
+         family={Melnick},
+         familyi={M\bibinitperiod},
+         given={Levi},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=MM}{%
+         family={Mesmakhosroshahi},
+         familyi={M\bibinitperiod},
+         given={Maral},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=RA}{%
+         family={Rodriguez},
+         familyi={R\bibinitperiod},
+         given={Andres},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Schulte},
+         familyi={S\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=SR}{%
+         family={Shafipour},
+         familyi={S\bibinitperiod},
+         given={Rasoul},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=SL}{%
+         family={Shao},
+         familyi={S\bibinitperiod},
+         given={Lei},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Siu},
+         familyi={S\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=DP}{%
+         family={Dubey},
+         familyi={D\bibinitperiod},
+         given={Pradeep},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=MP}{%
+         family={Micikevicius},
+         familyi={M\bibinitperiod},
+         given={Paulius},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=NM}{%
+         family={Naumov},
+         familyi={N\bibinitperiod},
+         given={Maxim},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=VC}{%
+         family={Verrilli},
+         familyi={V\bibinitperiod},
+         given={Colin},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=WR}{%
+         family={Wittig},
+         familyi={W\bibinitperiod},
+         given={Ralph},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=BD}{%
+         family={Burger},
+         familyi={B\bibinitperiod},
+         given={Doug},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=CE}{%
+         family={Chung},
+         familyi={C\bibinitperiod},
+         given={Eric},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {arXiv}%
+    }
+    \keyw{Computer Science - Artificial Intelligence, Computer Science -
+  Machine Learning}
+    \strng{namehash}{RBD+1}
+  \strng{fullhash}{RBDZRMAHMKADSCDCMDEDKDSEVGMHAJRPJDKGLMLAMLMMRASMSRSLSMDPMPNMVCWRBDCE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{RZM\textsuperscript {+}23}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{abstract}{%
+    Narrow bit-width data formats are key to reducing the computational and
+  storage costs of modern deep learning applications. This paper evaluates
+  Microscaling (MX) data formats that combine a per-block scaling factor with
+  narrow floating-point and integer types for individual elements. MX formats
+  balance the competing needs of hardware efficiency, model accuracy, and user
+  friction. Empirical results on over two dozen benchmarks demonstrate
+  practicality of MX data formats as a drop-in replacement for baseline FP32
+  for AI inference and training with low user friction. We also show the first
+  instance of training generative language models at sub-8-bit weights,
+  activations, and gradients with minimal accuracy loss and no modifications to
+  the training recipe.%
+    }
+    \verb{doi}
+    \verb 10.48550/arXiv.2310.10537
+    \endverb
+    \field{note}{arXiv:2310.10537 [cs]}
+    \field{title}{Microscaling {Data} {Formats} for {Deep} {Learning}}
+    \verb{url}
+    \verb http://arxiv.org/abs/2310.10537
+    \endverb
+    \field{month}{10}
+    \field{year}{2023}
+  \endentry
+
+  \entry{serodio2021unum}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=SMM}{%
+         family={Serodio},
+         familyi={S\bibinitperiod},
+         given={Micaela\bibnamedelima Moraes},
+         giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SMM1}
+    \strng{fullhash}{SMM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Ser21}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{title}{Unum Type-IV: A Floating-Point Unit with Dynamically Varying
+  Exponent and Mantissa Sizes}
+    \list{location}{1}{%
+      {Lisbon, Portugal}%
+    }
+    \list{institution}{1}{%
+      {Instituto Superior Tecnico, University of Lisbon}%
+    }
+    \field{type}{Master's Thesis}
+    \field{year}{2021}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{shafique_eda_2014}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=SM}{%
+         family={Shafique},
+         familyi={S\bibinitperiod},
+         given={Muhammad},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=GS}{%
+         family={Garg},
+         familyi={G\bibinitperiod},
+         given={Siddharth},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=HJ}{%
+         family={Henkel},
+         familyi={H\bibinitperiod},
+         given={Jörg},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=MD}{%
+         family={Marculescu},
+         familyi={M\bibinitperiod},
+         given={Diana},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Association for Computing Machinery}%
+    }
+    \strng{namehash}{SM+1}
+    \strng{fullhash}{SMGSHJMD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{shorttitle}
+    \field{labelalpha}{SGH\textsuperscript {+}14}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{abstract}{%
+    Technology scaling has resulted in smaller and faster transistors in
+  successive technology generations. However, transistor power consumption no
+  longer scales commensurately with integration density and, consequently, it
+  is projected that in future technology nodes it will only be possible to
+  simultaneously power on a fraction of cores on a multi-core chip in order to
+  stay within the power budget. The part of the chip that is powered off is
+  referred to as dark silicon and brings new challenges as well as
+  opportunities for the design community, particularly in the context of the
+  interaction of dark silicon with thermal, reliability and variability
+  concerns. In this perspectives paper we describe these new challenges and
+  opportunities, and provide preliminary experimental evidence in their
+  support.%
+    }
+    \field{booktitle}{Proceedings of the 51st {Annual} {Design} {Automation}
+  {Conference}}
+    \verb{doi}
+    \verb 10.1145/2593069.2593229
+    \endverb
+    \field{isbn}{978-1-4503-2730-5}
+    \field{pages}{1\bibrangedash 6}
+    \field{series}{{DAC} '14}
+    \field{shorttitle}{The {EDA} {Challenges} in the {Dark} {Silicon} {Era}}
+    \field{title}{The {EDA} {Challenges} in the {Dark} {Silicon} {Era}:
+  {Temperature}, {Reliability}, and {Variability} {Perspectives}}
+    \verb{url}
+    \verb https://doi.org/10.1145/2593069.2593229
+    \endverb
+    \list{location}{1}{%
+      {New York, NY, USA}%
+    }
+    \field{month}{06}
+    \field{year}{2014}
+  \endentry
+
+  \entry{sousa2024ptfloat}{inproceedings}{}
+    \name{author}{5}{}{%
+      {{hash=dSJT}{%
+         prefix={de},
+         prefixi={d\bibinitperiod},
+         family={Sousa},
+         familyi={S\bibinitperiod},
+         given={Jose\bibnamedelima T.},
+         giveni={J\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+      {{hash=LJD}{%
+         family={Lopes},
+         familyi={L\bibinitperiod},
+         given={Joao\bibnamedelima D.},
+         giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Serodio},
+         familyi={S\bibinitperiod},
+         given={Micaela},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=NHC}{%
+         family={Neto},
+         familyi={N\bibinitperiod},
+         given={Horacio\bibnamedelima C.},
+         giveni={H\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=VMP}{%
+         family={Vestias},
+         familyi={V\bibinitperiod},
+         given={Mario\bibnamedelima P.},
+         giveni={M\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{dSJT+1}
+    \strng{fullhash}{dSJTLJDSMNHCVMP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{SLS\textsuperscript {+}24}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{booktitle}{Proceedings of the 2024 IEEE International Symposium on
+  Computer Arithmetic (ARITH)}
+    \field{note}{Presented at the 31st IEEE International Symposium on Computer
+  Arithmetic (ARITH 2024)}
+    \field{title}{PT-Float: A Floating-Point Unit with Dynamically Varying
+  Exponent and Fraction Sizes}
+    \list{location}{1}{%
+      {Malaga, Spain}%
+    }
+    \field{year}{2024}
+  \endentry
+
+  \entry{talpes_dojo_2022}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=TE}{%
+         family={Talpes},
+         familyi={T\bibinitperiod},
+         given={Emil},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=WD}{%
+         family={Williams},
+         familyi={W\bibinitperiod},
+         given={Douglas},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=SDD}{%
+         family={Sarma},
+         familyi={S\bibinitperiod},
+         given={Debjit\bibnamedelima Das},
+         giveni={D\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+    }
+    \keyw{Machine learning, Microarchitecture, Supercomputers}
+    \strng{namehash}{TEWDSDD1}
+    \strng{fullhash}{TEWDSDD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{shorttitle}
+    \field{labelalpha}{TWS22}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{abstract}{%
+    Tesla’s in-house supercomputer for Machine Learning%
+    }
+    \field{booktitle}{2022 {IEEE} {Hot} {Chips} 34 {Symposium} ({HCS})}
+    \verb{doi}
+    \verb 10.1109/HCS55958.2022.9895534
+    \endverb
+    \field{note}{ISSN: 2573-2048}
+    \field{pages}{1\bibrangedash 28}
+    \field{shorttitle}{{DOJO}}
+    \field{title}{{DOJO}: {The} {Microarchitecture} of {Tesla}’s
+  {Exa}-{Scale} {Computer}}
+    \verb{url}
+    \verb https://ieeexplore.ieee.org/document/9895534
+    \endverb
+    \field{month}{08}
+    \field{year}{2022}
+  \endentry
+
+  \entry{zhang_qed_1996}{article}{}
+    \name{author}{3}{}{%
+      {{hash=ZT}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Tao},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=YZC}{%
+         family={Yan},
+         familyi={Y\bibinitperiod},
+         given={Zong-Chao},
+         giveni={Z\bibinithyphendelim C\bibinitperiod},
+      }}%
+      {{hash=DGWF}{%
+         family={Drake},
+         familyi={D\bibinitperiod},
+         given={G.\bibnamedelima W.\bibnamedelima F.},
+         giveni={G\bibinitperiod\bibinitdelim W\bibinitperiod\bibinitdelim
+  F\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ZTYZCDGWF1}
+    \strng{fullhash}{ZTYZCDGWF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{ZYD96}
+    \field{sortinit}{Z}
+    \field{sortinithash}{Z}
+    \field{abstract}{%
+    A reformulation of the external potential Bethe-Salpeter formalism is
+  developed for two-electron atoms. QED and relativistic corrections to energy
+  levels of order α7mc2lnα are derived and expressed in terms of expectation
+  values of nonrelativistic operators. Corrections of order α7mc2 from
+  exchange diagrams are also found. The total contributions of order α7mc2lnα
+  to the 1s2p3PJ fine structure intervals of helium are Δν01=82.6 kHz and
+  Δν12=−10.0 kHz. Results are given for He-like ions up to Z=12 and
+  compared with experiment.%
+    }
+    \verb{doi}
+    \verb 10.1103/PhysRevLett.77.1715
+    \endverb
+    \field{note}{Publisher: American Physical Society}
+    \field{number}{9}
+    \field{pages}{1715\bibrangedash 1718}
+    \field{title}{QED Corrections of
+  $O(m{c}^{2}{\ensuremath{\alpha}}^{7}\mathrm{ln}\ensuremath{\alpha})$ to the
+  Fine Structure Splittings of Helium and He-like Ions}
+    \verb{url}
+    \verb https://link.aps.org/doi/10.1103/PhysRevLett.77.1715
+    \endverb
+    \field{volume}{77}
+    \verb{file}
+    \verb APS Snapshot:/home/binaryman/Zotero/storage/XCFUJWQA/PhysRevLett.77.h
+    \verb tml:text/html
+    \endverb
+    \field{journaltitle}{Physical Review Letters}
+    \field{month}{08}
+    \field{year}{1996}
+  \endentry
+\enddatalist
+\endinput

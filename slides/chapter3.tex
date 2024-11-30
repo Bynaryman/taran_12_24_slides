@@ -1,0 +1,679 @@
+\graphicspath{{../../../PhD/paper_factory/thesis_louis/Chapter3/Figs/}}
+
+\subsection{Executive Summary and Motivations}
+\begin{frame}
+    \frametitle{Current Progress}
+
+    % Adding a thematic title for the slide that fits with the chapter
+    \centering
+    \huge ``Accelerating Deep Learning Inference with the Posit Number System''
+    \normalsize
+
+    \vspace{1em} % Add some vertical space before the table of contents
+
+    % Only shows the current section and its subsections, hides everything else
+    \tableofcontents[currentsection,
+                     subsectionstyle=show/shaded/hide,
+                     sectionstyle=show/hide]
+
+    % Explanation of options:
+    % - currentsection: Highlights the current section
+    % - subsectionstyle=show/show/hide: The current subsection and its siblings in the current section are shown
+    % - sectionstyle=show/hide: Shows only the current section, hides other sections
+\end{frame}
+\begin{frame}
+    \frametitle{Executive Summary}
+
+    \begin{exampleblock}<1->{Nascent Nature}
+	    The Posit format is emerging, with \textbf{limited state-of-the-art} implementations that are often \textbf{closed-source}.
+    \end{exampleblock}
+
+    \begin{block}<2->{Objective}
+	    To evaluate Posit circuitry features and standards with pipelined operators in an \textbf{end-to-end} environment.
+	    Complete \textbf{Simulation-based} and \textbf{Operator-level} results.
+    \end{block}
+
+    \begin{alertblock}<3->{Methodology}
+	    Employing a \textbf{Co-Design Accelerator Approach} on a cutting-edge POWER9 and CAPI2 platform to evaluate Posit logic in FPGA for \textbf{AI image classification}.
+    \end{alertblock}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Error Accumulation Mitigation}
+    \begin{columns}
+    	\only<1-2>{\onlyfootcite{osorio_rios_evaluating_2020}}
+            \begin{column}{0.65\textwidth}
+                \only<1-2>{ % Items appear on slides 1, 2, 3 and disappear on slide 4
+                    \begin{itemize}
+     		\item<1-2> $\approx50\%$ of CPU instructions are FMAs~\cite{osorio_rios_evaluating_2020}.
+                        \item<2> Conventional arithmetic loses accuracy as errors accumulate.
+                    \end{itemize}
+                }
+            \end{column}
+
+            \only<1-2>{ % Figure appears on slides 1, 2, 3 and disappears on slide 4
+                \begin{column}{0.34\textwidth}
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=\textwidth]{john_operations_percentage.png}
+                        \caption{Instruction distributions for neural networks.}
+                        \label{fig:john_percentage}
+                    \end{figure}
+                \end{column}
+            }
+    \end{columns}
+
+    \only<3>{ % This block will only appear on slide 4
+        \begin{block}{Motivation}
+            Posits prevent rounding errors with the quire feature.
+        \end{block}
+    }
+
+
+    \note[item]{Discuss FMAs importance and prevalence.}
+    \note[item]{Explain loss of accuracy in conventional floating-point arithmetic.}
+    \note[item]{Introduce posits' quire as a solution to improve precision in accumulations.}
+
+\end{frame}
+
+%\begin{frame}
+%    \frametitle{Precise around one but with a wide dynamic range}
+%
+%\only<1-4>{
+%\begin{columns}
+%        \begin{column}{0.5\textwidth}
+%            \begin{itemize}
+%		\item<1-4> Activation functions (ReLU, Sigmoid) introduce crucial non-linearity~\cite{ding_activation_2018}
+%                \item<2-4> They may output a wide range of values
+%                \item<3-4> Posits provide better precision near one than \textit{IEEE754} formats.
+%		\item<4-4> But also more dynamic range ($es>0$).
+%            \end{itemize}
+%        \end{column}
+%
+%        \begin{column}{0.5\textwidth}
+%            \begin{figure}[H]
+%                \centering
+%                \includegraphics[width=\textwidth]{epsilon16.pdf}
+%                \caption{Comparison of precision per binade}
+%                \label{fig:epsilon_16b}
+%            \end{figure}
+%        \end{column}
+%    \end{columns}
+%    }
+%    \only<1-4>{\onlyfootcite{ding_activation_2018}} % Ensure citation appears as a footnote on the first slide
+%
+%    \only<5>{ % This block will only appear on slide 4
+%        \begin{block}{Motivation}
+%		Posits naturally offer centered precision and wider dynamic range which matches AI workloads
+%        \end{block}
+%    }
+%
+%    \note[item]{Discuss non-linearity from activation functions and their importance.}
+%    \note[item]{Highlight the need for a number system with a broad dynamic range in neural networks.}
+%    \note[item]{Explain the advantages of posits in terms of precision near one and extended range.}
+%
+%\end{frame}
+
+\begin{frame}
+    \frametitle{Weight Distribution Optimizations}
+
+        \only<1-3>{ % Only show these items from slide 1 to 3
+	\begin{columns}[t]
+        \begin{column}{0.5\textwidth}
+                \begin{itemize}
+		    \item<1-> Weight distribution of (model,datasets).
+                    \item<2-> This distribution centered around zero and does not spread.
+		    \item<3-> Matches the \textbf{``golden zone''}.
+                \end{itemize}
+        \end{column}
+
+        \begin{column}{0.5\textwidth}
+                \begin{figure}[H]
+                    \centering
+			\only<1>{
+				\includegraphics[width=\textwidth]{vgg16.png}
+				\vspace{-7pt}
+        	            	\caption{Distribution of VGG16 weights.}
+			}
+			\only<2>{
+				\includegraphics[width=\textwidth]{resnet50.png}
+				\vspace{-7pt}
+        	            	\caption{Distribution of Resnet50 weights.}
+			}
+			\only<3>{
+				\includegraphics[width=\textwidth]{alexnet.png}
+				\vspace{-7pt}
+        	            	\caption{Distribution of AlexNet weights.}
+			}
+                \end{figure}
+        \end{column}
+    \end{columns}
+}
+
+
+\only<4>{
+       \begin{figure}[H]
+           \centering
+           \includegraphics[width=\textwidth]{epsilon16.pdf}
+           \caption{Comparison of precision per binade}
+       \end{figure}
+}
+
+%    \only<4>{ % This motivation block appears only on slide 4, making everything else disappear
+%        \begin{block}{Motivation}
+%            Posits' ``golden zone'' also aligns closely with the typical weight distributions found in neural networks
+%        \end{block}
+%    }
+
+    \note[item]{Discuss the unique characteristics of weight distributions in neural network models.}
+    \note[item]{Explain the match between posit numbers' ``golden zone'' and the typical distribution of neural network weights.}
+    \note[item]{Highlight how this feature of posits can optimize memory and computational efficiency in neural network architectures.}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Efficient Sigmoid Activation}
+		 Sigmoid introduce crucial non-linearity~\cite{ding_activation_2018}:
+		\begin{equation}
+		\sigma(x) = \frac{1}{1+e^{-x}}\nonumber
+		\end{equation}
+
+    \begin{columns}
+        \begin{column}{0.4\textwidth}
+            \begin{itemize}
+		\item<1-> \textit{IEEE754} have aproximations tricks (0x5f3759df)
+		\item<2-> \textit{Posits} defend with \textbf{nearly 0 cost} sigmoid approximation
+                \item<3-> MSB bitflip followed by constant bitshift
+            \end{itemize}
+        \end{column}
+        \begin{column}{0.6\textwidth}
+            \begin{figure}[H]
+                \centering
+                \includegraphics[width=\textwidth]{fast_sigmoid.pdf}
+                \caption{Sigmoid with 8-bit float types.}
+                \label{fig:fast_sigmoid}
+            \end{figure}
+        \end{column}
+
+    \end{columns}
+
+    \note[item]{Discuss the unique benefits of posit arithmetic for sigmoid activations in AI computations.}
+    \note[item]{Explain the process and benefits of posit's encoding scheme for efficient sigmoid approximation.}
+    \note[item]{Highlight the impact on performance and efficiency in AI systems utilizing posits.}
+
+\end{frame}
+
+\subsection{Posit Operator Framework (POF)}
+\begin{frame}
+    \frametitle{Current Progress}
+
+    % Only shows the current section and its subsections, hides everything else
+    \tableofcontents[currentsection,
+                     subsectionstyle=show/shaded/hide,
+                     sectionstyle=show/hide]
+
+    % Explanation of options:
+    % - currentsection: Highlights the current section
+    % - subsectionstyle=show/show/hide: The current subsection and its siblings in the current section are shown
+    % - sectionstyle=show/hide: Shows only the current section, hides other sections
+\end{frame}
+
+%\begin{frame}
+%    \frametitle{Methodology Overview}
+%    \begin{itemize}
+%	\item Goal: Evaluate only posit circuitry and the offered features of the standard with pipelined operators
+%	\item Co-Design Accelerator Approach: Host send image to classify to an FPGA that contains posit logic
+%        \item pioneering POWER9 + CAPI2 and posit implemerantion
+%	\item bottom-up approach
+%    \end{itemize}
+%    include image POF_qr.png
+%    \note[item]{Elucidate on the technical specifics and the verification process to ensure reliance.}
+%\end{frame}
+
+
+\begin{frame}
+    \frametitle{Bottom-Up Development: POF modules}
+
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{itemize}
+                \item<1-> Neurons and connections seen as a dependency graph.
+                \item<1-> SDFG: Synchronous Data Flow Graph.
+		\item<1-> \textbf{Streaming}
+		\item<2-> Seamless chaining into \textbf{large IP}.
+                \item<2-> Culminating in Fully Connected (FC) layer.
+		\item<3-> \textbf{+8000} SystemVerilog lines of codes
+		\item<3-> \textbf{50 Modules}
+            \end{itemize}
+        \end{column}
+
+        \begin{column}{0.5\textwidth}
+            \begin{figure}
+                \centering
+                \includegraphics[width=0.75\textwidth]{posit_denormalize.pdf}
+                \vspace{-0.3cm}
+                \caption{Posit Denormalize}
+                %\vspace{1cm}
+                \includegraphics[width=0.75\textwidth]{posit_normalize.pdf}
+                \vspace{-0.3cm}
+                \caption{Posit Normalize}
+                %\vspace{1cm}
+                \includegraphics[width=0.75\textwidth]{posit_2operands_operator.pdf}
+                \vspace{-0.3cm}
+                \caption{Posit Two Operands Operator}
+                \vspace{-0.3cm}
+                %\caption{SystemVerilog Interfaces and ports of POF modules}
+            \end{figure}
+        \end{column}
+    \end{columns}
+
+    \note[item]{Discuss the interconnectivity methodology using SDFG to ensure seamless data flow and integration of various components. Explain how each module's compliance with AXI-stream standards aids in creating a robust and scalable neural network architecture. Highlight how the Fully Connected layer's design aids in optimizing the neural network's performance and efficiency.}
+\end{frame}
+
+%\begin{frame}
+%    \frametitle{$\text{Neuron}\left \langle N,es\right \rangle$ Variations: Posit Implementations}
+%
+%    \begin{columns}
+%        \begin{column}{0.55\textwidth}
+%            \begin{itemize}
+%                %\item<1-> Neuron a.k.a ``positron''
+%		\item<1-> Weight-Activation dot-product, encoding/decoding, and nonlinear activations.
+%		\item<1-> \textbf{3 datapaths}
+%                %\item<1-> fair comparison with IEEE 754.
+%%                    \begin{itemize}
+%%                        \item<3-> Quire for exact accumulation.
+%%                        \item<3-> FMA for conventional processing.
+%%                        \item<3-> Standard with intermediate rounding.
+%%                    \end{itemize}
+%            \end{itemize}
+%        \end{column}
+%
+%        \begin{column}{0.45\textwidth}
+%            \begin{figure}
+%                \centering
+%                    \centering
+%                    \includegraphics[width=0.9\textwidth]{neuron_quire.pdf}
+%                     \vspace{-0.3cm}
+%                    \caption{Quire / Exact}
+%
+%                    \centering
+%                    \includegraphics[width=0.9\textwidth]{neuron_fma.pdf}
+%                     \vspace{-0.3cm}
+%                    \caption{FMA unit, mimicking IEEE754.}
+%
+%                    \centering
+%                    \includegraphics[width=0.9\textwidth]{neuron.pdf}
+%                     \vspace{-0.3cm}
+%                    \caption{Showcasing SV interface}
+%                    \label{fig:neuron_standard}
+%                \vspace{-0.3cm}
+%
+%		    %\caption{Three variations of $\text{Neuron}\left \langle N,es\right \rangle$ with different computational circuitries.}
+%                \label{fig:neuron_variations}
+%            \end{figure}
+%        \end{column}
+%    \end{columns}
+%
+%    \note[item]{Explain the neuron as a fundamental computational element in neural networks, termed 'positron' in reference to posit arithmetic and Asimov's literature. Discuss each implementation's design to illustrate how posits can potentially enhance neural network accuracy and efficiency through various arithmetic strategies. Highlight the role of the quire, FMA, and rounding in these models, noting their implications for real-world AI workload performance.}
+%\end{frame}
+
+\begin{frame}
+    \frametitle{$\text{Neuron}\left \langle N,es\right \rangle$ Posit}
+
+            \begin{itemize}
+                %\item<1-> Neuron a.k.a ``positron''
+		\item<1-> Weight-Activation dot-product, encoding/decoding, and nonlinear activations.
+            \end{itemize}
+
+            \begin{figure}
+                \centering
+                    \centering
+                    \includegraphics[width=0.9\textwidth]{neuron_quire.pdf}
+                     \vspace{-0.3cm}
+                    \caption{Quire / Exact}
+                \label{fig:neuron_variations}
+            \end{figure}
+
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{Hardware Cost Evaluation}
+
+	    \begin{columns}
+	        \begin{column}{0.4\textwidth}
+		\begin{table}[H]
+	    	\centering
+	    	\caption{Neurons Resource Utilization}
+	    	\label{tab:neuron_resource_utilization}
+	    		        \resizebox{0.96\textwidth}{!}{%
+	    	\begin{tabular}{@{}lcc@{}}
+	    	\toprule
+	    	\textbf{Module}                                  & \textbf{LUTs} & \textbf{FFs} \\
+	    	\midrule
+		\only<1>{\rowcolor{blue!25}}\textbf{Neuron<4,0,QUIRE>}      & 116   & 72  \\
+	    	Decoder<4,0>                                     & 3             & 0   \\
+	    	Mult<4,0>                                        & 6             & 0   \\
+	    	Quire19<4,0>                                     & 88            & 56  \\
+	    	Encoder+Round<4,0>                               & 7             & 0   \\
+	    	\midrule
+	    	\only<2>{\rowcolor{blue!25}}\textbf{Neuron<8,0,NOQUIRE>} & 336           & 126 \\
+	    	Decoder<8,0>                                     & 27            & 0   \\
+	    	Mult<8,0>                                        & 82            & 32  \\
+	    	Adder<8,0>                                       & 133           & 57  \\
+	    	Encoder+Round<8,0>                               & 38            & 0   \\
+	    	\midrule
+	    	\only<3>{\rowcolor{blue!25}}\textbf{Neuron<8,0,QUIRE>}     & 363           & 148 \\
+	    	Decoder<8,0>                                     & 27            & 0   \\
+	    	Mult<8,0>                                        & 85            & 51  \\
+	    	Quire35<8,0>                                     & 213           & 97  \\
+	    	Encoder+Round<8,0>                               & 38            & 0   \\
+	    	\bottomrule
+	    	\end{tabular}
+		}
+	    \end{table}
+
+        \end{column}
+
+        \begin{column}{0.6\textwidth}
+
+            \begin{table}[H]
+                \centering
+                \caption{Utilization for Posit<16,0>.}
+		    \vspace{-1mm}
+    		\resizebox{0.8\textwidth}{!}{%
+                \begin{tabular}{@{}lrrr@{}}
+                    \toprule
+                    \textbf{Module} & \textbf{LUTs} & \textbf{FFs} & \textbf{DSP48} \\
+                    \midrule
+			positron\_layer & \cellcolor{cyan!25}19482 & \cellcolor{orange!25}5764 & \cellcolor{pink!25}20 \\
+                    positron\_inst (20x) & 1002 & 279 & 1 \\
+                    \quad pipeline\_inst & 125 & 52 & 0 \\
+                    \quad posit\_mult\_inst & 168 & 37 & 1 \\
+                    \quad quire\_prod\_accum\_inst & 696 & 180 & 0 \\
+                    \quad weights\_ROM\_inst & 13 & 10 & 0 \\
+                    \bottomrule
+                \end{tabular}
+		    }
+            \end{table}
+		    \vspace{1mm}
+
+		\begin{table}[H]
+		    \centering
+                    \caption{Utilization for Posit<32,0>.}
+		    \vspace{-1mm}
+    		    \resizebox{0.8\textwidth}{!}{%
+		    \begin{tabular}{@{}lrrr@{}}
+		    \toprule
+		    \textbf{Module name} & \textbf{LUTs} & \textbf{FFs} & \textbf{DSP48 Blocks} \\
+		    \midrule
+		    positron\_layer                     & \cellcolor{cyan!25}44321 & \cellcolor{orange!25}11440 & \cellcolor{pink!25}80 \\
+		    \quad positron\_inst (20x)          & 2220  & 546  & 4  \\
+		    \quad\quad pipeline\_inst           & 277   & 100   & 0  \\
+		    \quad\quad posit\_mult\_inst        & 96   & 86   & 4  \\
+		    \quad\quad quire\_prod\_accum\_inst & 1833   & 347  & 0  \\
+		    \quad\quad weights\_ROM\_inst       & 14    & 10   & 0  \\
+		    \bottomrule
+		    \end{tabular}
+		     }
+		    \end{table}
+
+        \end{column}
+    \end{columns}
+
+    \note[item]{the cost is important to know to estimate the size of MLP to fill the fpga}
+
+\end{frame}
+
+\subsection{Machine Learning Evaluation}
+\begin{frame}
+    \frametitle{Current Progress}
+
+    % Only shows the current section and its subsections, hides everything else
+    \tableofcontents[currentsection,
+                     subsectionstyle=show/shaded/hide,
+                     sectionstyle=show/hide]
+
+    % Explanation of options:
+    % - currentsection: Highlights the current section
+    % - subsectionstyle=show/show/hide: The current subsection and its siblings in the current section are shown
+    % - sectionstyle=show/hide: Shows only the current section, hides other sections
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{Neural Network Topology}
+
+	\only<1->{
+    \begin{alertblock}{Topology Constraints}
+        Three-layer Multi-Layer Perceptron (MLP) was dictated by initial hardware limitations.
+    \end{alertblock}
+	}
+
+	\only<2->{
+    \begin{itemize}
+        \item \textbf{Data set:} MNIST with 60,000/10,000 training/test images.
+        \item \textbf{Input layer:} 784 neurons (28x28 pixels per image).
+        \item \textbf{Hidden layer:} 20 neurons, sigmoid activation function $\sigma(x) = \frac{1}{1 + e^{-x}}$.
+        \item \textbf{Output layer:} 10 neurons for digit classification, sigmoid activation.
+    \end{itemize}
+    }
+\end{frame}
+
+\begin{frame}
+    \frametitle{Neural Network Training and Evaluation}
+
+	\only<1->{
+    \begin{itemize}
+        \item \textbf{Learning rate:} Set at 0.2.
+        \item \textbf{Cost function:} Cross-entropy.
+	\item \textbf{Double-Precision Training}.
+	\item \textbf{Top1 scores:} Training set: 88.59\%; Test set: \textbf{91.73\%}.
+    \end{itemize}
+	}
+
+	\only<2->{
+    \begin{block}{Top1 score Goal}
+	    The \textbf{91.73\%} obtained by IEEE754-64 serves as an \textbf{oracle} and objective to \textbf{evaluate Posits}.
+    \end{block}
+    }
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Hardware Platform Overview}
+
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{itemize}
+                \item Power9 System (IBM AC922 with AlphaData 9V3 FPGA Board):
+                \begin{itemize}
+                    \item XCVU3P-2-FFVC1517 FPGA, UltraScale+ family.
+                    \item AC922 POWER9 system, 40 cores (20 per socket), 2.3GHz.
+                \end{itemize}
+                \item FPGA Specifications:
+                \begin{itemize}
+                    \item LUTs: 384k
+                    \item Flip-Flops: 788k
+                    \item DSP Slices: 2280
+                    \item Block RAM: 25.3Mb
+                    \item UltraRAM: 90Mb
+                \end{itemize}
+	\item PCIe Gen4-8 lanes, \textbf{15.754 GB/s}, supports \textbf{CAPI2} and IBM SNAP = \textbf{512b@250MHz}.
+            \end{itemize}
+        \end{column}
+
+        \begin{column}{0.5\textwidth}
+	    \begin{figure}[H]
+            \centering
+            \includegraphics[width=\textwidth]{p9.png}
+            \caption{IBM Power9 AC922; CAPI2 + VU3P.}
+	    \end{figure}
+        \end{column}
+    \end{columns}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Optimizing Throughput: Data Parallelism Approach}
+
+	\begin{exampleblock}<1->{Challenge}
+		One MLP consumes one datum per clock cycle. \textbf{Suboptimal} use of the high-speed link.
+	\end{exampleblock}
+
+	\begin{alertblock}<2->{Our approach}
+		\textbf{Data-Parallelism} by \textbf{interleaving} the pixels of input images. One MLP per independent images.
+	\end{alertblock}
+
+	\begin{block}<3->{Example: Comparing standards}
+		The �\textbf{performance} of Posit VS. IEEE754 is \textbf{correlated} with the necessary \textbf{bitwidth} to reach the 91\%
+	\end{block}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Data-Level Parallelism Examples}
+
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+	    \begin{figure}[H]
+            \centering
+            \includegraphics[width=\textwidth]{data_parallelism.pdf}
+            \caption{Data parallelism via interleaving pixels across MLP instances.}
+            \label{fig:data_parallelism}
+	    \end{figure}
+        \end{column}
+
+        \begin{column}{0.5\textwidth}
+	    \begin{figure}[H]
+            \centering
+            \includegraphics[width=0.9\textwidth]{16mlp.png}
+		    \caption{16 MLPs of posit<8,0>, utilizing 25\% of bandwidth (128/512).}
+            \label{fig:16mlp}
+	    \end{figure}
+        \end{column}
+    \end{columns}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Images per second VS. Accuracy VS. Footprints}
+
+            \begin{table}
+                \centering
+                    \caption{16 MLPs: Saving Communication}
+		    \vspace{-4mm}
+                    \label{tab:measured_performance}
+    	            \resizebox{0.65\textwidth}{!}{%
+                    \begin{tabular}{@{}lccccc@{}}
+                        \toprule
+                        \textbf{Format} & \textbf{Accuracy} & \textbf{Memory} & \textbf{Throughput} & \textbf{Bandwidth} & \textbf{FPS} \\
+                        \midrule
+                        \rowcolor{green!25}posit\textless4,0,quire\textgreater   & 91\% & 23.5MB & 1.56GB/s & 12.5\% & 3.8 $\times 10^6$ \\
+                        %posit\textless8,0,noquire\textgreater  & 91\% & 47MB   & 3.1GB/s  & 25\%   & 3.8$\times 10^6$ \\
+                        posit\textless8,0,quire\textgreater    & 91\% & 47MB   & 3.1GB/s  & 25\%   & 3.8 $\times 10^6$ \\
+                        posit\textless16,0,quire\textgreater   & 91\% & 94MB   & 6.2GB/s  & 50\%   &  3.8 $\times 10^6$ \\
+                        \midrule
+                        IEEE\textless4,1\textgreater           & \cellcolor{red!25}10\% & 23.5MB & 1.56GB/s & 12.5\% & 3.8 $\times 10^6$ \\
+                        IEEE\textless8,4\textgreater           & \cellcolor{red!25}50\% & 47MB   & 3.1GB/s  & 25\%   & 3.8 $\times 10^6$ \\
+                        \rowcolor{green!25}IEEE\textless16,5\textgreater          & 91\% & 94MB   & 6.2GB/s  & 50\%   & 3.8 $\times 10^6$ \\
+                        IEEE\textless32,8\textgreater          & 91\% & 189MB  & 12.5GB/s & 100\%  & 3.8  $\times 10^6$ \\
+                        \bottomrule
+	       	        \end{tabular}
+			}
+            \end{table}
+            \begin{table}
+            \centering
+            \caption{Theoretical Performance in an ideal FPGA}
+            \vspace{-4mm}
+            \label{tab:ideal_performance}
+    	    \resizebox{0.65\textwidth}{!}{%
+            \begin{tabular}{@{}lcccccc@{}}
+            \toprule
+            \textbf{Format} & \textbf{Accuracy}     & \textbf{Memory} & \textbf{\# of} & \textbf{Bandwidth} & \textbf{FPS} \\
+            		& \textbf{(Top1 Score)} & \textbf{Size}   & \textbf{MLPs} & \textbf{Occupancy} & \\
+            \midrule
+            \rowcolor{green!25}posit\textless4,0,quire\textgreater   & 91\% & 189MB & 128 & 100\% & 30.6$\times 10^6$ \\
+            %posit\textless8,0,noquire\textgreater\tnote{-} & 91\% & 189MB   & 64  & 100\% & 15.3 $\times 10^6$ \\
+            posit\textless8,0,quire\textgreater   & 91\% & 189MB   & 64  & 100\% & 15.3 $\times 10^6$ \\
+            posit\textless16,0,quire\textgreater  & 91\% & 189MB   & 32  & 100\% & 7.65 $\times 10^6$ \\
+            \midrule
+            IEEE\textless4,1\textgreater\tnote{*}          & \cellcolor{red!25}10\% & 189MB & 128 & 100\%  & 30.6 $\times 10^6$ \\
+            IEEE\textless8,4\textgreater\tnote{*}          & \cellcolor{red!25}50\% & 189MB   & 64  & 100\%  &  15.3 $\times 10^6$ \\
+            \rowcolor{green!25}IEEE\textless16,5\textgreater\tnote{*}         & 91\% & 189MB   & 32  & 100\%  &  7.65 $\times 10^6$ \\
+            IEEE\textless32,8\textgreater\tnote{*}         & 91\% & 189MB  & 16  & 100\%  &   3.8 $\times 10^6$ \\
+            \bottomrule
+            \end{tabular}
+		    }
+	    \end{table}
+
+\end{frame}
+
+
+\subsection{Conclusions}
+\begin{frame}
+    \frametitle{Current Progress}
+
+    % Only shows the current section and its subsections, hides everything else
+    \tableofcontents[currentsection,
+                     subsectionstyle=show/shaded/hide,
+                     sectionstyle=show/hide]
+
+    % Explanation of options:
+    % - currentsection: Highlights the current section
+    % - subsectionstyle=show/show/hide: The current subsection and its siblings in the current section are shown
+    % - sectionstyle=show/hide: Shows only the current section, hides other sections
+\end{frame}
+
+\begin{frame}
+    \frametitle{Summary of Insights and Key Contributions}
+
+    \begin{alertblock}<1->{POWER9 + CAPI2}
+	    Successful \textbf{SW/HW co-design} in a cutting-edge environment, maximizing bandwidth utilization.
+    \end{alertblock}
+	    \vspace{-2mm}
+
+    \begin{alertblock}<1->{Posit Development}
+	    Provision of an \textbf{open-source framework} with a comprehensive suite of Posit operators for \textbf{building neural networks}.
+    \end{alertblock}
+	    \vspace{-2mm}
+    \begin{block}<2->{Best Performance}
+	    Notably, Posit\textless4,0,QUIRE\textgreater\ is \textbf{$4\times$ more efficient} and uses \textbf{$4\times$ less memory} than the best IEEE754 float.
+    \end{block}
+
+	    \vspace{-2mm}
+
+    \begin{exampleblock}<2->{Findings}
+	    \textbf{Small Emerging format} as transport combined with \textbf{extended internal precision} is promising. \textbf{Alleviates the walls (A)}.
+    \end{exampleblock}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Discussions}
+
+    \begin{block}{Manual VS. Automated Pipelining}
+	    Transitioning to \textbf{automated pipeline tools}, especially when adapting to multiple computer formats.
+    \end{block}
+
+    \begin{block}{Expanding Model Complexity}
+	    Integrating more impactful models like \textbf{CNNs} and generic HPC kernels such as \textbf{GEMM}, to enhance the scope and \textbf{impact of our research}.
+    \end{block}
+
+    \begin{block}{Fair Format Comparison}
+	    Enabling \textbf{fair comparisons} between different computational formats by ensuring feature parity and maintaining \textbf{format agnosticism}.
+    \end{block}
+
+    \note[item]{These directions pave the way for the next chapter, where we implement the strategies outlined above to address current limitations and expand our research scope.}
+
+\end{frame}
+%\begin{frame}
+%    \frametitle{Conclusions}
+%    \begin{itemize}
+%	\item manual pipeline hard
+%	\item more impactful model
+%	\item lack power results and resource to compare inter formats
+%        \item Summary of key benefits of the Posit Number System.
+%        \item Future research directions.
+%    \end{itemize}
+%\end{frame}

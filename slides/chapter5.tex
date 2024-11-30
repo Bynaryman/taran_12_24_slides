@@ -1,0 +1,470 @@
+\graphicspath{{../../../PhD/paper_factory/thesis_louis/Chapter5/Figs/}}
+\subsection{Executive Summary}
+\begin{frame}
+    \frametitle{Current Progress}
+
+    % Adding a thematic title for the slide that fits with the chapter
+    \centering
+    \huge ``An Open-Source Framework for Efficient Numerically-Tailored Computations''
+    \normalsize
+
+    \vspace{1em} % Add some vertical space before the table of contents
+
+    % Only shows the current section and its subsections, hides everything else
+    \tableofcontents[currentsection,
+                     subsectionstyle=show/shaded/hide,
+                     sectionstyle=show/hide]
+
+    % Explanation of options:
+    % - currentsection: Highlights the current section
+    % - subsectionstyle=show/show/hide: The current subsection and its siblings in the current section are shown
+    % - sectionstyle=show/hide: Shows only the current section, hides other sections
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{Executive Summary}
+
+    % Uncover each block one by one
+        \begin{block}<1->{GEMM Multiplication Kernel}
+		A large variety of scientific applications rely on \textbf{GEMM } kernel. The \textbf{numerical requirements are very heterogeneous}, e.g., AI or weather forecasting.
+        \end{block}
+
+        \begin{exampleblock}<2->{Lack of Hardware Precision Adaptability}
+		\textbf{Extended} or adaptative \textbf{software precision is expensive} and often the computations land in commodity hardware.
+        \end{exampleblock}
+
+        \begin{alertblock}<3->{Our Proposal}
+		We propose an \textbf{Open-Source framework} to bridge high-level libraries to numerically aware and accelerated GEMM kernels.
+        \end{alertblock}
+\end{frame}
+\subsection{Open Source SW/HW Co-designed Framework}
+\begin{frame}
+    \frametitle{Current Progress}
+
+    % Only shows the current section and its subsections, hides everything else
+    \tableofcontents[currentsection,
+                     subsectionstyle=show/shaded/hide,
+                     sectionstyle=show/hide]
+
+    % Explanation of options:
+    % - currentsection: Highlights the current section
+    % - subsectionstyle=show/show/hide: The current subsection and its siblings in the current section are shown
+    % - sectionstyle=show/hide: Shows only the current section, hides other sections
+\end{frame}
+
+\begin{frame}
+    \frametitle{Open Source SW/HW Co-designed Framework}
+    \begin{figure}
+      \centering
+      \includegraphics[width=\textwidth]{overall_framework.pdf}
+      \caption{The 2 phases of the framework: right, the a priori Hardware generation flow, and left, the runtime execution flow.}
+    \end{figure}
+
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{Framework: Hardware Side}
+
+    \begin{columns}
+
+    \begin{column}{0.5\textwidth} % Adjust width as needed
+        \begin{itemize} % Incremental overlay specifications
+	    \item<1-> Configuration files to bitstream
+	    \item<1-> Modified FloPoCo~\cite{flopoco1}
+            \item<1-> OpenCAPI offers $\approx$23GBp/s with 1024-bit bus @200MHz
+        \end{itemize}
+    \end{column}
+
+    \begin{column}{0.5\textwidth}
+        \begin{figure}
+            \centering
+            \includegraphics[width=\textwidth]{framework_HW.pdf}
+            \caption{Automated HW generation}
+        \end{figure}
+    \end{column}
+
+    \end{columns}
+
+\onlyfootcite{flopoco1}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Framework: Software Side}
+
+    \begin{columns}
+
+    \begin{column}{0.35\textwidth} % Adjust width as needed
+	\only<1>{
+	Strategy:
+        \begin{itemize}
+		\item<1-> HPC codes rely on \textbf{BLAS calls}
+		\item<1-> \textbf{Numpy, Pytorch}
+		\item<1-> Intercept, cast, dispatch
+        \end{itemize}
+	}
+	\only<2>{
+	\begin{itemize}
+
+        	% User Process items
+        	\item \textbf{User Process:}
+        	\begin{enumerate}
+        	    \item Matrix Allocation
+        	    \item Call \texttt{gemm()}
+        	\end{enumerate}
+
+        	% Spacer
+        	\vspace{1em}
+
+        	% Our Library items
+        	\item \textbf{Our lib:}
+        	\begin{enumerate}
+		    \setcounter{enumi}{2}
+        	    \item Arithmetic cast
+        	    \item Signal DMA properties
+        	    \item HW address translation
+        	    \item DMA starts
+        	\end{enumerate}
+    \end{itemize}
+    }
+    \end{column}
+
+    \begin{column}{0.65\textwidth}
+        \begin{figure}
+            \centering
+            \includegraphics[width=\textwidth]{framework_SW.pdf}
+            \caption{Software flow}
+        \end{figure}
+    \end{column}
+
+    \end{columns}
+
+\end{frame}
+
+\begin{frame}
+	\frametitle{SW Code Example}
+
+	\small
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.8\textwidth]{listing1.png}
+	    \vspace{-3mm}
+        \caption{Calling twice the same user application (python) with our BLAS}
+    \end{figure}
+	    \vspace{-2mm}
+
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.8\textwidth]{listing2.png}
+	    \vspace{-3mm}
+        \caption{gemm.py: a python program calling GEMMs. No changes in the code.}
+    \end{figure}
+	\normalsize
+
+\end{frame}
+
+\subsection{Workload Evaluation}
+\begin{frame}
+    \frametitle{Current Progress}
+
+    % Only shows the current section and its subsections, hides everything else
+    \tableofcontents[currentsection,
+                     subsectionstyle=show/shaded/hide,
+                     sectionstyle=show/hide]
+
+    % Explanation of options:
+    % - currentsection: Highlights the current section
+    % - subsectionstyle=show/show/hide: The current subsection and its siblings in the current section are shown
+    % - sectionstyle=show/hide: Shows only the current section, hides other sections
+\end{frame}
+
+\begin{frame}
+	\frametitle{Evaluation of HPC Codes: Sea Surface Height (SSH)}
+
+%\scriptsize
+
+\begin{columns}
+
+\begin{column}{0.5\textwidth}
+    \begin{myitemize}
+        \item<1-> Ocean circulation models
+	\item<1-> Monitors climate changes~\cite{barrick_ocean}
+	\item<1-> \textbf{Precision-hungry} workload
+	\item<1-> Alternating signs and spans over \textbf{15 orders of magnitude}
+	\item<1-> Can be solved without hardware
+	\item<1-> Kahan SCS, DCS~\cite{kahan_pracniques_1965}
+	\item<1-> Extended Software Precision~\cite{bailey_high-precision_2009})
+    \end{myitemize}
+\end{column}
+\begin{column}{0.5\textwidth}
+    \begin{figure}
+	    \vspace{2mm}
+        \includegraphics[width=\textwidth]{4_forloops.pdf}
+	    \vspace{-11mm}
+	    \caption{Double-precision errors.}
+    \end{figure}
+\end{column}
+
+\end{columns}
+
+
+\onlyfootcite{barrick_ocean}
+\onlyfootcite{kahan_pracniques_1965}
+\onlyfootcite{bailey_high-precision_2009}
+\normalsize
+
+	\note[item]  {(conv, im2col, FC)}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Evaluation of HPC Codes: Artificial Intelligence}
+
+%\scriptsize
+
+\begin{columns}
+
+\begin{column}{0.5\textwidth}
+    %\textbf{Artificial Intelligence (AI)}
+    \begin{myitemize}
+	\item GEMMs (im2col, FC, Conv)
+        %\item Used to solve many modern problems (image recognition, NLP)
+	\item \textbf{Precision-resilient} workloads~\cite{johnson_rethinking_2018}
+        \item Accumulations of closely related values~\cite{li_robustness-aware_2021}
+    \end{myitemize}
+    %\vspace{-2mm} % Adjust spacing as needed
+\end{column}
+\begin{column}{0.5\textwidth}
+    \begin{figure}
+        \includegraphics[width=\textwidth]{histograms.jpg}
+	    \caption{Weights histograms Alexnet/Resnet18}
+    \end{figure}
+\end{column}
+\end{columns}
+
+
+\onlyfootcite{li_robustness-aware_2021}
+\onlyfootcite{johnson_rethinking_2018}
+\normalsize
+
+	\note[item]  {(conv, im2col, FC)}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Evaluation: SSH results}
+
+\begin{columns}
+
+\begin{column}{0.5\textwidth}
+	\tiny
+%\scriptsize
+\begin{myitemize}
+	\item<1-> \textbf{IEEE754-64-FDP} vs. \textbf{IEEE754-64/128 FMAs}
+	\tiny
+    \begin{myitemize}
+	\tiny
+        \item 64-bit format + 91-bit FDP: <ovf:30,msb:30,lsb:-30>
+	\item 128-bit quad-precision FMA
+        \item 64-bit double-precision FMA
+    \end{myitemize}
+	\item<2-> \textbf{10 shuffles} per chunk size
+	\item<2-> \textbf{4 metrics}: mean, RSD, Accuracy, Accuracy cost
+    \tiny
+    \item<3-> The FDP maintains \textbf{reproducibility} unlike the FMA
+    \item<3-> The FDP always exhibits \textbf{52} correct bits
+    \begin{myitemize}
+	\tiny
+	\item \textbf{5x} better than quad-precision
+	\item \textbf{27.7x} better than double-precision
+    \end{myitemize}
+
+	\tiny
+    \item<4-> At 200MHz, power consumptions are:
+    \begin{myitemize}
+	\tiny
+        \item 0.266W for IEEE754-64
+        \item 0.549W for IEEE754-128
+        \item 0.491W for 91-bit FDP
+    \end{myitemize}
+	\tiny
+    \item<5-> For the same Wattage, our FDP generates:
+    \begin{myitemize}
+	\tiny
+	\item \textbf{5.6x} more correct bits than IEEE754-128
+	\item \textbf{15.1x} more correct bits than IEEE754-64
+    \end{myitemize}
+\end{myitemize}
+\end{column}
+
+\tiny
+\begin{column}{0.5\textwidth}
+\centering
+\includegraphics[width=0.85\columnwidth]{SSH.pdf}
+\caption{IEEE754-64/128 FMAs vs. [64+91]-FDP}
+\end{column}
+
+\end{columns}
+\normalsize
+\end{frame}
+
+\begin{frame}
+\frametitle{Evaluation: AI results}
+
+\begin{columns}
+
+\begin{column}{0.4\textwidth}
+\tiny
+\begin{itemize}
+	\item<1-> \textbf{Pytorch code without any changes}
+	\item<1-> Top1/5 scores and \textbf{``score costs''}
+	\vspace{3mm}
+    \item<2-> Evaluated models:
+        \begin{itemize}
+\tiny
+            \item ResNet18
+            \item ResNet34
+            \item ResNet50
+            \item DenseNet121
+            \item DenseNet169
+            \item VGG11\_BN
+        \end{itemize}
+    \item<3-> Evaluated datasets:
+        \begin{itemize}
+\tiny
+            \item CIFAR10
+            \item ImageNet
+        \end{itemize}
+    \item<4-> Evaluated computer formats:
+        \begin{itemize}
+\tiny
+            \item IEEE754-32
+            \item BrainFloat16
+        \end{itemize}
+    \item<5-> 27 accumulators and conventional FMA
+    \item<5-> A total of \textbf{384} combinations
+\end{itemize}
+\end{column}
+
+\begin{column}{0.6\textwidth}
+\tiny
+\centering
+\includegraphics[width=\columnwidth]{nn_accuracy_and_acc_per_power_all_subplot.png}
+\caption{Top1/5 scores/costs across different models/formats/datasets/accumulators}
+\end{column}
+
+\end{columns}
+\normalsize
+\end{frame}
+
+\begin{frame}
+\frametitle{A zoom on the LSB case}
+\begin{figure}
+	\centering
+	\includegraphics[width=0.75\textwidth]{zoom_accuracy.png}
+	\vspace{-10pt}
+	\caption{The impact of lowering number of LSBs on Top1/5 scores and score costs.}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{A zoom on the LSB + densenet121 + ImageNet case}
+\begin{figure}
+	\centering
+	\includegraphics[width=0.75\textwidth]{zoom_accuracy_highlight.png}
+	\vspace{-10pt}
+	\caption{The impact of lowering number of LSBs on Top1/5 scores and score costs.}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Evaluation: AI results}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.97\columnwidth]{nn_power_all_subplots.pdf}
+	\vspace{-4mm}
+	\caption{Top1 scores VS. Energy cost of inferencing validation set}
+\end{figure}
+
+\normalsize
+\end{frame}
+
+\begin{frame}
+    \frametitle{Zoom on ImageNet + Resnet50}
+
+	\only<1-4>{
+	\begin{figure}[H]
+            \centering
+		%\vspace{1mm}
+	    	\only<1>{
+	            	\includegraphics[width=\textwidth]{zoom_imagenet_resnet50.png}
+			%\vspace{-2mm}
+			\caption{Test Set Inference Cost VS. Top1 Score.}
+		}
+	    	\only<2>{
+	            	\includegraphics[width=\textwidth]{zoom_imagenet_resnet50_2.png}
+			%\vspace{-2mm}
+			\caption{Test Set Inference Cost VS. Top1 Score.}
+		}
+	    	\only<3>{
+	            	\includegraphics[width=\textwidth]{zoom_imagenet_resnet50_3.png}
+			%\vspace{-2mm}
+			\caption{Test Set Inference Cost VS. Top1 Score.}
+		}
+	    	\only<4>{
+	            	\includegraphics[width=\textwidth]{zoom_imagenet_resnet50_4.png}
+			%\vspace{-2mm}
+			\caption{Test Set Inference Cost VS. Top1 Score.}
+		}
+	\end{figure}
+	}
+%            \item goal: 84\% top 1 score
+%            \item FDP<9,6-20> saves 25Wh for bf16 and 100Wh for FP32
+
+
+	\only<5>{
+        \begin{block}{Graphical Superiority}
+		Graphically, it always exists one \textbf{FDP} to the left (indicating lower energy) and are never below (ensuring equal or greater accuracy) conventional FMAs, \textbf{highlighting their superior performance}
+        \end{block}
+	}
+    \normalsize
+
+\end{frame}
+
+\subsection{Conclusions}
+\begin{frame}
+    \frametitle{Current Progress}
+
+    % Only shows the current section and its subsections, hides everything else
+    \tableofcontents[currentsection,
+                     subsectionstyle=show/shaded/hide,
+                     sectionstyle=show/hide]
+
+    % Explanation of options:
+    % - currentsection: Highlights the current section
+    % - subsectionstyle=show/show/hide: The current subsection and its siblings in the current section are shown
+    % - sectionstyle=show/hide: Shows only the current section, hides other sections
+\end{frame}
+
+\begin{frame}
+    \frametitle{Summary of Insights and Key Contributions}
+
+	\begin{alertblock}<1->{Open-Source Framework}
+		A \textbf{bridge} from user applications to silicon, focusing on \textbf{tailored arithmetic} solutions.
+	\end{alertblock}
+	\vspace{-2mm}
+	\begin{alertblock}<2->{Transparent Integration}
+		Seamlessly integrates \textbf{without code modification}, agnostic of underlying hardware.
+	\end{alertblock}
+	\vspace{-2mm}
+	\begin{block}<3->{Enhancing State-of-the-Art}
+		Improves \textbf{energy efficiency and accuracy} across \textbf{drastically diverse HPC applications}.
+	\end{block}
+	\vspace{-2mm}
+	\begin{exampleblock}<4->{Findings}
+		System-wise Arithmetic and numerically-tailored solutions alleviate the power wall (A), and the concern of workload sparsity (B).
+	\end{exampleblock}
+\end{frame}

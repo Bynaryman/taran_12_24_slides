@@ -1,0 +1,723 @@
+\graphicspath{{../../../PhD/paper_factory/thesis_louis/Chapter2/Figs/}{../../../PhD/paper_factory/thesis_louis/Chapter3/Figs/}{../../../PhD/paper_factory/thesis_louis/Chapter4/Figs/}{../../../PhD/paper_factory/thesis_louis/Chapter5/Figs/}{../../../PhD/paper_factory/thesis_louis/Chapter6/Figs/}}
+
+\section{Chapter 2}
+\begin{frame}
+    \frametitle{Absolute and Relative Errors}
+
+        \begin{alertblock}{Error Analysis and Formulas}
+            \vspace{-6mm}
+            \begin{align*}
+                \text{Absolute Error} &= |R_\text{exact} - R| \\
+                \text{Relative Error} &= \frac{|R_\text{exact} - R|}{|R_\text{exact}|}
+            \end{align*}
+
+            %\vspace{-4mm}
+            \begin{table}[H]
+                \centering
+                \begin{tabular}{|c|c|c|}
+                    \hline
+                    & \textbf{Absolute Error} & \textbf{Relative Error} \\ \hline
+                    \textbf{FMA} & 1.46044921875 & 0.0311 (3.11\%) \\ \hline
+                    \textbf{Kulisch} & 0 & 0 \\ \hline
+                \end{tabular}
+            \end{table}
+        \end{alertblock}
+\end{frame}
+
+%\begin{frame}
+%    \frametitle{Background: Posit representations}
+%	\begin{column}{0.6\textwidth}
+%\begin{figure}[H]
+%	\centering
+%	\includegraphics[width=0.5\textwidth]{posit_7_2.pdf}
+%	\caption{$posit\left \langle 7,2 \right \rangle$.}
+%	%\vspace{-0.5cm}
+%\end{figure}
+%\end{column}
+%
+%	\begin{columns}
+%	\begin{column}{0.4\textwidth}
+%\begin{figure}[H]
+%	\centering
+%	\includegraphics[width=0.5\columnwidth]{projective_reals_4_0_2.pdf}
+%	\caption{$posit\left \langle 4,0 \right \rangle$.}
+%	%\vspace{-0.5cm}
+%	\includegraphics[width=0.5\columnwidth]{projective_reals_4_1_2.pdf}
+%	\caption{$posit\left \langle 4,1 \right \rangle$.}
+%	%\vspace{-0.5cm}
+%\end{figure}
+%\end{column}
+%\end{columns}
+%\end{frame}
+
+\begin{frame}
+    \frametitle{Background: Posit representations}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.5\textwidth]{posit_7_2.pdf}
+        \caption{$posit\left \langle 7,2 \right \rangle$.}
+    \end{figure}
+\end{frame}
+\begin{frame}
+    \frametitle{Background: Posit representations}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.5\textwidth]{projective_reals_4_0_2.pdf}
+        \caption{$posit\left \langle 4,0 \right \rangle$.}
+    \end{figure}
+\end{frame}
+\begin{frame}
+    \frametitle{Background: Posit representations}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.5\textwidth]{projective_reals_4_1_2.pdf}
+        \caption{$posit\left \langle 4,1 \right \rangle$.}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+    \frametitle{CSA with RCA}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.9\textwidth]{CSA_RCA.pdf}
+        \caption{CSA followed by RCA with critical path in red.}
+    \end{figure}
+\end{frame}
+
+
+
+\begin{frame}
+    \frametitle{Background: Posit Decoding Example}
+
+            \begin{block}{Posit Encoding Formula}
+                Given a posit number \( x \), it can be decoded using the formula:
+                \[
+                x =
+                \begin{cases}
+                0 & \text{when } 0\ldots0 \\
+                \pm\infty & \text{when } 10\ldots0 \\
+                (-1)^s \times \text{useed}^k \times 2^e \times \left(1 + \frac{f_{m-1}\ldots f_0}{2^m}\right) & \text{otherwise}
+                \end{cases}
+                \]
+            \end{block}
+
+            \begin{block}{Example: posit<5,1> \( \text{Ob00101} \)}
+                \begin{itemize}
+                    \item \( k = -1 \) (because \( 1 \) run-bit (\( 0 \)) followed by the \( r \) bit (\( 1 \)))
+                    \item \( x = (-1)^0 \times (2^{2^1})^{-1} \times 2^0 \times \left( 1 + \frac{1}{2^1} \right) \)
+                    \item \( x = 1 \times \frac{1}{4} \times 1 \times \frac{3}{2} \)
+                    \item \( x = \frac{3}{8} \)
+                \end{itemize}
+            \end{block}
+\end{frame}
+
+
+\section{Chapter 3}
+
+\begin{frame}
+    \frametitle{Methodology Overview}
+
+        \begin{block}{Parallel Approach}
+		We adopt a \textbf{parallel approach}, combining a \textbf{bottom-up} methodology for the arithmetic part with a \textbf{horizontal} strategy for HPC integration.
+        \end{block}
+
+    \note[item]{Elucidate on the technical specifics and the verification process to ensure reliance.}
+\end{frame}
+
+\begin{frame}
+    \frametitle{$\text{Neuron}\left \langle N,es\right \rangle$ Variations: 3 Posit Implementations}
+
+            \begin{figure}
+                \centering
+                    \centering
+                    \includegraphics[width=0.9\textwidth]{neuron_quire.pdf}
+                     \vspace{-0.3cm}
+                    \caption{Quire / Exact}
+
+                    \centering
+                    \includegraphics[width=0.9\textwidth]{neuron_fma.pdf}
+                     \vspace{-0.3cm}
+                    \caption{FMA unit, mimicking IEEE754.}
+
+                    \centering
+                    \includegraphics[width=0.9\textwidth]{neuron.pdf}
+                     \vspace{-0.3cm}
+                    \caption{Showcasing SV interface}
+                    \label{fig:neuron_standard}
+                \vspace{-0.3cm}
+
+		    %\caption{Three variations of $\text{Neuron}\left \langle N,es\right \rangle$ with different computational circuitries.}
+                \label{fig:neuron_variations}
+            \end{figure}
+
+    \note[item]{Explain the neuron as a fundamental computational element in neural networks, termed 'positron' in reference to posit arithmetic and Asimov's literature. Discuss each implementation's design to illustrate how posits can potentially enhance neural network accuracy and efficiency through various arithmetic strategies. Highlight the role of the quire, FMA, and rounding in these models, noting their implications for real-world AI workload performance.}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Bottom-Up Development: Fully Connected (FC) Layer}
+
+    \begin{columns}
+        \begin{column}{0.6\textwidth}
+       %     \begin{itemize}
+       % 	\item<1-> Neurons instantiated via HDL's generate feature
+       % 	\item<2-> "mm2s" (memory map to stream) module agregates neuron outputs and create output burst stream transaction
+       %     \end{itemize}
+    	\begin{figure}
+        \centering
+        \includegraphics[width=0.9\textwidth]{overlay_design.pdf}
+        \vspace{-0.4cm} % Slight space between figures for better visual separation
+        \caption{System layout on XC7020 Arty board.}
+        \label{fig:overlay_design}
+
+        \vspace{0.3cm} % Slight space between figures for better visual separation
+
+        \includegraphics[width=0.8\textwidth]{zoom1.pdf}
+        \vspace{-0.3cm} % Slight space between figures for better visual separation
+        \caption{Detailed neural network layers.}
+        \label{fig:zoom_layers}
+    \end{figure}
+        \end{column}
+        \begin{column}{0.4\textwidth}
+            \begin{figure}
+                \centering
+                \includegraphics[width=\textwidth]{layer_schematic.pdf}
+                \caption{Data aggregation of 20 neurons.}
+                \label{fig:layer_schematic}
+            \end{figure}
+        \end{column}
+    \end{columns}
+
+    \note[item]{Discuss the use of HDL generate features for instantiating neurons and their assembly into FC layers. Highlight the role of the "mm2s" module in ensuring efficient data flow and integration, emphasizing its importance in the construction of neural network architectures. Explain the functionality and benefits of this design, especially in terms of data aggregation and processing efficiency.}
+\end{frame}
+
+
+%\begin{frame}
+%    \frametitle{Horizontal Development}
+%    looppack, figure of fpga
+%    \begin{itemize}
+%        \item Comparative analysis with traditional floating-point systems.
+%        \item Evaluation based on real-world AI workloads.
+%    \end{itemize}
+%    \note[item]{Mention benchmarks and metrics used for this analysis.}
+%\end{frame}
+
+
+\begin{frame}
+    \frametitle{Horizontal Development: PCI-e Performance \& Integrity}
+
+   % \begin{columns}
+   %     \begin{column}{0.3\textwidth}
+   %         \begin{itemize}
+   %             \item<1-> Loopback module for data integrity and delay simulation.
+   %             \item<2-> Gradual replacement with neural network components.
+   %         \end{itemize}
+   %     \end{column}
+
+        %\begin{column}{0.7\textwidth} % Increased width for the image
+            \begin{figure}
+                \centering
+                \includegraphics[width=\textwidth]{capi_snap.pdf}
+		    \caption{Integration schematic on Power9: testing \textbf{data integrity} and \textbf{performance} in a pioneering environment. From \textbf{loopback} to \textbf{neural network}.}
+                \label{fig:capi_snap}
+            \end{figure}
+    %    \end{column}
+    %\end{columns}
+
+	\note[item]{Loopback module for data integrity and delay simulation.}
+	\note[item]{Gradual replacement with neural network components.}
+	\note[item]{The colors}
+    \note[item]{}
+\end{frame}
+
+\begin{frame}
+    \frametitle{MLP Example}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.5\textwidth]{deep_positron.pdf}
+        \caption{Example of an MLP.}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Posit MLP in a small FPGA}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.5\textwidth]{floorplan_anotated.pdf}
+        \caption{The 2 layers in brown and green of a posit MLP in Arty7020.}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Elaborated Positron}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=\textwidth]{positron.pdf}
+        \caption{Vivado schematic of an elaborated neuron with posits.}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Quire critical path using fast carry chain}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.4\textwidth]{hidden_layer_carry.pdf}
+        \caption{Routed view of an MLP hidden layer, with an accumulator carry chain highlighted.}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Bottom-Up Development: Verification Methodology}
+
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{itemize}
+                \item<1-> Bit-to-bit verification vectors are generated and verified using high-level languages supporting posit semantics.
+                \item<2-> Source and sink methodology for robust testing.
+                \item<3-> PSLSE allows full system emulation of PCIe bursts using identical C code on x86 and Power machines.
+                %\item<4-> Efficient testing of image classification with full PCIe trace analysis in reasonable time.
+            \end{itemize}
+        \end{column}
+
+        \begin{column}{0.5\textwidth}
+            \begin{figure}
+                \centering
+                \includegraphics[width=\textwidth]{tb.pdf}
+                \caption{Source and sink methodology for module verification, showcasing input generation and output validation.}
+                \label{fig:bit_to_bit}
+            \end{figure}
+        \end{column}
+    \end{columns}
+
+    \note[item]{Discuss the significance of using PSLSE for full system emulation and how it integrates with C code on x86 architectures to mimic PCIe behaviors. Emphasize the importance of bit-to-bit verification in ensuring data integrity and system robustness. Mention benchmarks and metrics used for this analysis.}
+\end{frame}
+
+\begin{frame}
+    \frametitle{FC Layer Development: Vivado GUI Integration}
+
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.9\textwidth]{overlay_design.pdf}
+        \vspace{-0.5cm} % Slight space between figures for better visual separation
+        \caption{System layout on XC7020 Arty board.}
+        \label{fig:overlay_design}
+
+        \vspace{-0.3cm} % Slight space between figures for better visual separation
+
+        \includegraphics[width=0.6\textwidth]{zoom1.pdf}
+        \vspace{-0.3cm} % Slight space between figures for better visual separation
+        \caption{Detailed neural network layers.}
+        \label{fig:zoom_layers}
+    \end{figure}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{FPS Calculation and Example Configuration}
+
+    \begin{columns}
+        \begin{column}{0.6\textwidth}
+            \begin{itemize}
+		\item<1-> Frames per Second (FPS) is a throughput metric in the context of image processing
+                \item<2-> let $n$ be bitwidth, $c$ occupancy ratio
+                \begin{equation}
+                    \text{FPS}(n, c) \approx \frac{12 \times c \times 10^9}{784 \times \frac{n}{8}}\nonumber
+                \end{equation}
+                \item<3-> Example features 16 MLPS of 8-bit posit
+                \item<3-> one quarter of the link is utilized
+		\item<3-> Example FPS = $FPS(8,0.25)\approx3.8\times10^{6}$
+            \end{itemize}
+        \end{column}
+
+        \begin{column}{0.4\textwidth}
+	    \begin{figure}[H]
+            \centering
+            \includegraphics[width=\textwidth]{16mlp.png}
+            \caption{16 MLPs on VU3P FPGA, utilizing 25\% of bandwidth.}
+            \label{fig:16mlp}
+	    \end{figure}
+        \end{column}
+    \end{columns}
+
+\end{frame}
+
+\section{Chapter 4}
+
+
+\begin{frame}
+	\frametitle{Systolic Array Generator: Half Speed Sink Down (HSSD)}
+
+%    \begin{columns}
+%        \begin{column}{0.5\textwidth}
+	    \begin{itemize}
+                \item \textbf{Scaling:} Local connectivity minimizes global routing.
+                \item \textbf{Performance:} Stalling-free output and batch processing of independent GEMMs.
+            \end{itemize}
+%        \end{column}
+%
+%        \begin{column}{0.4\textwidth}
+	    \begin{figure}[H]
+            \centering
+            \includegraphics[width=0.8\textwidth]{batched.pdf}
+            \caption{batch processing using HSSD.}
+            \label{fig:batched}
+	    \end{figure}
+%        \end{column}
+%    \end{columns}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Evaluation: Throughput and Performance}
+
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            %\begin{itemize}
+            %    \item Throughput (B/s)
+            %    \item Performance (Ops/s)
+            %    \item Energy Efficiency (Ops/s/W)
+            %    \item Accuracy (number of accurate bits)
+            %\end{itemize}
+            \begin{figure}
+                \centering
+                \includegraphics[width=\textwidth]{throughput.pdf}
+		    \vspace{-0.3cm}
+                \caption{Measured vs. theoretical Throughput}
+            \end{figure}
+        \end{column}
+
+        \begin{column}{0.5\textwidth}
+	    %\vspace{0.5cm}
+            \begin{figure}
+                \centering
+                \includegraphics[width=\textwidth]{performance.pdf}
+		    \vspace{-0.3cm}
+                \caption{Measured vs. theoretical Performances}
+            \end{figure}
+        \end{column}
+    \end{columns}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Evaluation: HSSD impact}
+  \begin{itemize}
+        \item<1-> Payload of 1GB.
+	\item<1-> Sweep \( p \) the "Common dimension" in \( A_{m \times p} \times B_{p \times n} = C_{m \times n} \).
+	\item<2-> \textbf{HSSD saturates} the link for all sizes
+    \end{itemize}
+
+    \vspace{0.5cm}
+
+    \begin{figure}
+        \centering
+        \includegraphics[width=\textwidth]{throughput_no_hssd.pdf} % Ensure the file path is correct
+        \vspace{-0.5cm}
+        \caption{HSSD impact for $2^{30}$ Bytes payload across dimension sizes ($p$).}
+    \end{figure}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Output-Stationary Systolic Array}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.8\textwidth]{overall_SA_OS.pdf}
+        %\caption{Example of an MLP.}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Weight-Stationary Systolic Array}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=\textwidth]{overall_SA_WS.pdf}
+        %\caption{Example of an MLP.}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Multi-Project Waffer Tapeout}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.45\textwidth]{mpw5_multi_macro_highlighted.png}
+        %\caption{Example of an MLP.}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Recent Re-evaluation on smaller FP formats on ASIC}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.85\textwidth]{compressed_sa2.png}
+        %\caption{Example of an MLP.}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+    \frametitle{SA 8x8 e4m3 rulers congestion heatmap}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.45\textwidth]{SA_8x8_e4m3_rulers_congestion2.png}
+        %\caption{Example of an MLP.}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Placement with eletrostatic field of 64x64 ; <1mm2 e4m3}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.55\textwidth]{SA_64x64.jpg}
+        %\caption{Example of an MLP.}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Raytracing top view SA 4x3 posit<8,0>}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.5\textwidth]{teras_neo.png}
+        %\caption{Example of an MLP.}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+    \frametitle{CAPI backpressure design}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.85\textwidth]{backpressure.pdf}
+        %\caption{Example of an MLP.}
+    \end{figure}
+\end{frame}
+
+\section{Chapter 5}
+\begin{frame}
+	\frametitle{Any code works without modification: Santa Cruz case}
+
+	\begin{figure}[H]
+	        \centering
+		%\vspace{1mm}
+		\only<1>{
+	        	\includegraphics[width=0.85\textwidth]{santacruz.jpg}
+			\vspace{-2mm}
+			\caption{A photo of barrio de Santa cruz.}
+		}
+		\only<2>{
+	        	\includegraphics[width=0.85\textwidth]{out_1.png}
+			\vspace{-2mm}
+			\caption{Deepdream iteration 1.}
+		}
+		\only<3>{
+	        	\includegraphics[width=0.85\textwidth]{out_2.png}
+			\vspace{-2mm}
+			\caption{Deepdream iteration 2.}
+		}
+		\only<4>{
+	        	\includegraphics[width=0.85\textwidth]{out_3.png}
+			\vspace{-2mm}
+			\caption{Deepdream iteration 3.}
+		}
+		\only<5>{
+	        	\includegraphics[width=0.85\textwidth]{out_4.png}
+			\vspace{-2mm}
+			\caption{Deepdream iteration 4.}
+		}
+		\only<6>{
+	        	\includegraphics[width=0.85\textwidth]{out_5.png}
+			\vspace{-2mm}
+			\caption{Deepdream iteration 5.}
+		}
+		\only<7>{
+	        	\includegraphics[width=0.85\textwidth]{out_6.png}
+			\vspace{-2mm}
+			\caption{Deepdream iteration 6.}
+		}
+		\only<8>{
+	        	\includegraphics[width=0.85\textwidth]{out_7.png}
+			\vspace{-2mm}
+			\caption{Deepdream iteration 7.}
+		}
+	\end{figure}
+\end{frame}
+
+\section{Chapter 6}
+\begin{frame}
+	\frametitle{Division Algorithm Contribtion: 32/3 5-bit}
+
+	\begin{figure}[H]
+	        \centering
+		%\vspace{1mm}
+	        \includegraphics[width=\textwidth]{division_bit_serial_32_3_5.pdf}
+		%\vspace{-2mm}
+		\caption{32 divided by 3 on 5-bit.}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Division Algorithm Contribtion: 112/-72 6-bit (log scale)}
+
+	\begin{figure}[H]
+	        \centering
+		%\vspace{1mm}
+	        \includegraphics[width=\textwidth]{division_bit_serial_112_m72_6_log.pdf}
+		%\vspace{-2mm}
+		\caption{112 divided by -72 on 6-bit.}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Division Algorithm Contribtion: 132/36 8-bit}
+
+	\begin{figure}[H]
+	        \centering
+		%\vspace{1mm}
+	        \includegraphics[width=\textwidth]{division_bit_serial_132_14_8.pdf}
+		%\vspace{-2mm}
+		\caption{132 divided by 36 on 8-bit.}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Posit Division layouts: scaled}
+    %\tiny
+	\begin{figure}[H]
+            \centering
+		%\vspace{1mm}
+            \includegraphics[width=0.75\textwidth]{posit_div_scale.png}
+		\vspace{-2mm}
+		\caption{Posit64 Non-Restoring division: baseline (left) and 2-bit serial adder (right).}
+	\end{figure}
+    %\normalsize
+\end{frame}
+
+\begin{frame}
+    \frametitle{Posit Division layouts: not scaled}
+
+	\begin{figure}[H]
+	        \centering
+		%\vspace{1mm}
+	        \includegraphics[width=0.75\textwidth]{posit_div_not_scale.png}
+		%\vspace{-2mm}
+		\caption{Posit64 Non-Restoring division: baseline (right) and 2-bit serial adder (left).}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Posit Division layouts: scaled and heatmap}
+
+	\begin{figure}[H]
+	        \centering
+		%\vspace{1mm}
+	        \includegraphics[width=0.72\textwidth]{scaled_posit_div.png}
+		\vspace{-2mm}
+		\caption{Posit64 Non-Restoring division: baseline (left) and 2-bit serial adder (right).}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+    \frametitle{SAP results against IEEE754: Area, 32-bit}
+
+	\begin{figure}[H]
+	        \centering
+		%\vspace{1mm}
+	        \includegraphics[width=0.35\textwidth]{nb_units_across_technodes_comparison_SAP_baseline_ieee32.pdf}
+		%\vspace{-2mm}
+		\caption{Area efficiency of SAP designs against ieee754-32 across PDKs.}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+    \frametitle{SAP results against IEEE754: Area, 64-bit}
+
+	\begin{figure}[H]
+	        \centering
+		%\vspace{1mm}
+	        \includegraphics[width=0.35\textwidth]{nb_units_across_technodes_comparison_SAP_baseline_ieee64.pdf}
+		%\vspace{-2mm}
+		\caption{Area efficiency of SAP designs against ieee754-64 across PDKs.}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+	\frametitle{SAP results against IEEE754: Area, 64-bit, log scale}
+
+	\begin{figure}[H]
+	        \centering
+		%\vspace{1mm}
+	        \includegraphics[width=0.35\textwidth]{nb_units_across_technodes_comparison_SAP_baseline_ieee64_log.pdf}
+		%\vspace{-2mm}
+		\caption{Area efficiency of SAP designs against ieee754-64 across PDKs (log scale).}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+    \frametitle{SAP results against IEEE754: Power, 32-bit}
+
+	\begin{figure}[H]
+	        \centering
+		%\vspace{1mm}
+	        \includegraphics[width=0.35\textwidth]{nb_units_power_across_technodes_comparison_SAP_baseline_ieee32.pdf}
+		%\vspace{-2mm}
+		\caption{Power efficiency of SAP designs against ieee754-32 across PDKs.}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+    \frametitle{SAP results against IEEE754: Power, 64-bit}
+
+	\begin{figure}[H]
+	        \centering
+		%\vspace{1mm}
+	        \includegraphics[width=0.35\textwidth]{nb_units_power_across_technodes_comparison_SAP_baseline_ieee64.pdf}
+		%\vspace{-2mm}
+		\caption{Power efficiency of SAP designs against ieee754-64 across PDKs.}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+    \frametitle{GDS example: ASAP7}
+
+	\begin{figure}[H]
+	        \centering
+		%\vspace{1mm}
+	        \includegraphics[width=0.85\textwidth]{asap7.png}
+		%\vspace{-2mm}
+		\caption{ASAP7 div. routed layout.}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+    \frametitle{GDS example: NanGate45}
+
+	\begin{figure}[H]
+	        \centering
+		%\vspace{1mm}
+	        \includegraphics[width=0.85\textwidth]{nangate45.png}
+		%\vspace{-2mm}
+		\caption{NanGate45 div. routed layout.}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+    \frametitle{GDS example: Sky130HD}
+
+	\begin{figure}[H]
+	        \centering
+		%\vspace{1mm}
+	        \includegraphics[width=0.85\textwidth]{sky130hd.png}
+		%\vspace{-2mm}
+		\caption{SkyWater130 High Density div routed layout.}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+    \frametitle{GDS example: GF180}
+
+	\begin{figure}[H]
+	        \centering
+		%\vspace{1mm}
+	        \includegraphics[width=0.85\textwidth]{gf180.png}
+		%\vspace{-2mm}
+		\caption{GlobalFoundries div routed layout.}
+	\end{figure}
+\end{frame}
+
