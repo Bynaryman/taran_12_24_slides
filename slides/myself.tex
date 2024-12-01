@@ -1,53 +1,47 @@
+\graphicspath{{./figs/}}
 \subsection{Ego}
-%\begin{frame}
-%	\frametitle{Who Am I ?}
-%	\begin{itemize}
-%		\item Louis Ledoux
-%		\item research interests:
-%			Computer Architecture: Floating-Point Units, Systolic Arrays, Matrix-Matrix Multiply (MMM) Units, GPUs, FPGAs
-%Computer Arithmetic: Number Representations, Application-Specific Circuits, FloPoCo, Posit & IEEE754 Standards,
-%Kulisch Accumulator, Accuracy and Energy Budgeting
-%High Performance Computing: BLAS, GEMMs, Heterogeneous Workloads, Numerical Analysis, Supercomputing
-%		\item education:
-%			classe prepa integree
-%			ESIR
-%			UPC
-%			soon post doc lyon insa with florent de dinechin
-%
-%		\item
-%	\end{itemize}
-%\end{frame}
 
 \begin{frame}
 	\frametitle{Who Am I? — Basic Info}
-	\begin{itemize}
-		\item \textbf{Name:} Louis Ledoux
-		\item \textbf{Role:} PhD Candidate in Computer Architecture
-		\item \textbf{Current Affiliation:} [Your University or Research Institute]
-		\item \textbf{Contact and More:}
+	\begin{columns}
+	\begin{column}{0.65\textwidth}
 		\begin{itemize}
-			\item [\href{https://example.com}{Website}] — Detailed CV, papers, projects, and more.
-			\item Publications on \href{https://arxiv.org/}{arXiv} and other journals.
+			\item Louis Ledoux, 29 yo, PhD arithmetic HW
+			\item My website, a pointer to many things:
+			\begin{itemize}
+				\item papers
+				\item CV
+				\item projects
+				\item this presentation's slides
+			\end{itemize}
 		\end{itemize}
-		\item \textbf{Fun Fact:} Also an electronic music producer—attempting to optimize beats while optimizing circuits.
-	\end{itemize}
+	\end{column}
+	\begin{column}{0.35\textwidth}
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=\textwidth]{QR-Mysite.png}
+			\caption{https://bynaryman.github.io/}
+			\label{fig:qr_website}
+		\end{figure}
+	\end{column}
+	\end{columns}
 \end{frame}
 
 \begin{frame}
 	\frametitle{Who Am I? — Research Interests}
 	\begin{itemize}
-		\item \textbf{Computer Architecture:}
+		\item<1-> \textbf{Computer Architecture:}
 		\begin{itemize}
 			\item Floating-Point Units, Systolic Arrays, Matrix-Matrix Multiply (MMM) Units
 			\item GPUs, FPGAs, workload-specific accelerators
 		\end{itemize}
-		\item \textbf{Computer Arithmetic:}
+		\item<2-> \textbf{Computer Arithmetic:}
 		\begin{itemize}
-			\item Number Representations, Application-Specific Circuits
-			\item FloPoCo, Posit & IEEE 754 Standards
-			\item Kulisch Accumulator, Accuracy and Energy Optimization
+			\item Number Representations, Posit, IEEE 754 Standards
+			\item FloPoCo, Application-Specific Circuits
+			\item Kulisch Accumulator
 		\end{itemize}
-		\item \textbf{High Performance Computing:}
+		\item<3-> \textbf{High Performance Computing:}
 		\begin{itemize}
 			\item BLAS, GEMMs, Heterogeneous Workloads
 			\item Numerical Analysis, Supercomputing
@@ -58,21 +52,20 @@
 \begin{frame}
 	\frametitle{Who Am I? — Education}
 	\begin{itemize}
-		\item \textbf{Integrated Preparatory Class:}
+		\item<1-> \textbf{2013-2015} - Integrated Preparatory Class (CUPGE) - \textit{Rennes}
+		\item<2-> \textbf{2015-2018} - ESIR (\'Ecole Supérieur d'Ing\'enieurs de \textit{Rennes})
 		\begin{itemize}
-			\item Gained a strong foundation in mathematics and sciences.
+			\item Engineer + Master's Degree, specializing in Computer Science.
+			\item Last year coopt student at b<>com made me go to hardware
 		\end{itemize}
-		\item \textbf{ESIR:}
+		\item<3-> \textbf{2018-2024} - UPC (Universitat Politècnica de Catalunya) - \textit{Barcelona}
 		\begin{itemize}
-			\item Engineer + Master's Degree, specializing in Computer Architecture.
+			\item Also Barcelona Supercomputing Center (BSC) / Marenostrum4/5
+			\item Thesis: \textit{``Floating-Point Arithmetic Paradigms for High-Performance Computing: Software Algorithms and Hardware Designs''}
 		\end{itemize}
-		\item \textbf{UPC Barcelona:}
+		\item<4-> \textbf{2025-2027} - Coming Soon: Postdoc at INSA - \textit{Lyon}
 		\begin{itemize}
-			\item International experience enriching my knowledge in HPC and computer arithmetic.
-		\end{itemize}
-		\item \textbf{Coming Soon: Postdoc at INSA Lyon:}
-		\begin{itemize}
-			\item Collaborating with Florent de Dinechin on advanced floating-point arithmetic research.
+			\item with Florent de Dinechin on MLIR-FloPoCo
 		\end{itemize}
 	\end{itemize}
 \end{frame}
@@ -80,18 +73,47 @@
 \begin{frame}
 	\frametitle{Who Am I? — Hobbies}
 	\begin{itemize}
-		\item \textbf{Music Production:}
+		\item<1-> \textbf{Mixing science and art}
 		\begin{itemize}
-			\item I create electronic music, focusing on Intelligent Drum and Bass.
-			\item Available under "et-al-records" on SoundCloud.
+			\item Crafting weird instruments (FDD, HDD, scanner)
+			\item Modular Synthesis (Eurorack)
+			\item Visualing birth of chips
+			\item Rendering chips polygons
+			\item Hacking a bit of everything
+			\item ...
 		\end{itemize}
-		\item \textbf{Fusion of Work and Play:}
+		\item<2-> \textbf{Time for a showcase}
 		\begin{itemize}
-			\item Whether it's optimizing circuits or crafting soundscapes, precision is key.
-		\end{itemize}
-		\item \textbf{Outdoors:}
-		\begin{itemize}
-			\item Cycling and hiking — it’s good to step away from transistors and get some fresh air.
+			\item but let's talk about it afterwards :)
 		\end{itemize}
 	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Render Systolic Array}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.5\textwidth]{4096PE.jpg}
+		\caption{Edge detetion iteration 256 neterov.}
+		\label{fig:4096PE}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Systolic Array GDS Raytracing + artistic blur lens}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.8\textwidth]{teras.png}
+		\caption{Raytracing W\&B and blur.}
+		\label{fig:teras_raytracing}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Systolic Array Tapeout}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{tapeout_pic.jpg}
+	\caption{Photo taken with a lens and a smartphone.}
+\end{figure}
 \end{frame}
