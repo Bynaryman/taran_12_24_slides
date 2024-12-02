@@ -13,20 +13,17 @@
 
 \begin{frame}
     \frametitle{Conclusions}
-    \begin{block}<1->{First Contribution}
-	    Provided early insight in an \textbf{HPC environment} of an emerging floating-point format: \textbf{Posits}.
+    \begin{block}<1->{General-Purpose is suboptimal by definition}
+	    All float formats will either have too much/few dynamic range or precision.
     \end{block}
-	\vspace{-1mm}
-    \begin{block}<2->{Second Contribution}
-	    Ensured \textbf{fairness} between formats comparison and provided a \textbf{generator of accelerated GEMM} kernels focused on \textbf{arithmetic}.
+    \begin{block}<2->{Hardware Reconfigurability}
+	    Adapt the circuit and number representation for the corresponding task.
     \end{block}
-	\vspace{-1mm}
-    \begin{block}<3->{Third Contribution}
-	    Connected \textbf{silicon layout} to \textbf{HPC software}. Systematic enchancement \textbf{accuracy and energy} consumption for \textbf{distinct HPC codes}.
+    \begin{block}<3->{More drastically}
+	    Taepout a chip for a task ?
     \end{block}
-	\vspace{-1mm}
-    \begin{block}<4->{Last Contribution}
-	Revisited \textbf{Circuitry} for floating-point \textbf{division} motivated by modern opportunities: \textbf{Vector Processing} and \textbf{Open Silicon}.
+    \begin{block}<4->{Multi-Level Intermediate Representations}
+	    At least, this paradigm will help in capturing optimizations from the problem to the transistors.
     \end{block}
 
 
@@ -34,7 +31,7 @@
 
 
 \begin{frame}
-\frametitle{Dissemination: Publications}
+\frametitle{Publications Related to this Presentation}
 \scriptsize
 \begin{myitemize}
 	\item \textbf{L. Ledoux} and M. Casas, “A Generator of Numerically-Tailored and High-Throughput Accelerators for Batched GEMMs,” in 2022 IEEE 30th Annual International Symposium on Field-Programmable Custom Computing Machines (FCCM), May 2022, pp. 1–10. \textit{\url{doi: 10.1109/FCCM53951.2022.9786164}}

@@ -31,27 +31,30 @@
 		Matrix-Matrix Multiplication (MMM) accelerators \textbf{have no focus on precision/accuracy}, but on performance.
         \end{exampleblock}
 
-        \begin{block}<3->{Our Proposal}
+        \begin{block}<3->{Proposal 1}
 		Generation of scalable Systolic Arrays with \textbf{adaptative precision} Processing Elements.
+        \end{block}
+        \begin{block}<3->{Proposal 2}
+		\textbf{Open-Source framework} to bridge high-level libraries to numerically aware and accelerated GEMM kernels.
         \end{block}
 \end{frame}
 
 
 \subsection{Numerically-tailored GEMMs}
 \subsubsection{Systolic Array Generator}
-%\begin{frame}
-%    \frametitle{Current Progress}
-%
-%    % Only shows the current section and its subsections, hides everything else
-%    \tableofcontents[currentsection,
-%                     subsectionstyle=show/shaded/hide,
-%                     sectionstyle=show/hide]
-%
-%    % Explanation of options:
-%    % - currentsection: Highlights the current section
-%    % - subsectionstyle=show/show/hide: The current subsection and its siblings in the current section are shown
-%    % - sectionstyle=show/hide: Shows only the current section, hides other sections
-%\end{frame}
+\begin{frame}
+    \frametitle{Current Progress}
+
+    % Only shows the current section and its subsections, hides everything else
+    \tableofcontents[currentsection,
+                     subsectionstyle=show/shaded/hide,
+                     sectionstyle=show/hide]
+
+    % Explanation of options:
+    % - currentsection: Highlights the current section
+    % - subsectionstyle=show/show/hide: The current subsection and its siblings in the current section are shown
+    % - sectionstyle=show/hide: Shows only the current section, hides other sections
+\end{frame}
 
 \begin{frame}
     \frametitle{Systolic Array Generator: Overview}
@@ -655,12 +658,11 @@
 \begin{frame}
     \frametitle{Discussions}
 
-
-   \begin{block}<1->{Workload Discussion}
+   \begin{block}{Workload Discussion}
 	   The range \([-1, 1]\) does not reflect real workload conditions. Other contributions propose evaluations with \textbf{artificial} matrices in ranges like \([-10, 10]\), \([-100, 100]\), up to \([-10^{8}, 10^{8}]\).
     \end{block}
 
-        \begin{block}<2->{Future Research Directions}
-            Adopt a more \textbf{realistic} approach by bridging to software-based HPC code.
-        \end{block}
+%        \begin{block}<2->{Future Research Directions}
+%            Adopt a more \textbf{realistic} approach by bridging to software-based HPC code.
+%        \end{block}
 \end{frame}

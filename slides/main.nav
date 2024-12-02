@@ -9,14 +9,14 @@
 \headcommand {\beamer@subsectionentry {0}{1}{1}{3}{Ego}}
 \headcommand {\slideentry {1}{1}{1}{3/3}{Ego}{0}}
 \headcommand {\beamer@framepages {3}{3}}
-\headcommand {\slideentry {1}{1}{2}{4/6}{Ego}{0}}
-\headcommand {\beamer@framepages {4}{6}}
-\headcommand {\slideentry {1}{1}{3}{7/10}{Ego}{0}}
-\headcommand {\beamer@framepages {7}{10}}
-\headcommand {\slideentry {1}{1}{4}{11/12}{Ego}{0}}
-\headcommand {\beamer@framepages {11}{12}}
-\headcommand {\slideentry {1}{1}{5}{13/13}{Ego}{0}}
-\headcommand {\beamer@framepages {13}{13}}
+\headcommand {\slideentry {1}{1}{2}{4/4}{Ego}{0}}
+\headcommand {\beamer@framepages {4}{4}}
+\headcommand {\slideentry {1}{1}{3}{5/7}{Ego}{0}}
+\headcommand {\beamer@framepages {5}{7}}
+\headcommand {\slideentry {1}{1}{4}{8/11}{Ego}{0}}
+\headcommand {\beamer@framepages {8}{11}}
+\headcommand {\slideentry {1}{1}{5}{12/13}{Ego}{0}}
+\headcommand {\beamer@framepages {12}{13}}
 \headcommand {\slideentry {1}{1}{6}{14/14}{Ego}{0}}
 \headcommand {\beamer@framepages {14}{14}}
 \headcommand {\slideentry {1}{1}{7}{15/15}{Ego}{0}}
@@ -33,292 +33,344 @@
 \headcommand {\beamer@framepages {20}{20}}
 \headcommand {\slideentry {1}{1}{13}{21/21}{Ego}{0}}
 \headcommand {\beamer@framepages {21}{21}}
-\headcommand {\beamer@subsectionpages {3}{21}}
-\headcommand {\beamer@subsectionentry {0}{1}{2}{22}{Marenostrum}}
-\headcommand {\slideentry {1}{2}{1}{22/22}{Marenostrum}{0}}
+\headcommand {\slideentry {1}{1}{14}{22/22}{Ego}{0}}
 \headcommand {\beamer@framepages {22}{22}}
-\headcommand {\slideentry {1}{2}{2}{23/27}{Marenostrum}{0}}
-\headcommand {\beamer@framepages {23}{27}}
-\headcommand {\beamer@sectionpages {3}{27}}
-\headcommand {\beamer@subsectionpages {22}{27}}
-\headcommand {\sectionentry {2}{Presentation Context}{28}{Presentation Context}{0}}
-\headcommand {\beamer@subsectionpages {28}{27}}
-\headcommand {\beamer@subsectionentry {0}{2}{1}{28}{Challenges}}
-\headcommand {\slideentry {2}{1}{1}{28/28}{Challenges}{0}}
-\headcommand {\beamer@framepages {28}{28}}
-\headcommand {\slideentry {2}{1}{2}{29/29}{Challenges}{0}}
-\headcommand {\beamer@framepages {29}{29}}
-\headcommand {\slideentry {2}{1}{3}{30/32}{Challenges}{0}}
-\headcommand {\beamer@framepages {30}{32}}
-\headcommand {\slideentry {2}{1}{4}{33/35}{Challenges}{0}}
-\headcommand {\beamer@framepages {33}{35}}
-\headcommand {\slideentry {2}{1}{5}{36/36}{Challenges}{0}}
-\headcommand {\beamer@framepages {36}{36}}
-\headcommand {\slideentry {2}{1}{6}{37/37}{Challenges}{0}}
-\headcommand {\beamer@framepages {37}{37}}
-\headcommand {\slideentry {2}{1}{7}{38/40}{Challenges}{0}}
-\headcommand {\beamer@framepages {38}{40}}
-\headcommand {\beamer@subsectionpages {28}{40}}
-\headcommand {\beamer@subsectionentry {0}{2}{2}{41}{Background}}
-\headcommand {\slideentry {2}{2}{1}{41/54}{Background}{0}}
-\headcommand {\beamer@framepages {41}{54}}
-\headcommand {\slideentry {2}{2}{2}{55/63}{Background}{0}}
-\headcommand {\beamer@framepages {55}{63}}
-\headcommand {\slideentry {2}{2}{3}{64/65}{Background}{0}}
-\headcommand {\beamer@framepages {64}{65}}
-\headcommand {\slideentry {2}{2}{4}{66/70}{Background}{0}}
-\headcommand {\beamer@framepages {66}{70}}
-\headcommand {\slideentry {2}{2}{5}{71/73}{Background}{0}}
-\headcommand {\beamer@framepages {71}{73}}
-\headcommand {\beamer@sectionpages {28}{73}}
-\headcommand {\beamer@subsectionpages {41}{73}}
-\headcommand {\sectionentry {3}{Accuracy vs. Energy Efficiency}{74}{Accuracy vs. Energy Efficiency}{0}}
-\headcommand {\beamer@subsectionpages {74}{73}}
-\headcommand {\beamer@subsectionentry {0}{3}{1}{74}{Executive Summary}}
-\headcommand {\slideentry {3}{1}{1}{74/74}{Executive Summary}{0}}
-\headcommand {\beamer@framepages {74}{74}}
-\headcommand {\slideentry {3}{1}{2}{75/77}{Executive Summary}{0}}
-\headcommand {\beamer@framepages {75}{77}}
-\headcommand {\beamer@subsectionpages {74}{77}}
-\headcommand {\beamer@subsectionentry {0}{3}{2}{78}{Numerically-tailored GEMMs}}
-\headcommand {\beamer@subsubsectionentry {0}{3}{2}{1}{78}{Systolic Array Generator}}
-\headcommand {\slideentry {3}{2}{1}{78/80}{Numerically-tailored GEMMs}{0}}
-\headcommand {\beamer@framepages {78}{80}}
-\headcommand {\slideentry {3}{2}{2}{81/81}{Numerically-tailored GEMMs}{0}}
-\headcommand {\beamer@framepages {81}{81}}
-\headcommand {\slideentry {3}{2}{3}{82/84}{Numerically-tailored GEMMs}{0}}
-\headcommand {\beamer@framepages {82}{84}}
-\headcommand {\slideentry {3}{2}{4}{85/85}{Numerically-tailored GEMMs}{0}}
-\headcommand {\beamer@framepages {85}{85}}
-\headcommand {\slideentry {3}{2}{5}{86/88}{Numerically-tailored GEMMs}{0}}
-\headcommand {\beamer@framepages {86}{88}}
-\headcommand {\beamer@subsubsectionentry {0}{3}{2}{2}{89}{Evaluation}}
+\headcommand {\beamer@subsectionpages {3}{22}}
+\headcommand {\beamer@subsectionentry {0}{1}{2}{23}{Marenostrum}}
+\headcommand {\slideentry {1}{2}{1}{23/23}{Marenostrum}{0}}
+\headcommand {\beamer@framepages {23}{23}}
+\headcommand {\slideentry {1}{2}{2}{24/24}{Marenostrum}{0}}
+\headcommand {\beamer@framepages {24}{24}}
+\headcommand {\slideentry {1}{2}{3}{25/29}{Marenostrum}{0}}
+\headcommand {\beamer@framepages {25}{29}}
+\headcommand {\beamer@sectionpages {3}{29}}
+\headcommand {\beamer@subsectionpages {23}{29}}
+\headcommand {\sectionentry {2}{Presentation Context}{30}{Presentation Context}{0}}
+\headcommand {\beamer@subsectionpages {30}{29}}
+\headcommand {\beamer@subsectionentry {0}{2}{1}{30}{Challenges}}
+\headcommand {\slideentry {2}{1}{1}{30/30}{Challenges}{0}}
+\headcommand {\beamer@framepages {30}{30}}
+\headcommand {\slideentry {2}{1}{2}{31/31}{Challenges}{0}}
+\headcommand {\beamer@framepages {31}{31}}
+\headcommand {\slideentry {2}{1}{3}{32/34}{Challenges}{0}}
+\headcommand {\beamer@framepages {32}{34}}
+\headcommand {\slideentry {2}{1}{4}{35/37}{Challenges}{0}}
+\headcommand {\beamer@framepages {35}{37}}
+\headcommand {\slideentry {2}{1}{5}{38/38}{Challenges}{0}}
+\headcommand {\beamer@framepages {38}{38}}
+\headcommand {\slideentry {2}{1}{6}{39/39}{Challenges}{0}}
+\headcommand {\beamer@framepages {39}{39}}
+\headcommand {\slideentry {2}{1}{7}{40/42}{Challenges}{0}}
+\headcommand {\beamer@framepages {40}{42}}
+\headcommand {\beamer@subsectionpages {30}{42}}
+\headcommand {\beamer@subsectionentry {0}{2}{2}{43}{Background}}
+\headcommand {\slideentry {2}{2}{1}{43/56}{Background}{0}}
+\headcommand {\beamer@framepages {43}{56}}
+\headcommand {\slideentry {2}{2}{2}{57/65}{Background}{0}}
+\headcommand {\beamer@framepages {57}{65}}
+\headcommand {\slideentry {2}{2}{3}{66/67}{Background}{0}}
+\headcommand {\beamer@framepages {66}{67}}
+\headcommand {\slideentry {2}{2}{4}{68/72}{Background}{0}}
+\headcommand {\beamer@framepages {68}{72}}
+\headcommand {\slideentry {2}{2}{5}{73/75}{Background}{0}}
+\headcommand {\beamer@framepages {73}{75}}
+\headcommand {\beamer@sectionpages {30}{75}}
+\headcommand {\beamer@subsectionpages {43}{75}}
+\headcommand {\sectionentry {3}{Accuracy vs. Energy Efficiency}{76}{Accuracy vs. Energy Efficiency}{0}}
+\headcommand {\beamer@subsectionpages {76}{75}}
+\headcommand {\beamer@subsectionentry {0}{3}{1}{76}{Executive Summary}}
+\headcommand {\slideentry {3}{1}{1}{76/76}{Executive Summary}{0}}
+\headcommand {\beamer@framepages {76}{76}}
+\headcommand {\slideentry {3}{1}{2}{77/79}{Executive Summary}{0}}
+\headcommand {\beamer@framepages {77}{79}}
+\headcommand {\beamer@subsectionpages {76}{79}}
+\headcommand {\beamer@subsectionentry {0}{3}{2}{80}{Numerically-tailored GEMMs}}
+\headcommand {\beamer@subsubsectionentry {0}{3}{2}{1}{80}{Systolic Array Generator}}
+\headcommand {\slideentry {3}{2}{1}{80/80}{Numerically-tailored GEMMs}{0}}
+\headcommand {\beamer@framepages {80}{80}}
+\headcommand {\slideentry {3}{2}{2}{81/83}{Numerically-tailored GEMMs}{0}}
+\headcommand {\beamer@framepages {81}{83}}
+\headcommand {\slideentry {3}{2}{3}{84/84}{Numerically-tailored GEMMs}{0}}
+\headcommand {\beamer@framepages {84}{84}}
+\headcommand {\slideentry {3}{2}{4}{85/87}{Numerically-tailored GEMMs}{0}}
+\headcommand {\beamer@framepages {85}{87}}
+\headcommand {\slideentry {3}{2}{5}{88/88}{Numerically-tailored GEMMs}{0}}
+\headcommand {\beamer@framepages {88}{88}}
 \headcommand {\slideentry {3}{2}{6}{89/91}{Numerically-tailored GEMMs}{0}}
 \headcommand {\beamer@framepages {89}{91}}
-\headcommand {\slideentry {3}{2}{7}{92/92}{Numerically-tailored GEMMs}{0}}
-\headcommand {\beamer@framepages {92}{92}}
-\headcommand {\slideentry {3}{2}{8}{93/93}{Numerically-tailored GEMMs}{0}}
-\headcommand {\beamer@framepages {93}{93}}
-\headcommand {\slideentry {3}{2}{9}{94/94}{Numerically-tailored GEMMs}{0}}
-\headcommand {\beamer@framepages {94}{94}}
-\headcommand {\slideentry {3}{2}{10}{95/95}{Numerically-tailored GEMMs}{0}}
+\headcommand {\beamer@subsubsectionentry {0}{3}{2}{2}{92}{Evaluation}}
+\headcommand {\slideentry {3}{2}{7}{92/94}{Numerically-tailored GEMMs}{0}}
+\headcommand {\beamer@framepages {92}{94}}
+\headcommand {\slideentry {3}{2}{8}{95/95}{Numerically-tailored GEMMs}{0}}
 \headcommand {\beamer@framepages {95}{95}}
-\headcommand {\slideentry {3}{2}{11}{96/96}{Numerically-tailored GEMMs}{0}}
+\headcommand {\slideentry {3}{2}{9}{96/96}{Numerically-tailored GEMMs}{0}}
 \headcommand {\beamer@framepages {96}{96}}
-\headcommand {\slideentry {3}{2}{12}{97/97}{Numerically-tailored GEMMs}{0}}
+\headcommand {\slideentry {3}{2}{10}{97/97}{Numerically-tailored GEMMs}{0}}
 \headcommand {\beamer@framepages {97}{97}}
-\headcommand {\beamer@subsubsectionentry {0}{3}{2}{3}{98}{Conclusions}}
-\headcommand {\slideentry {3}{2}{13}{98/101}{Numerically-tailored GEMMs}{0}}
-\headcommand {\beamer@framepages {98}{101}}
-\headcommand {\slideentry {3}{2}{14}{102/103}{Numerically-tailored GEMMs}{0}}
-\headcommand {\beamer@framepages {102}{103}}
-\headcommand {\beamer@subsectionpages {78}{103}}
-\headcommand {\beamer@subsectionentry {0}{3}{3}{104}{Bridging to real workloads}}
-\headcommand {\beamer@subsubsectionentry {0}{3}{3}{1}{104}{Open Source SW/HW Co-designed Framework}}
-\headcommand {\slideentry {3}{3}{1}{104/104}{Bridging to real workloads}{0}}
-\headcommand {\beamer@framepages {104}{104}}
-\headcommand {\slideentry {3}{3}{2}{105/105}{Bridging to real workloads}{0}}
+\headcommand {\slideentry {3}{2}{11}{98/98}{Numerically-tailored GEMMs}{0}}
+\headcommand {\beamer@framepages {98}{98}}
+\headcommand {\slideentry {3}{2}{12}{99/99}{Numerically-tailored GEMMs}{0}}
+\headcommand {\beamer@framepages {99}{99}}
+\headcommand {\slideentry {3}{2}{13}{100/100}{Numerically-tailored GEMMs}{0}}
+\headcommand {\beamer@framepages {100}{100}}
+\headcommand {\beamer@subsubsectionentry {0}{3}{2}{3}{101}{Conclusions}}
+\headcommand {\slideentry {3}{2}{14}{101/104}{Numerically-tailored GEMMs}{0}}
+\headcommand {\beamer@framepages {101}{104}}
+\headcommand {\slideentry {3}{2}{15}{105/105}{Numerically-tailored GEMMs}{0}}
 \headcommand {\beamer@framepages {105}{105}}
-\headcommand {\slideentry {3}{3}{3}{106/106}{Bridging to real workloads}{0}}
+\headcommand {\beamer@subsectionpages {80}{105}}
+\headcommand {\beamer@subsectionentry {0}{3}{3}{106}{Bridging to real workloads}}
+\headcommand {\beamer@subsubsectionentry {0}{3}{3}{1}{106}{Open Source SW/HW Co-designed Framework}}
+\headcommand {\slideentry {3}{3}{1}{106/106}{Bridging to real workloads}{0}}
 \headcommand {\beamer@framepages {106}{106}}
-\headcommand {\slideentry {3}{3}{4}{107/108}{Bridging to real workloads}{0}}
-\headcommand {\beamer@framepages {107}{108}}
-\headcommand {\slideentry {3}{3}{5}{109/109}{Bridging to real workloads}{0}}
-\headcommand {\beamer@framepages {109}{109}}
-\headcommand {\beamer@subsubsectionentry {0}{3}{3}{2}{110}{Workload Evaluation}}
-\headcommand {\slideentry {3}{3}{6}{110/110}{Bridging to real workloads}{0}}
-\headcommand {\beamer@framepages {110}{110}}
-\headcommand {\slideentry {3}{3}{7}{111/111}{Bridging to real workloads}{0}}
+\headcommand {\slideentry {3}{3}{2}{107/107}{Bridging to real workloads}{0}}
+\headcommand {\beamer@framepages {107}{107}}
+\headcommand {\slideentry {3}{3}{3}{108/108}{Bridging to real workloads}{0}}
+\headcommand {\beamer@framepages {108}{108}}
+\headcommand {\slideentry {3}{3}{4}{109/110}{Bridging to real workloads}{0}}
+\headcommand {\beamer@framepages {109}{110}}
+\headcommand {\slideentry {3}{3}{5}{111/111}{Bridging to real workloads}{0}}
 \headcommand {\beamer@framepages {111}{111}}
-\headcommand {\slideentry {3}{3}{8}{112/116}{Bridging to real workloads}{0}}
-\headcommand {\beamer@framepages {112}{116}}
-\headcommand {\slideentry {3}{3}{9}{117/121}{Bridging to real workloads}{0}}
-\headcommand {\beamer@framepages {117}{121}}
-\headcommand {\slideentry {3}{3}{10}{122/122}{Bridging to real workloads}{0}}
-\headcommand {\beamer@framepages {122}{122}}
-\headcommand {\slideentry {3}{3}{11}{123/123}{Bridging to real workloads}{0}}
-\headcommand {\beamer@framepages {123}{123}}
-\headcommand {\slideentry {3}{3}{12}{124/124}{Bridging to real workloads}{0}}
+\headcommand {\beamer@subsubsectionentry {0}{3}{3}{2}{112}{Workload Evaluation}}
+\headcommand {\slideentry {3}{3}{6}{112/112}{Bridging to real workloads}{0}}
+\headcommand {\beamer@framepages {112}{112}}
+\headcommand {\slideentry {3}{3}{7}{113/113}{Bridging to real workloads}{0}}
+\headcommand {\beamer@framepages {113}{113}}
+\headcommand {\slideentry {3}{3}{8}{114/118}{Bridging to real workloads}{0}}
+\headcommand {\beamer@framepages {114}{118}}
+\headcommand {\slideentry {3}{3}{9}{119/123}{Bridging to real workloads}{0}}
+\headcommand {\beamer@framepages {119}{123}}
+\headcommand {\slideentry {3}{3}{10}{124/124}{Bridging to real workloads}{0}}
 \headcommand {\beamer@framepages {124}{124}}
-\headcommand {\slideentry {3}{3}{13}{125/129}{Bridging to real workloads}{0}}
-\headcommand {\beamer@framepages {125}{129}}
-\headcommand {\beamer@subsectionpages {104}{129}}
-\headcommand {\beamer@subsectionentry {0}{3}{4}{130}{Conclusions}}
-\headcommand {\slideentry {3}{4}{1}{130/133}{Conclusions}{0}}
-\headcommand {\beamer@framepages {130}{133}}
-\headcommand {\beamer@sectionpages {74}{133}}
-\headcommand {\beamer@subsectionpages {130}{133}}
-\headcommand {\sectionentry {4}{Latency vs. Parallelism}{134}{Latency vs. Parallelism}{0}}
-\headcommand {\beamer@subsectionpages {134}{133}}
-\headcommand {\beamer@subsectionentry {0}{4}{1}{134}{Executive Summary}}
-\headcommand {\slideentry {4}{1}{1}{134/134}{Executive Summary}{0}}
-\headcommand {\beamer@framepages {134}{134}}
-\headcommand {\slideentry {4}{1}{2}{135/138}{Executive Summary}{0}}
-\headcommand {\beamer@framepages {135}{138}}
-\headcommand {\beamer@subsectionpages {134}{138}}
-\headcommand {\beamer@subsectionentry {0}{4}{2}{139}{Algorithmic Contribution}}
-\headcommand {\slideentry {4}{2}{1}{139/139}{Algorithmic Contribution}{0}}
-\headcommand {\beamer@framepages {139}{139}}
-\headcommand {\slideentry {4}{2}{2}{140/141}{Algorithmic Contribution}{0}}
-\headcommand {\beamer@framepages {140}{141}}
-\headcommand {\slideentry {4}{2}{3}{142/142}{Algorithmic Contribution}{0}}
-\headcommand {\beamer@framepages {142}{142}}
-\headcommand {\slideentry {4}{2}{4}{143/146}{Algorithmic Contribution}{0}}
-\headcommand {\beamer@framepages {143}{146}}
-\headcommand {\slideentry {4}{2}{5}{147/148}{Algorithmic Contribution}{0}}
-\headcommand {\beamer@framepages {147}{148}}
-\headcommand {\slideentry {4}{2}{6}{149/151}{Algorithmic Contribution}{0}}
-\headcommand {\beamer@framepages {149}{151}}
-\headcommand {\slideentry {4}{2}{7}{152/152}{Algorithmic Contribution}{0}}
-\headcommand {\beamer@framepages {152}{152}}
-\headcommand {\beamer@subsectionpages {139}{152}}
-\headcommand {\beamer@subsectionentry {0}{4}{3}{153}{Results}}
-\headcommand {\slideentry {4}{3}{1}{153/153}{Results}{0}}
-\headcommand {\beamer@framepages {153}{153}}
-\headcommand {\slideentry {4}{3}{2}{154/154}{Results}{0}}
+\headcommand {\slideentry {3}{3}{11}{125/125}{Bridging to real workloads}{0}}
+\headcommand {\beamer@framepages {125}{125}}
+\headcommand {\slideentry {3}{3}{12}{126/126}{Bridging to real workloads}{0}}
+\headcommand {\beamer@framepages {126}{126}}
+\headcommand {\slideentry {3}{3}{13}{127/131}{Bridging to real workloads}{0}}
+\headcommand {\beamer@framepages {127}{131}}
+\headcommand {\beamer@subsectionpages {106}{131}}
+\headcommand {\beamer@subsectionentry {0}{3}{4}{132}{Conclusions}}
+\headcommand {\slideentry {3}{4}{1}{132/135}{Conclusions}{0}}
+\headcommand {\beamer@framepages {132}{135}}
+\headcommand {\beamer@sectionpages {76}{135}}
+\headcommand {\beamer@subsectionpages {132}{135}}
+\headcommand {\sectionentry {4}{Latency vs. Parallelism}{136}{Latency vs. Parallelism}{0}}
+\headcommand {\beamer@subsectionpages {136}{135}}
+\headcommand {\beamer@subsectionentry {0}{4}{1}{136}{Executive Summary}}
+\headcommand {\slideentry {4}{1}{1}{136/136}{Executive Summary}{0}}
+\headcommand {\beamer@framepages {136}{136}}
+\headcommand {\slideentry {4}{1}{2}{137/140}{Executive Summary}{0}}
+\headcommand {\beamer@framepages {137}{140}}
+\headcommand {\beamer@subsectionpages {136}{140}}
+\headcommand {\beamer@subsectionentry {0}{4}{2}{141}{Algorithmic Contribution}}
+\headcommand {\slideentry {4}{2}{1}{141/141}{Algorithmic Contribution}{0}}
+\headcommand {\beamer@framepages {141}{141}}
+\headcommand {\slideentry {4}{2}{2}{142/143}{Algorithmic Contribution}{0}}
+\headcommand {\beamer@framepages {142}{143}}
+\headcommand {\slideentry {4}{2}{3}{144/144}{Algorithmic Contribution}{0}}
+\headcommand {\beamer@framepages {144}{144}}
+\headcommand {\slideentry {4}{2}{4}{145/148}{Algorithmic Contribution}{0}}
+\headcommand {\beamer@framepages {145}{148}}
+\headcommand {\slideentry {4}{2}{5}{149/150}{Algorithmic Contribution}{0}}
+\headcommand {\beamer@framepages {149}{150}}
+\headcommand {\slideentry {4}{2}{6}{151/153}{Algorithmic Contribution}{0}}
+\headcommand {\beamer@framepages {151}{153}}
+\headcommand {\slideentry {4}{2}{7}{154/154}{Algorithmic Contribution}{0}}
 \headcommand {\beamer@framepages {154}{154}}
-\headcommand {\slideentry {4}{3}{3}{155/155}{Results}{0}}
+\headcommand {\beamer@subsectionpages {141}{154}}
+\headcommand {\beamer@subsectionentry {0}{4}{3}{155}{Results}}
+\headcommand {\slideentry {4}{3}{1}{155/155}{Results}{0}}
 \headcommand {\beamer@framepages {155}{155}}
-\headcommand {\slideentry {4}{3}{4}{156/157}{Results}{0}}
-\headcommand {\beamer@framepages {156}{157}}
-\headcommand {\slideentry {4}{3}{5}{158/158}{Results}{0}}
-\headcommand {\beamer@framepages {158}{158}}
-\headcommand {\slideentry {4}{3}{6}{159/159}{Results}{0}}
-\headcommand {\beamer@framepages {159}{159}}
-\headcommand {\slideentry {4}{3}{7}{160/160}{Results}{0}}
+\headcommand {\slideentry {4}{3}{2}{156/156}{Results}{0}}
+\headcommand {\beamer@framepages {156}{156}}
+\headcommand {\slideentry {4}{3}{3}{157/157}{Results}{0}}
+\headcommand {\beamer@framepages {157}{157}}
+\headcommand {\slideentry {4}{3}{4}{158/159}{Results}{0}}
+\headcommand {\beamer@framepages {158}{159}}
+\headcommand {\slideentry {4}{3}{5}{160/160}{Results}{0}}
 \headcommand {\beamer@framepages {160}{160}}
-\headcommand {\slideentry {4}{3}{8}{161/161}{Results}{0}}
+\headcommand {\slideentry {4}{3}{6}{161/161}{Results}{0}}
 \headcommand {\beamer@framepages {161}{161}}
-\headcommand {\beamer@subsectionpages {153}{161}}
-\headcommand {\beamer@subsectionentry {0}{4}{4}{162}{Conclusions}}
-\headcommand {\slideentry {4}{4}{1}{162/162}{Conclusions}{0}}
+\headcommand {\slideentry {4}{3}{7}{162/162}{Results}{0}}
 \headcommand {\beamer@framepages {162}{162}}
-\headcommand {\slideentry {4}{4}{2}{163/166}{Conclusions}{0}}
-\headcommand {\beamer@framepages {163}{166}}
-\headcommand {\beamer@sectionpages {134}{166}}
-\headcommand {\beamer@subsectionpages {162}{166}}
-\headcommand {\sectionentry {5}{Closing}{167}{Closing}{0}}
-\headcommand {\slideentry {5}{0}{1}{167/167}{}{0}}
-\headcommand {\beamer@framepages {167}{167}}
-\headcommand {\slideentry {5}{0}{2}{168/171}{}{0}}
-\headcommand {\beamer@framepages {168}{171}}
-\headcommand {\slideentry {5}{0}{3}{172/172}{}{0}}
-\headcommand {\beamer@framepages {172}{172}}
-\headcommand {\slideentry {5}{0}{4}{173/173}{}{0}}
-\headcommand {\beamer@framepages {173}{173}}
-\headcommand {\slideentry {5}{0}{5}{174/174}{}{0}}
+\headcommand {\slideentry {4}{3}{8}{163/163}{Results}{0}}
+\headcommand {\beamer@framepages {163}{163}}
+\headcommand {\beamer@subsectionpages {155}{163}}
+\headcommand {\beamer@subsectionentry {0}{4}{4}{164}{Conclusions}}
+\headcommand {\slideentry {4}{4}{1}{164/164}{Conclusions}{0}}
+\headcommand {\beamer@framepages {164}{164}}
+\headcommand {\slideentry {4}{4}{2}{165/168}{Conclusions}{0}}
+\headcommand {\beamer@framepages {165}{168}}
+\headcommand {\beamer@sectionpages {136}{168}}
+\headcommand {\beamer@subsectionpages {164}{168}}
+\headcommand {\sectionentry {5}{Closing}{169}{Closing}{0}}
+\headcommand {\slideentry {5}{0}{1}{169/169}{}{0}}
+\headcommand {\beamer@framepages {169}{169}}
+\headcommand {\slideentry {5}{0}{2}{170/173}{}{0}}
+\headcommand {\beamer@framepages {170}{173}}
+\headcommand {\slideentry {5}{0}{3}{174/174}{}{0}}
 \headcommand {\beamer@framepages {174}{174}}
-\headcommand {\gdef \insertmainframenumber {82}}
-\headcommand {\partentry {\translate {Appendix}}{1}}
-\headcommand {\beamer@partpages {1}{174}}
-\headcommand {\beamer@sectionpages {167}{174}}
-\headcommand {\beamer@subsectionpages {167}{174}}
-\headcommand {\beamer@appendixpages {175}}
-\headcommand {\beamer@sectionpages {175}{174}}
-\headcommand {\beamer@subsectionpages {175}{174}}
-\headcommand {\sectionentry {6}{Chapter 2}{175}{Chapter 2}{1}}
-\headcommand {\slideentry {6}{0}{1}{175/175}{}{1}}
+\headcommand {\slideentry {5}{0}{4}{175/175}{}{0}}
 \headcommand {\beamer@framepages {175}{175}}
-\headcommand {\slideentry {6}{0}{2}{176/176}{}{1}}
+\headcommand {\slideentry {5}{0}{5}{176/176}{}{0}}
 \headcommand {\beamer@framepages {176}{176}}
-\headcommand {\slideentry {6}{0}{3}{177/177}{}{1}}
+\headcommand {\gdef \insertmainframenumber {85}}
+\headcommand {\partentry {\translate {Appendix}}{1}}
+\headcommand {\beamer@partpages {1}{176}}
+\headcommand {\beamer@sectionpages {169}{176}}
+\headcommand {\beamer@subsectionpages {169}{176}}
+\headcommand {\beamer@appendixpages {177}}
+\headcommand {\beamer@sectionpages {177}{176}}
+\headcommand {\beamer@subsectionpages {177}{176}}
+\headcommand {\sectionentry {6}{Chapter 2}{177}{Chapter 2}{1}}
+\headcommand {\slideentry {6}{0}{1}{177/177}{}{1}}
 \headcommand {\beamer@framepages {177}{177}}
-\headcommand {\slideentry {6}{0}{4}{178/178}{}{1}}
+\headcommand {\slideentry {6}{0}{2}{178/178}{}{1}}
 \headcommand {\beamer@framepages {178}{178}}
-\headcommand {\slideentry {6}{0}{5}{179/179}{}{1}}
+\headcommand {\slideentry {6}{0}{3}{179/179}{}{1}}
 \headcommand {\beamer@framepages {179}{179}}
-\headcommand {\slideentry {6}{0}{6}{180/180}{}{1}}
+\headcommand {\slideentry {6}{0}{4}{180/180}{}{1}}
 \headcommand {\beamer@framepages {180}{180}}
-\headcommand {\beamer@sectionpages {175}{180}}
-\headcommand {\beamer@subsectionpages {175}{180}}
-\headcommand {\sectionentry {7}{Chapter 3}{181}{Chapter 3}{1}}
-\headcommand {\slideentry {7}{0}{1}{181/181}{}{1}}
+\headcommand {\slideentry {6}{0}{5}{181/181}{}{1}}
 \headcommand {\beamer@framepages {181}{181}}
-\headcommand {\slideentry {7}{0}{2}{182/182}{}{1}}
+\headcommand {\slideentry {6}{0}{6}{182/182}{}{1}}
 \headcommand {\beamer@framepages {182}{182}}
-\headcommand {\slideentry {7}{0}{3}{183/183}{}{1}}
+\headcommand {\slideentry {6}{0}{7}{183/183}{}{1}}
 \headcommand {\beamer@framepages {183}{183}}
-\headcommand {\slideentry {7}{0}{4}{184/184}{}{1}}
+\headcommand {\slideentry {6}{0}{8}{184/184}{}{1}}
 \headcommand {\beamer@framepages {184}{184}}
-\headcommand {\slideentry {7}{0}{5}{185/185}{}{1}}
+\headcommand {\slideentry {6}{0}{9}{185/185}{}{1}}
 \headcommand {\beamer@framepages {185}{185}}
-\headcommand {\slideentry {7}{0}{6}{186/186}{}{1}}
+\headcommand {\slideentry {6}{0}{10}{186/186}{}{1}}
 \headcommand {\beamer@framepages {186}{186}}
-\headcommand {\slideentry {7}{0}{7}{187/187}{}{1}}
+\headcommand {\slideentry {6}{0}{11}{187/187}{}{1}}
 \headcommand {\beamer@framepages {187}{187}}
-\headcommand {\slideentry {7}{0}{8}{188/188}{}{1}}
+\headcommand {\slideentry {6}{0}{12}{188/188}{}{1}}
 \headcommand {\beamer@framepages {188}{188}}
-\headcommand {\slideentry {7}{0}{9}{189/191}{}{1}}
-\headcommand {\beamer@framepages {189}{191}}
-\headcommand {\slideentry {7}{0}{10}{192/192}{}{1}}
-\headcommand {\beamer@framepages {192}{192}}
-\headcommand {\slideentry {7}{0}{11}{193/195}{}{1}}
-\headcommand {\beamer@framepages {193}{195}}
-\headcommand {\beamer@sectionpages {181}{195}}
-\headcommand {\beamer@subsectionpages {181}{195}}
-\headcommand {\sectionentry {8}{Chapter 4}{196}{Chapter 4}{1}}
-\headcommand {\slideentry {8}{0}{1}{196/196}{}{1}}
-\headcommand {\beamer@framepages {196}{196}}
-\headcommand {\slideentry {8}{0}{2}{197/197}{}{1}}
-\headcommand {\beamer@framepages {197}{197}}
-\headcommand {\slideentry {8}{0}{3}{198/199}{}{1}}
-\headcommand {\beamer@framepages {198}{199}}
-\headcommand {\slideentry {8}{0}{4}{200/200}{}{1}}
-\headcommand {\beamer@framepages {200}{200}}
-\headcommand {\slideentry {8}{0}{5}{201/201}{}{1}}
-\headcommand {\beamer@framepages {201}{201}}
-\headcommand {\slideentry {8}{0}{6}{202/202}{}{1}}
+\headcommand {\slideentry {6}{0}{13}{189/189}{}{1}}
+\headcommand {\beamer@framepages {189}{189}}
+\headcommand {\slideentry {6}{0}{14}{190/190}{}{1}}
+\headcommand {\beamer@framepages {190}{190}}
+\headcommand {\slideentry {6}{0}{15}{191/193}{}{1}}
+\headcommand {\beamer@framepages {191}{193}}
+\headcommand {\slideentry {6}{0}{16}{194/194}{}{1}}
+\headcommand {\beamer@framepages {194}{194}}
+\headcommand {\slideentry {6}{0}{17}{195/197}{}{1}}
+\headcommand {\beamer@framepages {195}{197}}
+\headcommand {\beamer@sectionpages {177}{197}}
+\headcommand {\beamer@subsectionpages {177}{197}}
+\headcommand {\sectionentry {7}{Chapter 4}{198}{Chapter 4}{1}}
+\headcommand {\slideentry {7}{0}{1}{198/198}{}{1}}
+\headcommand {\beamer@framepages {198}{198}}
+\headcommand {\slideentry {7}{0}{2}{199/199}{}{1}}
+\headcommand {\beamer@framepages {199}{199}}
+\headcommand {\slideentry {7}{0}{3}{200/201}{}{1}}
+\headcommand {\beamer@framepages {200}{201}}
+\headcommand {\slideentry {7}{0}{4}{202/202}{}{1}}
 \headcommand {\beamer@framepages {202}{202}}
-\headcommand {\slideentry {8}{0}{7}{203/203}{}{1}}
+\headcommand {\slideentry {7}{0}{5}{203/203}{}{1}}
 \headcommand {\beamer@framepages {203}{203}}
-\headcommand {\slideentry {8}{0}{8}{204/204}{}{1}}
+\headcommand {\slideentry {7}{0}{6}{204/204}{}{1}}
 \headcommand {\beamer@framepages {204}{204}}
-\headcommand {\slideentry {8}{0}{9}{205/205}{}{1}}
+\headcommand {\slideentry {7}{0}{7}{205/205}{}{1}}
 \headcommand {\beamer@framepages {205}{205}}
-\headcommand {\slideentry {8}{0}{10}{206/206}{}{1}}
+\headcommand {\slideentry {7}{0}{8}{206/206}{}{1}}
 \headcommand {\beamer@framepages {206}{206}}
-\headcommand {\slideentry {8}{0}{11}{207/207}{}{1}}
+\headcommand {\slideentry {7}{0}{9}{207/207}{}{1}}
 \headcommand {\beamer@framepages {207}{207}}
-\headcommand {\beamer@sectionpages {196}{207}}
-\headcommand {\beamer@subsectionpages {196}{207}}
-\headcommand {\sectionentry {9}{Chapter 5}{208}{Chapter 5}{1}}
-\headcommand {\slideentry {9}{0}{1}{208/215}{}{1}}
-\headcommand {\beamer@framepages {208}{215}}
-\headcommand {\beamer@sectionpages {208}{215}}
-\headcommand {\beamer@subsectionpages {208}{215}}
-\headcommand {\sectionentry {10}{Chapter 6}{216}{Chapter 6}{1}}
-\headcommand {\slideentry {10}{0}{1}{216/216}{}{1}}
-\headcommand {\beamer@framepages {216}{216}}
-\headcommand {\slideentry {10}{0}{2}{217/217}{}{1}}
-\headcommand {\beamer@framepages {217}{217}}
-\headcommand {\slideentry {10}{0}{3}{218/218}{}{1}}
+\headcommand {\slideentry {7}{0}{10}{208/208}{}{1}}
+\headcommand {\beamer@framepages {208}{208}}
+\headcommand {\slideentry {7}{0}{11}{209/209}{}{1}}
+\headcommand {\beamer@framepages {209}{209}}
+\headcommand {\beamer@sectionpages {198}{209}}
+\headcommand {\beamer@subsectionpages {198}{209}}
+\headcommand {\sectionentry {8}{Chapter 5}{210}{Chapter 5}{1}}
+\headcommand {\slideentry {8}{0}{1}{210/217}{}{1}}
+\headcommand {\beamer@framepages {210}{217}}
+\headcommand {\beamer@sectionpages {210}{217}}
+\headcommand {\beamer@subsectionpages {210}{217}}
+\headcommand {\sectionentry {9}{Chapter 6}{218}{Chapter 6}{1}}
+\headcommand {\slideentry {9}{0}{1}{218/218}{}{1}}
 \headcommand {\beamer@framepages {218}{218}}
-\headcommand {\slideentry {10}{0}{4}{219/219}{}{1}}
+\headcommand {\slideentry {9}{0}{2}{219/219}{}{1}}
 \headcommand {\beamer@framepages {219}{219}}
-\headcommand {\slideentry {10}{0}{5}{220/220}{}{1}}
+\headcommand {\slideentry {9}{0}{3}{220/220}{}{1}}
 \headcommand {\beamer@framepages {220}{220}}
-\headcommand {\slideentry {10}{0}{6}{221/221}{}{1}}
+\headcommand {\slideentry {9}{0}{4}{221/221}{}{1}}
 \headcommand {\beamer@framepages {221}{221}}
-\headcommand {\slideentry {10}{0}{7}{222/222}{}{1}}
+\headcommand {\slideentry {9}{0}{5}{222/222}{}{1}}
 \headcommand {\beamer@framepages {222}{222}}
-\headcommand {\slideentry {10}{0}{8}{223/223}{}{1}}
+\headcommand {\slideentry {9}{0}{6}{223/223}{}{1}}
 \headcommand {\beamer@framepages {223}{223}}
-\headcommand {\slideentry {10}{0}{9}{224/224}{}{1}}
+\headcommand {\slideentry {9}{0}{7}{224/224}{}{1}}
 \headcommand {\beamer@framepages {224}{224}}
-\headcommand {\slideentry {10}{0}{10}{225/225}{}{1}}
+\headcommand {\slideentry {9}{0}{8}{225/225}{}{1}}
 \headcommand {\beamer@framepages {225}{225}}
-\headcommand {\slideentry {10}{0}{11}{226/226}{}{1}}
+\headcommand {\slideentry {9}{0}{9}{226/226}{}{1}}
 \headcommand {\beamer@framepages {226}{226}}
-\headcommand {\slideentry {10}{0}{12}{227/227}{}{1}}
+\headcommand {\slideentry {9}{0}{10}{227/227}{}{1}}
 \headcommand {\beamer@framepages {227}{227}}
-\headcommand {\slideentry {10}{0}{13}{228/228}{}{1}}
+\headcommand {\slideentry {9}{0}{11}{228/228}{}{1}}
 \headcommand {\beamer@framepages {228}{228}}
-\headcommand {\slideentry {10}{0}{14}{229/229}{}{1}}
+\headcommand {\slideentry {9}{0}{12}{229/229}{}{1}}
 \headcommand {\beamer@framepages {229}{229}}
-\headcommand {\slideentry {10}{0}{15}{230/230}{}{1}}
+\headcommand {\slideentry {9}{0}{13}{230/230}{}{1}}
 \headcommand {\beamer@framepages {230}{230}}
-\headcommand {\beamer@partpages {175}{230}}
-\headcommand {\beamer@subsectionpages {216}{230}}
-\headcommand {\beamer@sectionpages {216}{230}}
-\headcommand {\beamer@documentpages {230}}
-\headcommand {\gdef \inserttotalframenumber {126}}
+\headcommand {\slideentry {9}{0}{14}{231/231}{}{1}}
+\headcommand {\beamer@framepages {231}{231}}
+\headcommand {\slideentry {9}{0}{15}{232/232}{}{1}}
+\headcommand {\beamer@framepages {232}{232}}
+\headcommand {\beamer@sectionpages {218}{232}}
+\headcommand {\beamer@subsectionpages {218}{232}}
+\headcommand {\sectionentry {10}{Chapter 3}{233}{Chapter 3}{1}}
+\headcommand {\beamer@subsectionpages {233}{232}}
+\headcommand {\beamer@subsectionentry {1}{10}{1}{233}{Executive Summary and Motivations}}
+\headcommand {\slideentry {10}{1}{1}{233/233}{Executive Summary and Motivations}{1}}
+\headcommand {\beamer@framepages {233}{233}}
+\headcommand {\slideentry {10}{1}{2}{234/236}{Executive Summary and Motivations}{1}}
+\headcommand {\beamer@framepages {234}{236}}
+\headcommand {\slideentry {10}{1}{3}{237/239}{Executive Summary and Motivations}{1}}
+\headcommand {\beamer@framepages {237}{239}}
+\headcommand {\slideentry {10}{1}{4}{240/243}{Executive Summary and Motivations}{1}}
+\headcommand {\beamer@framepages {240}{243}}
+\headcommand {\slideentry {10}{1}{5}{244/246}{Executive Summary and Motivations}{1}}
+\headcommand {\beamer@framepages {244}{246}}
+\headcommand {\beamer@subsectionpages {233}{246}}
+\headcommand {\beamer@subsectionentry {1}{10}{2}{247}{Posit Operator Framework (POF)}}
+\headcommand {\slideentry {10}{2}{1}{247/247}{Posit Operator Framework (POF)}{1}}
+\headcommand {\beamer@framepages {247}{247}}
+\headcommand {\slideentry {10}{2}{2}{248/250}{Posit Operator Framework (POF)}{1}}
+\headcommand {\beamer@framepages {248}{250}}
+\headcommand {\slideentry {10}{2}{3}{251/251}{Posit Operator Framework (POF)}{1}}
+\headcommand {\beamer@framepages {251}{251}}
+\headcommand {\slideentry {10}{2}{4}{252/254}{Posit Operator Framework (POF)}{1}}
+\headcommand {\beamer@framepages {252}{254}}
+\headcommand {\beamer@subsectionpages {247}{254}}
+\headcommand {\beamer@subsectionentry {1}{10}{3}{255}{Machine Learning Evaluation}}
+\headcommand {\slideentry {10}{3}{1}{255/255}{Machine Learning Evaluation}{1}}
+\headcommand {\beamer@framepages {255}{255}}
+\headcommand {\slideentry {10}{3}{2}{256/257}{Machine Learning Evaluation}{1}}
+\headcommand {\beamer@framepages {256}{257}}
+\headcommand {\slideentry {10}{3}{3}{258/259}{Machine Learning Evaluation}{1}}
+\headcommand {\beamer@framepages {258}{259}}
+\headcommand {\slideentry {10}{3}{4}{260/260}{Machine Learning Evaluation}{1}}
+\headcommand {\beamer@framepages {260}{260}}
+\headcommand {\slideentry {10}{3}{5}{261/263}{Machine Learning Evaluation}{1}}
+\headcommand {\beamer@framepages {261}{263}}
+\headcommand {\slideentry {10}{3}{6}{264/264}{Machine Learning Evaluation}{1}}
+\headcommand {\beamer@framepages {264}{264}}
+\headcommand {\slideentry {10}{3}{7}{265/265}{Machine Learning Evaluation}{1}}
+\headcommand {\beamer@framepages {265}{265}}
+\headcommand {\beamer@subsectionpages {255}{265}}
+\headcommand {\beamer@subsectionentry {1}{10}{4}{266}{Conclusions}}
+\headcommand {\slideentry {10}{4}{1}{266/266}{Conclusions}{1}}
+\headcommand {\beamer@framepages {266}{266}}
+\headcommand {\slideentry {10}{4}{2}{267/268}{Conclusions}{1}}
+\headcommand {\beamer@framepages {267}{268}}
+\headcommand {\slideentry {10}{4}{3}{269/269}{Conclusions}{1}}
+\headcommand {\beamer@framepages {269}{269}}
+\headcommand {\beamer@partpages {177}{269}}
+\headcommand {\beamer@subsectionpages {266}{269}}
+\headcommand {\beamer@sectionpages {233}{269}}
+\headcommand {\beamer@documentpages {269}}
+\headcommand {\gdef \inserttotalframenumber {148}}
