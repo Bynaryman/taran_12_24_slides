@@ -1,27 +1,27 @@
 \beamer@sectionintoc {1}{Marenostrum et ego}{3}{0}{1}
 \beamer@subsectionintoc {1}{1}{Ego}{3}{0}{1}
 \beamer@subsectionintoc {1}{2}{Marenostrum}{22}{0}{1}
-\beamer@sectionintoc {2}{Presentation Context}{23}{0}{2}
-\beamer@subsectionintoc {2}{1}{Challenges}{23}{0}{2}
-\beamer@subsectionintoc {2}{2}{Background}{36}{0}{2}
-\beamer@sectionintoc {3}{Accuracy vs. Energy Efficiency}{69}{0}{3}
-\beamer@subsectionintoc {3}{1}{Executive Summary}{69}{0}{3}
-\beamer@subsectionintoc {3}{2}{Numerically-tailored GEMMs}{73}{0}{3}
-\beamer@subsubsectionintoc {3}{2}{1}{Systolic Array Generator}{73}{0}{3}
-\beamer@subsubsectionintoc {3}{2}{2}{Evaluation}{84}{0}{3}
-\beamer@subsubsectionintoc {3}{2}{3}{Conclusions}{93}{0}{3}
-\beamer@subsectionintoc {3}{3}{Bridging to real workloads}{99}{0}{3}
-\beamer@subsubsectionintoc {3}{3}{1}{Open Source SW/HW Co-designed Framework}{99}{0}{3}
-\beamer@subsubsectionintoc {3}{3}{2}{Workload Evaluation}{105}{0}{3}
-\beamer@subsectionintoc {3}{4}{Conclusions}{125}{0}{3}
-\beamer@sectionintoc {4}{Latency vs. Parallelism}{129}{0}{4}
-\beamer@subsectionintoc {4}{1}{Executive Summary}{129}{0}{4}
-\beamer@subsectionintoc {4}{2}{Algorithmic Contribution}{134}{0}{4}
-\beamer@subsectionintoc {4}{3}{Results}{148}{0}{4}
-\beamer@subsectionintoc {4}{4}{Conclusions}{157}{0}{4}
-\beamer@sectionintoc {5}{Closing}{162}{0}{5}
-\beamer@sectionintoc {6}{Chapter 2}{170}{1}{6}
-\beamer@sectionintoc {7}{Chapter 3}{176}{1}{7}
-\beamer@sectionintoc {8}{Chapter 4}{191}{1}{8}
-\beamer@sectionintoc {9}{Chapter 5}{203}{1}{9}
-\beamer@sectionintoc {10}{Chapter 6}{211}{1}{10}
+\beamer@sectionintoc {2}{Presentation Context}{28}{0}{2}
+\beamer@subsectionintoc {2}{1}{Challenges}{28}{0}{2}
+\beamer@subsectionintoc {2}{2}{Background}{41}{0}{2}
+\beamer@sectionintoc {3}{Accuracy vs. Energy Efficiency}{74}{0}{3}
+\beamer@subsectionintoc {3}{1}{Executive Summary}{74}{0}{3}
+\beamer@subsectionintoc {3}{2}{Numerically-tailored GEMMs}{78}{0}{3}
+\beamer@subsubsectionintoc {3}{2}{1}{Systolic Array Generator}{78}{0}{3}
+\beamer@subsubsectionintoc {3}{2}{2}{Evaluation}{89}{0}{3}
+\beamer@subsubsectionintoc {3}{2}{3}{Conclusions}{98}{0}{3}
+\beamer@subsectionintoc {3}{3}{Bridging to real workloads}{104}{0}{3}
+\beamer@subsubsectionintoc {3}{3}{1}{Open Source SW/HW Co-designed Framework}{104}{0}{3}
+\beamer@subsubsectionintoc {3}{3}{2}{Workload Evaluation}{110}{0}{3}
+\beamer@subsectionintoc {3}{4}{Conclusions}{130}{0}{3}
+\beamer@sectionintoc {4}{Latency vs. Parallelism}{134}{0}{4}
+\beamer@subsectionintoc {4}{1}{Executive Summary}{134}{0}{4}
+\beamer@subsectionintoc {4}{2}{Algorithmic Contribution}{139}{0}{4}
+\beamer@subsectionintoc {4}{3}{Results}{153}{0}{4}
+\beamer@subsectionintoc {4}{4}{Conclusions}{162}{0}{4}
+\beamer@sectionintoc {5}{Closing}{167}{0}{5}
+\beamer@sectionintoc {6}{Chapter 2}{175}{1}{6}
+\beamer@sectionintoc {7}{Chapter 3}{181}{1}{7}
+\beamer@sectionintoc {8}{Chapter 4}{196}{1}{8}
+\beamer@sectionintoc {9}{Chapter 5}{208}{1}{9}
+\beamer@sectionintoc {10}{Chapter 6}{216}{1}{10}
